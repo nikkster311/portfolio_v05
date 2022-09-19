@@ -1,0 +1,19 @@
+.light-theme {}
+
+.dark-theme {}
+
+:root {
+    --primary-color: #ebb7b6;
+    --secondary-color: #a45e5f;
+    --header-font-color: #4a4849;
+    --text-font-color: #284c4c;
+    --heading-color: #848c8d;
+}
+
+[data-theme="dark"] {
+    --primary-color: #172737FF;
+    --secondary-color: #114538;
+    --header-font-color: #d2e1cc;
+    --text-font-color: #5e8d83;
+    --heading-color: #0f444c;
+}
