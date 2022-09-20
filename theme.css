@@ -1,19 +1,17 @@
-.light-theme {}
-
-.dark-theme {}
-
 :root {
     --primary-color: #ebb7b6;
-    --secondary-color: #a45e5f;
-    --header-font-color: #4a4849;
-    --text-font-color: #284c4c;
-    --heading-color: #848c8d;
+    --footer-bg-font-color: #284c4c;
+    --hover-font-color: #848c8d;
+    --text-font-color: #4a4849;
+    --heading-color: #a45e5f;
+
 }
 
 [data-theme="dark"] {
     --primary-color: #172737FF;
-    --secondary-color: #114538;
-    --header-font-color: #d2e1cc;
+    --footer-bg-font-color: #114538;
+    --hover-font-color: #d2e1cc;
     --text-font-color: #5e8d83;
-    --heading-color: #0f444c;
+    --heading-color: #14606b;
+    /*--heading-color: #0f444c;*/
 }
