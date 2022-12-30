@@ -1,14 +1,18 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Merriweather', serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
 }
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: 'Merriweather', serif;
     background-color: var(--primary-color);
     color: var(--text-font-color);
 }
+
+
 
 /*light dark transition*/
 body[data-theme], div, a, p, h1, h2, h3, h4, h5, h6 button, span, section {
@@ -19,8 +23,26 @@ h1 {
     color: var(--hover-font-color);
 }
 
+h2{
+    font-size: 65px;
+    font-weight: 400;
+    margin: 0;
+}
+
 h2, h3 {
     color: var(--heading-color);
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.75px;
 }
 
 .btn {
@@ -52,6 +74,19 @@ h2, h3 {
     color: var(--primary-color);
 }
 
+.rotate-email-container {
+    animation: slide-left 2s ease-out;
+    position: fixed;
+    z-index: 90000000;
+    right: -30px;
+    top: 50%;
+}
+
+#rotate-email {
+    transform: rotate(90deg);
+    padding-bottom: 2px;
+}
+
 .flex {
     display: flex;
 }
@@ -78,6 +113,7 @@ section {
     height: 80vh;
     background-color: var(--primary-color);
     padding: 10px;
+    margin: 0 20px;
 }
 
 section h2 {
@@ -106,3 +142,19 @@ section p {
     display: flex;
 }
 
+.intro {
+    margin: 70px;
+    width: fit-content;
+    padding: 20px 30px;
+    /*background: rgba(var(--footer-bg-font-color), 0.4);*/
+    /*background: rgba(var(--hover-font-color), 0.8);*/
+    background: var(--hover-font-color-op);
+    /*background: rgba(120, 120, 120, 0.8);*/
+
+    /*opacity: 0.4;*/
+    border-radius: 50px;
+}
+
+.intro h4 {
+    margin-top: 15px;
+}
