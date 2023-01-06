@@ -19,27 +19,27 @@ body[data-theme], div, a, p, h1, h2, h3, h4, h5, h6 button, span, section {
     transition: 500ms;
 }
 
-h1 {
+h1, .h1 {
     color: var(--hover-font-color);
 }
 
-h2{
+h2, .h2 {
     font-size: 65px;
     font-weight: 400;
     margin: 0;
 }
 
-h2, h3 {
+h2, h3, .h2, .h3 {
     color: var(--heading-color);
 }
 
-h4 {
+h4, .h4 {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-h5 {
+h5, .h5 {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0.75px;
@@ -78,14 +78,41 @@ h5 {
     animation: slide-left 2s ease-out;
     position: fixed;
     z-index: 90000000;
-    right: -30px;
+    right: -55px;
     top: 50%;
+}
+
+.rotate-email-container:hover #rotate-email{
+    cursor: pointer;
 }
 
 #rotate-email {
     transform: rotate(90deg);
     padding-bottom: 2px;
 }
+  
+  .rotate-email-container .tooltiptext {
+    visibility: hidden;
+    width: 130px;
+    font-size: 12px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 57%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .rotate-email-container:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
 
 .flex {
     display: flex;
@@ -116,14 +143,14 @@ section {
     margin: 0 20px;
 }
 
-section h2 {
+section h2, section .h2 {
     width: fit-content;
     border-radius: 20px;
     background: var(--primary-color);
     color: var(--heading-color);
 }
 
-section p {
+section p, section .p {
     background: var(--primary-color);
     color: var(--text-font-color);
 }

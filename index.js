@@ -23,6 +23,17 @@ function toggleTheme() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
+// copy email onclick
+    function copyEmail() {
+        navigator.clipboard.writeText('nikki@nikkster.tech');
+        var tooltip = document.getElementById("emailToolTip");
+        tooltip.innerHTML = "Email Copied!";
+    }
+
+    function emailHover() {
+        var tooltip = document.getElementById("emailToolTip");
+        tooltip.innerHTML = "Copy to clipboard";
+      }
 
 // var lastScrollTop = 0;
 //
