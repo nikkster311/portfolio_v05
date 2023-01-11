@@ -33,7 +33,33 @@ function toggleTheme() {
     function emailHover() {
         var tooltip = document.getElementById("emailToolTip");
         tooltip.innerHTML = "Copy to clipboard";
+    }
+
+// project
+    function projHover(proj) {
+        console.log(proj)
+    }
+
+// appear on scroll
+function appearOnScroll() {
+    var appearItem = document.querySelectorAll(".appear-on-scroll");
+  
+    for (var i = 0; i < appearItem.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = appearItem[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        appearItem[i].classList.add("active");
+      } else {
+        appearItem[i].classList.remove("active");
       }
+    }
+  }
+  
+  window.addEventListener("scroll", appearOnScroll);
+      
+
 
 // var lastScrollTop = 0;
 //
