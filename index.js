@@ -37,7 +37,18 @@ function toggleTheme() {
 
 // project
     function projHover(proj) {
-        console.log(proj)
+        // identify project being hovered over
+        var projName = 'proj-' + proj
+
+        var all = document.querySelectorAll('.project-description')
+        for (i=0; i<all.length; i++) {
+            // add hide to all projects
+            !all[i].classList.contains('hide') ? all[i].classList.add('hide') : null;
+            // remove hide from specific project
+            all[i].classList.contains(projName) ? all[i].classList.remove('hide') : null;
+        }
+
+
     }
 
 // appear on scroll
