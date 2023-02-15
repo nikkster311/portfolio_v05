@@ -17,15 +17,14 @@
 <div class="topnav flex">
     <a href="#about">about</a>
     <a href="#experience">experience</a>
+    <a href ="#personalProjects">personal projects</a>
     <a href="#volunteer">volunteer</a>
-    <a href="#projects">projects</a>
     <a href="#contact">contact</a>
     <button class="btn" onclick="toggleTheme()">
         <i id="light-icon" class="hide fa-solid fa-sun"></i>
         <i id="dark-icon" style="display: none" class="show fa-solid fa-moon"></i>
     </button>
 </div>
-
 <div class="intro">
     <h4>Hi, my name is</h4>
     <h2>Nikki Hermann</h2>
@@ -53,25 +52,79 @@
     </section>
     <section id="about">
         <div class="appear-on-scroll">
-            <h3>About</h3>
-            <p>blah blah blah blah I do tech and go outdoors.</p>    
-        </div>    </section>
+            <h1>About</h1>
+            <div class="d">
+                <img class="portrait-img" src="imgs/profeditcrop.jpg">
+                <div>
+                    <h4>Automating the Mundane</h4>
+                    <p>I am a Front-End React and Shopify developer based in Washington State. I am passionate about building things that automate the mundane in order to free up your time so that you can do the things you actually enjoy doing.</p>
+                    <p>Previously I worked as a park ranger which allowed me to do what I love - be outdoors and experience life in different parts of the country. Through this work I spoke with thousands of visitors a day, from all over world.</p>
+                    <p>The outdoors inspires my work and drives me to build beautiful, thoughtful creations.</p>  
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="experience">
         <div class="appear-on-scroll">
-            <div class="flex">
-                <div class="project-description proj-cnprc">
-                    <h3>CNPRC</h3>
-                    <p>languages</p>
-                    <p>here is more info</p>
+            <h1>Experience</h1>
+            <div class="flex format-flex">
+                <div>
+                    <div class="project-description proj-cnprc hide">
+                        <h3>CNPRC</h3>
+                        <p>languages</p>
+                        <p>here is more info</p>
+                        <p><a href="cnprc.html">see more</a></p>
+                        <p><a href="#">view live site</a></p>
+                    </div>
+                    <div class="project-description proj-shikohin hide">
+                        <h3>shikohin</h3>
+                        <p>languages</p>
+                        <p>here is more info</p>
+                    </div>
+                    <div class="project-description proj-abs hide">
+                        <h3>abs</h3>
+                        <p>languages</p>
+                        <p>here is more info</p>
+                    </div>
                 </div>
                 <ul>
-                    <li class="btn-proj-cnprc" onmouseout="projHover('cnprc')">CNPRC</li>
-                    <li class="btn-proj-shikohin" onmouseout="projHover('shikohin')">Shikohin</li>
-                    <li class="btn-proj-abs" onmouseout="projHover('abs')">Amplify Black Stories</li>
+                    <li class="btn-proj-cnprc" onmouseover="projHover('cnprc')">CNPRC</li>
+                    <li class="btn-proj-shikohin" onmouseover="projHover('shikohin')">Shikohin</li>
+                    <li class="btn-proj-abs" onmouseover="projHover('abs')">Amplify Black Stories</li>
                 </ul>
-            </div>
-            <h3>Experience</h3>
-            <p>a;lsfkjasdfj;lk alsjdf s;aldjf as;dlfjasd;lfjasl;dfj asdlfj asdlfj asdflj</p>    
+            </div> 
+        </div>
+        
+    </section>
+    <section id="personalProjects">
+        <div class="appear-on-scroll">
+            <h1>Personal Projects</h1>
+            <div class="flex format-flex">
+                <div>
+                    <div class="project-description proj-cnprc hide">
+                        <h3>CNPRC</h3>
+                        <p>languages</p>
+                        <p>here is more info</p>
+                        <p><a href="#">see more</a></p>
+                        <p><a href="#">view live site</a></p>
+                    </div>
+                    <div class="project-description proj-shikohin hide">
+                        <h3>shikohin</h3>
+                        <p>languages</p>
+                        <p>here is more info</p>
+                    </div>
+                    <div class="project-description proj-abs hide">
+                        <h3>abs</h3>
+                        <p>languages</p>
+                        <p>here is more info</p>
+                    </div>
+                </div>
+                <ul>
+                    <li class="btn-proj-cnprc" onmouseover="projHover('cnprc')">CNPRC</li>
+                    <li class="btn-proj-shikohin" onmouseover="projHover('shikohin')">Shikohin</li>
+                    <li class="btn-proj-abs" onmouseover="projHover('abs')">Amplify Black Stories</li>
+                </ul>
+            </div> 
         </div>
         
     </section>
