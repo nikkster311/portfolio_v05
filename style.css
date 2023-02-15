@@ -20,7 +20,7 @@ body[data-theme], div, a, p, h1, h2, h3, h4, h5, h6 button, span, section {
 }
 
 h1, .h1 {
-    color: var(--hover-font-color);
+    color: var(--heading-color);
 }
 
 h2, .h2 {
@@ -36,13 +36,20 @@ h2, h3, .h2, .h3 {
 h4, .h4 {
     font-size: 24px;
     font-weight: 400;
-    margin-bottom: 10px;
 }
 
 h5, .h5 {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0.75px;
+}
+
+body[data-theme="light"] .intro h2 {
+    color: var(--text-font-color);
+}
+
+body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
+    color: var(--heading-color);
 }
 
 .btn {
@@ -119,6 +126,15 @@ h5, .h5 {
     display: flex;
 }
 
+#about .flex {
+    align-items: center;
+}
+
+#about .appear-on-scroll {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
 .topnav {
     overflow: hidden;
     justify-content: right;
@@ -150,10 +166,10 @@ h5, .h5 {
   }
 
 section {
-    height: 80vh;
+    overflow: hidden;
     background-color: var(--primary-color);
     /* padding: 10px; */
-    padding: 20px 40px;
+    padding: 35px 100px 65px 65px;
 }
 
 section h2, section .h2 {
@@ -163,29 +179,46 @@ section h2, section .h2 {
     color: var(--heading-color);
 }
 
-section p, section .p {
+section p, section .p, section p a, section .p a {
     /* background: var(--primary-color); */
     color: var(--text-font-color);
 }
 
-/*------------------------------------------*/
-
-.flex {
-    display: flex;
+section p a:hover, section .p a:hover {
+    color: var(--heading-color)
 }
 
+/*------------------------------------------*/
 
-.flex div:first-of-type, .flex ul:first-of-type {
+.portrait-img {
+    height: 35vh;
+    border-radius: 50%;
+    shape-outside: circle(53.75% at 134px 133px);
+    float: right;
+    margin: 0 0 1rem 1rem;
+    border: 10px solid;
+}
+
+.hide {
+    display: none;
+    transition: 500ms;
+}
+
+.flex.format-flex div div {
+    width: 100%!important;
+}
+
+.flex.flex.format-flex div:first-of-type, .flex ul:first-of-type {
     width: 30%;
     /* background-color: var(--heading-color); */
 }
 
-.flex div:nth-child(2), .flex ul:nth-child(2){
+.flex.flex.format-flex div:nth-child(2), .flex ul:nth-child(2){
     width: 70%;
     /* background-color: var(--hover-font-color); */
 }
 
-.flex ul li {
+.flex.flex.format-flex ul li {
     border-top: 2px solid;
     display: flex;
     font-size: 80px;
@@ -221,6 +254,7 @@ section p, section .p {
 
 .intro h4 {
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .footer {
