@@ -57,6 +57,27 @@ h5, .h5 {
     letter-spacing: 0.75px;
 }
 
+@media screen and (max-width: 700px) {
+    h1, .h1 {
+
+    }
+
+    h2, .h2 {
+        font-size: 30px;
+    }
+
+    h3, .h3 {}
+
+    h4, .h4 {
+        font-size: 18px;
+    }
+
+    h5, .h5 {
+        font-size: 14px;
+        letter-spacing: 0.7px;
+    }
+}
+
 body[data-theme="light"] .intro h2 {
     color: var(--text-font-color);
 }
@@ -93,6 +114,17 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
 #topBtn:hover {
     background-color: var(--text-font-color);
     color: var(--primary-color);
+}
+
+@media screen and (max-width: 700px) {
+    .btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+    #topBtn {
+        bottom: 13px;
+        right: 13px;
+    }
 }
 
 .rotate-email-container {
@@ -148,6 +180,12 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 700px) {
+    .portrait-img-wrapper {
+        text-align: center;
+    }
+}
+
 .topnav {
     overflow: hidden;
     justify-content: right;
@@ -164,6 +202,21 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
 .topnav a:hover {
     background-color: var(--primary-color);
     color: var(--hover-font-color);
+}
+
+@media screen and (max-width: 700px) {
+    .topnav {
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 10px;
+    }
+    .topnav a {
+        font-size: 14px;
+        padding: 0;
+    }
+    .topnav .btn {
+        padding: 5px;
+    }
 }
 
 .appear-on-scroll {
@@ -201,15 +254,50 @@ section p a:hover, section .p a:hover {
     color: var(--heading-color)
 }
 
+@media screen and (max-width: 700px) {
+    section {
+        padding: 30px 45px 30px 35px;
+    }
+}
+
 /*------------------------------------------*/
+
+@media screen and (min-width: 699px) {
+    .media-show {
+        display: none!important;
+    }
+
+    .media-hide {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .media-show {
+        display: block;
+    }
+
+    .media-hide {
+        display: none!important;
+    }
+}
 
 .portrait-img {
     height: 35vh;
-    border-radius: 50%;
+    border-radius: 30%;
     shape-outside: circle(53.75% at 134px 133px);
     float: right;
     margin: 0 0 1rem 1rem;
     border: 10px solid;
+}
+
+@media screen and (max-width: 700px) {
+    .portrait-img {
+        height: 30vh;
+        shape-outside: none;
+        margin: 0;
+        float: none;
+    }
 }
 
 .hide {
@@ -277,8 +365,34 @@ section p a:hover, section .p a:hover {
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 700px) {
+    .intro {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
 .footer {
     background-color: var(--footer-bg-font-color);
     color: var(--hover-font-color);
     padding: 10px;
+}
+
+
+
+/* EXPERIENCE PAGES */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid img {
+    /* width: 40px; */
+    width: 80%;
+}
+
+.right {
+    width: fit-content;
+    float: right;
 }
