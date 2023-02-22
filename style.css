@@ -12,7 +12,20 @@ body {
     color: var(--text-font-color);
 }
 
-
+*::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--hover-font-color);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--text-font-color);
+    border-radius: 10px;
+    border: 1px solid var(--heading-color);
+  }
+  
 
 /*light dark transition*/
 body[data-theme], div, a, p, h1, h2, h3, h4, h5, h6 button, span, section {
@@ -229,14 +242,21 @@ section p a:hover, section .p a:hover {
     padding: 14px 0 40px;
     transition: .15s opacity;
 }
+.scroll-wrapper {
+    display: flex;
+    height: 510px;
+    overflow: auto;
+}
+
+.scroll-div {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    height: 100%;
+}
 
 .main-content section:nth-of-type(even) {
     background-color: var(--hover-font-color-op);
-}
-
-.main-content section:nth-of-type(even) p {
-    /* color: var(--heading-color); */
-
 }
 
 .intro {
