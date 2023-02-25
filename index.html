@@ -17,7 +17,8 @@
 <div class="topnav flex">
     <a href="#about">about</a>
     <a href="#experience">experience</a>
-    <a href ="#personalProjects">personal projects</a>
+    <a class="media-show" href ="#personalProjects">projects</a>
+    <a class="media-hide" href ="#personalProjects">personal projects</a>
     <a href="#volunteer">volunteer</a>
     <a href="#contact">contact</a>
     <button class="btn" onclick="toggleTheme()">
@@ -49,8 +50,9 @@
     <section id="about">
         <div class="appear-on-scroll">
             <h1>About</h1>
-            <div>
-                <img class="portrait-img" src="imgs/profeditcrop.jpg">
+            <div class="portrait-img-wrapper">
+                <img class="portrait-img" src="./imgs/profeditcrop.jpg">
+                </div>
                 <div>
                     <h3>Automating the Mundane</h3>
                     <p>I am a Front-End React and Shopify developer based in Washington State. I am passionate
@@ -64,7 +66,6 @@
                         thoughtful creations.</strong>
                       </p>
                 </div>
-            </div>
         </div>
     </section>
     <section id="experience">
@@ -162,15 +163,15 @@
 
                 </div>
                 <ul>
-                    <li class="btn-proj-cnprc" onmouseover="projHover('cnprc')">CNPRC</li>
-                    <li class="btn-proj-shikohin" onmouseover="projHover('shikohin')">Shikohin</li>
-                    <li class="btn-proj-abs" onmouseover="projHover('abs')">Amplify Black Stories</li>
-                    <li class="btn-proj-jono" onmouseover="projHover('jono')">Jono Pandolfi</li>
-                    <li class="btn-proj-bean" onmouseover="projHover('bean')">Bean.LA</li>
-                    <li class="btn-proj-sailthru" onmouseover="projHover('sailthru')">Sailthru</li>
-                    <li class="btn-proj-madhappy" onmouseover="projHover('madhappy')">MadHappy</li>
-                    <li class="btn-proj-ensemble" onmouseover="projHover('ensemble')">Ensemble</li>
-                    <li class="btn-proj-frontapp" onmouseover="projHover('frontapp')">FrontApp</li>
+                    <a href="experience/cnprc.html"><li class="btn-proj-cnprc" onmouseover="projHover('cnprc')">CNPRC</li></a>
+                    <a href="experience/shikohin.html"><li class="btn-proj-shikohin" onmouseover="projHover('shikohin')">Shikohin</li></a>
+                    <a href="experience/abs.html"><li class="btn-proj-abs" onmouseover="projHover('abs')">Amplify Black Stories</li></a>
+                    <a href="experience/jono-pandolfi.html"><li class="btn-proj-jono" onmouseover="projHover('jono')">Jono Pandolfi</li></a>
+                    <a href="experience/bean.html"><li class="btn-proj-bean" onmouseover="projHover('bean')">Bean.LA</li></a>
+                    <a href="experience/sailthru.html"><li class="btn-proj-sailthru" onmouseover="projHover('sailthru')">Sailthru</li></a>
+                    <a href="experience/madhappy.html"><li class="btn-proj-madhappy" onmouseover="projHover('madhappy')">MadHappy</li></a>
+                    <a href="experience/ensemble.html"><li class="btn-proj-ensemble" onmouseover="projHover('ensemble')">Ensemble</li></a>
+                    <a href="experience/frontapp.html"><li class="btn-proj-frontapp" onmouseover="projHover('frontapp')">FrontApp</li></a>
                 </ul>
             </div> 
         </div>
