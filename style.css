@@ -14,6 +14,7 @@ body {
 
 *::-webkit-scrollbar {
     width: 8px;
+    height: 8px;
   }
   
   *::-webkit-scrollbar-track {
@@ -59,7 +60,7 @@ h5, .h5 {
 
 @media screen and (max-width: 700px) {
     h1, .h1 {
-
+        font-size: 30px;
     }
 
     h2, .h2 {
@@ -329,7 +330,30 @@ section p a:hover, section .p a:hover {
     cursor: pointer;
     padding: 14px 0 40px;
     transition: .15s opacity;
+    color: var(--text-font-color);
 }
+
+.flex.flex.format-flex ul a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    .flex.format-flex {
+        height: auto;
+    }
+    .flex.format-flex .scroll-div {
+        display: none;
+    }    
+    .flex.format-flex ul {
+        width: 100%;
+        padding: 0px;
+    }
+    .flex.flex.format-flex ul li {
+        font-size: clamp(30px, 5.6vw, 80px);
+        padding: 8px 0 25px;
+    }
+}
+
 .scroll-wrapper {
     display: flex;
     height: 510px;
