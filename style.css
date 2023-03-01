@@ -102,6 +102,14 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
     background-color: var(--heading-color);
 }
 
+.light {
+    color: var(--heading-color);
+}
+
+.dark {
+    color: var(--text-font-color);
+}
+
 #topBtn {
     display: none;
     position: fixed;
@@ -176,11 +184,6 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
     align-items: center;
 }
 
-#about .appear-on-scroll {
-    max-width: 750px;
-    margin: 0 auto;
-}
-
 @media screen and (max-width: 700px) {
     .portrait-img-wrapper {
         text-align: center;
@@ -225,6 +228,8 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
     transform: translateY(100px);
     opacity: 0;
     transition: 1s all ease;
+    max-width: 1000px;
+    margin: 0 auto;
   }
   
   .appear-on-scroll.active {
@@ -286,7 +291,7 @@ section p a:hover, section .p a:hover {
 .portrait-img {
     height: 35vh;
     border-radius: 30%;
-    shape-outside: circle(53.75% at 134px 133px);
+    shape-outside: circle(61.52% at 130px 121px);
     float: right;
     margin: 0 0 1rem 1rem;
     border: 10px solid;
@@ -324,7 +329,7 @@ section p a:hover, section .p a:hover {
     border-top: 2px solid;
     display: flex;
     font-size: 80px;
-    font-size: clamp(40px,5.6vw,80px);
+    font-size: clamp(40px,5.6vw,50px);
     letter-spacing: -2px;
     line-height: calc(90 / 80);
     cursor: pointer;
@@ -335,6 +340,10 @@ section p a:hover, section .p a:hover {
 
 .flex.flex.format-flex ul a {
     text-decoration: none;
+}
+
+.flex.format-flex img {
+    width: inherit;
 }
 
 @media screen and (max-width: 700px) {
@@ -369,6 +378,11 @@ section p a:hover, section .p a:hover {
 
 .main-content section:nth-of-type(even) {
     background-color: var(--hover-font-color-op);
+}
+
+.intro-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .intro {
