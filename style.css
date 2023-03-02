@@ -213,6 +213,7 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
         justify-content: space-around;
         align-items: center;
         padding-left: 10px;
+        padding-top: 8px;
     }
     .topnav a {
         font-size: 14px;
@@ -290,19 +291,18 @@ section p a:hover, section .p a:hover {
 
 .portrait-img {
     height: 35vh;
-    border-radius: 30%;
-    shape-outside: circle(61.52% at 130px 121px);
-    float: right;
-    margin: 0 0 1rem 1rem;
+    border-radius: 50px;
     border: 10px solid;
+    margin-left: 30px;
 }
 
 @media screen and (max-width: 700px) {
+    #about .flex {
+        flex-direction: column-reverse;
+    }
     .portrait-img {
         height: 30vh;
-        shape-outside: none;
-        margin: 0;
-        float: none;
+        margin: 20px 0 30px;
     }
 }
 
