@@ -13,19 +13,8 @@
     <script src="index.js"></script>
 </head>
 
-<body data-theme="dark">
-<div class="topnav flex">
-    <a href="#about">about</a>
-    <a href="#experience">experience</a>
-    <a class="media-show" href ="#personalProjects">projects</a>
-    <a class="media-hide" href ="#personalProjects">personal projects</a>
-    <a href="#volunteer">volunteer</a>
-    <a href="#contact">contact</a>
-    <button class="btn" onclick="toggleTheme()">
-        <i id="light-icon" class="hide fa-solid fa-toggle-off"></i>
-        <i id="dark-icon" style="display: none" class="show fa-solid fa-toggle-on"></i>
-    </button>
-</div>
+<body onload="setTheme()" data-theme="dark">
+<script src="nav.js"></script>
 <div class="intro-wrapper">
     <div class="intro">
         <h4>Hi, my name is</h4>
@@ -35,15 +24,8 @@
 </div>
 
 <div class="main-content">
-    
-    <div class="rotate-email-container">
-        <p onclick="copyEmail()" onmouseout="emailHover()" id="rotate-email">
-            <span class="tooltiptext" id="emailToolTip">
-                Copy to clipboard
-            </span>
-            nikki@nikkster.tech</p>
-    </div>
-    <button class="btn" onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
+    <script src="topBtnContact.js"></script>
 
     <section id="about">
         <div class="appear-on-scroll flex">
