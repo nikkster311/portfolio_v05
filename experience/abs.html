@@ -10,11 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
 </head>
 
-<body>
-    
+<body onload="setTheme()" data-theme="dark">
+  <script src="../nav.js"></script>    
+  <script src="../topBtnContact.js"></script>
+
     <div class="modal-header">Amplify Black Stories</div>
     <div class="modal-body">
       <h4>Captivating stories.
@@ -26,23 +28,27 @@
       <a target="__blank" href="https://www.amplifyblackstories.org/">Live Version</a>
       <p>Launched April 2021</p>
       <hr>
-      <p>Home Screen - Desktop</p>
-      <img class="modal-img" src="../imgs/screenshots/abs/screencapture-file-C-Users-Jake-Desktop-abs-index-html-2021-03-04-22_57_50.png" alt="View of home screen">
-      </br>
-      <p>Home Screen - Mobile</p>
-      <img class="modal-img-mobile" src="../imgs/screenshots/abs/_C__Users_Jake_Desktop_abs_index.html(iPhone 5_SE).png" alt="View of home screen - mobile">
-      </br>
-      <p>Home Screen - Mobile (Landscape)</p>
-      <img class="modal-img-mobile" src="../imgs/screenshots/abs/_C__Users_Jake_Desktop_abs_index.html(iPhone 6_7_8).png" alt="View of home screen - mobile - landscape">
-      </br>
-      <p>About Screen - Desktop </p>
-      <img class="modal-img" src="../imgs/screenshots/abs/screencapture-file-C-Users-Jake-Desktop-abs-about-html-2021-03-04-22_58_43.png" alt="View of about screen">
-      </br>
-      <p>About Screen - Mobile</p>
-      <img class="modal-img-mobile" src="../imgs/screenshots/abs/_C__Users_Jake_Desktop_abs_about.html(iPhone 6_7_8).png" alt="About screen - mobile">
-      </br>
-      <a target="__blank" href="https://www.amplifyblackstories.org/">Live Version</a>
-      <p>Launched April 2021</p>
+      <!-- <div class="grid"> -->
+        <p>Home Screen - Desktop</p>
+        <img class="modal-img" style="float: right;" src="../imgs/screenshots/abs/screencapture-file-C-Users-Jake-Desktop-abs-index-html-2021-03-04-22_57_50.png" alt="View of home screen">
+        </br>
+        <div class="grid">
+        <!-- <p>Home Screen - Mobile</p> -->
+        <img class="modal-img-mobile" src="../imgs/screenshots/abs/_C__Users_Jake_Desktop_abs_index.html(iPhone 5_SE).png" alt="View of home screen - mobile">
+        <!-- </br> -->
+        <!-- <p>Home Screen - Mobile (Landscape)</p> -->
+        <img class="modal-img-mobile" src="../imgs/screenshots/abs/_C__Users_Jake_Desktop_abs_index.html(iPhone 6_7_8).png" alt="View of home screen - mobile - landscape">
+        <!-- </br> -->
+        <!-- <p>About Screen - Desktop </p>
+        <img class="modal-img" src="../imgs/screenshots/abs/screencapture-file-C-Users-Jake-Desktop-abs-about-html-2021-03-04-22_58_43.png" alt="View of about screen">
+        </br> -->
+        <!-- <p>About Screen - Mobile</p> -->
+        <img class="modal-img-mobile" src="../imgs/screenshots/abs/_C__Users_Jake_Desktop_abs_about.html(iPhone 6_7_8).png" alt="About screen - mobile">
+        <!-- </br> -->
+        </div>
+        <a target="__blank" href="https://www.amplifyblackstories.org/">Live Version</a>
+    <!-- </div> -->
+    <p>Launched April 2021</p>
     </div>
 
 </body>
