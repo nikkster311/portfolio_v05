@@ -1,10 +1,14 @@
 let lightTheme = false;
 
-function toggleTheme() {
-    lightTheme = !lightTheme
+function setTheme() {
     document.body.setAttribute('data-theme', lightTheme === true ? 'light' : 'dark')
     document.getElementById('light-icon').style.display = (lightTheme === true ? 'none' : 'block')
     document.getElementById('dark-icon').style.display = (lightTheme === true ? 'block' : 'none')
+}
+
+function toggleTheme() {
+    lightTheme = !lightTheme;
+    setTheme();
 }
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -27,11 +31,16 @@ function toggleTheme() {
     function copyEmail() {
         navigator.clipboard.writeText('nikki@nikkster.tech');
         var tooltip = document.getElementById("emailToolTip");
+        tooltip.classList.remove('hide');
         tooltip.innerHTML = "Email Copied!";
+        setTimeout(() => {
+            tooltip.classList.add('hide');
+        }, 3000);
     }
 
     function emailHover() {
         var tooltip = document.getElementById("emailToolTip");
+        tooltip.classList.remove('hide');
         tooltip.innerHTML = "Copy to clipboard";
     }
 
@@ -70,17 +79,3 @@ function appearOnScroll() {
   
   window.addEventListener("scroll", appearOnScroll);
       
-
-
-// var lastScrollTop = 0;
-//
-// // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-// element.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
-//     var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-//     if (st > lastScrollTop){
-//         // downscroll code
-//     } else {
-//         // upscroll code
-//     }
-//     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-// }, false);
