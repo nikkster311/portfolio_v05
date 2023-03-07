@@ -1,14 +1,19 @@
-let lightTheme = false;
+const toggleTheme = () => {
+    const rootElem = document.body;
+    let dataTheme = rootElem.getAttribute('data-theme'), newTheme;
 
-function setTheme() {
-    document.body.setAttribute('data-theme', lightTheme === true ? 'light' : 'dark')
-    document.getElementById('light-icon').style.display = (lightTheme === true ? 'none' : 'block')
-    document.getElementById('dark-icon').style.display = (lightTheme === true ? 'block' : 'none')
-}
+    newTheme = (dataTheme === 'light') ? 'dark' : 'light';
 
-function toggleTheme() {
-    lightTheme = !lightTheme;
-    setTheme();
+    rootElem.setAttribute('data-theme', newTheme);
+
+    var lightIcon = document.getElementById("light-icon");
+    var darkIcon = document.getElementById("dark-icon");
+    console.log(lightIcon)
+    console.log(darkIcon)
+    lightIcon ? lightIcon.style.display = (newTheme === 'light' ? 'none' : 'block') : console.log('kight icon not here');
+    darkIcon ? darkIcon.style.display = (newTheme === 'light' ? 'block' : 'none') : console.log('dark icon doesnt exist');
+
+    localStorage.setItem('theme', newTheme);
 }
 
 // When the user scrolls down 20px from the top of the document, show the button
