@@ -5,5 +5,5 @@ document.write('<div class="rotate-email-container">\
     </span>\
     nikki@nikkster.tech</p>\
 </div>\
-<button class="btn" onclick="topFunction()" id="topBtn" title="Go to top">Top</button>\
+<button class="btn fixedBtn" onclick="topFunction()" id="topBtn" title="Go to top">Top</button>\
 ');

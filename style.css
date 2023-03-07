@@ -110,19 +110,37 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
     color: var(--text-font-color);
 }
 
-#topBtn {
+.fixedBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
     z-index: 99;
     background-color: var(--hover-font-color-op);
     border: 2px solid var(--primary-color);
 }
 
-#topBtn:hover {
+.fixedBtn:hover {
     background-color: var(--text-font-color);
     color: var(--primary-color);
+}
+
+.fixedBtn:hover i {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.fixedBtn .btn {
+    background-color: transparent;
+}
+
+#topBtn {
+    bottom: 20px;
+    right: 30px;
+}
+
+#homeBtn {
+    display: block;
+    top: 5px;
+    left: 5px;
 }
 
 @media screen and (max-width: 700px) {
@@ -188,6 +206,10 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
     .portrait-img-wrapper {
         text-align: center;
     }
+}
+
+.fa-solid {
+    padding: 0;
 }
 
 .topnav {
@@ -310,7 +332,7 @@ section p a:hover, section .p a:hover {
 }
 
 .hide {
-    display: none;
+    display: none!important;
     transition: 500ms;
 }
 
