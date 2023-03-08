@@ -194,6 +194,26 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
     opacity: 1;
   }
 
+
+.border-top-right {
+    position: relative;
+    margin: 20px;
+}
+    
+.border-top-right:after {
+    display: block;
+    content: "";
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    border-top: 3px solid var(--text-font-color);
+    border-left: 3px solid var(--text-font-color);
+}
+
+
+
 .flex {
     display: flex;
 }
@@ -442,23 +462,4 @@ section p a:hover, section .p a:hover {
     background-color: var(--footer-bg-font-color);
     color: var(--hover-font-color);
     padding: 10px;
-}
-
-
-
-/* EXPERIENCE PAGES */
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.grid img {
-    /* width: 40px; */
-    width: 80%;
-}
-
-.right {
-    width: fit-content;
-    float: right;
 }
