@@ -1,3 +1,4 @@
+// change the theme settings, store in local storage
 const toggleTheme = () => {
     const rootElem = document.body;
     let dataTheme = rootElem.getAttribute('data-theme'), newTheme;
@@ -15,6 +16,22 @@ const toggleTheme = () => {
 
     localStorage.setItem('theme', newTheme);
 }
+
+// remove the loader after the page loads
+function removeLoader() {
+    var loader = document.getElementById('loader-wrapper');
+    var pageWrapper = document.getElementById('page-wrapper');
+    console.log(loader)
+    console.log(pageWrapper)
+    setTimeout(() => {
+        loader.classList.add('hide-loader-functionality');
+        pageWrapper.classList.remove('hide-loader-functionality');
+        document.body.classList.remove('no-scroll');
+    }, 1000);
+}
+
+// on page load, call removeLoader function
+window.addEventListener("load", removeLoader);
 
 // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
