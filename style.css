@@ -153,6 +153,45 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
         right: 13px;
     }
 }
+.socials-container {
+    /* animation: slide-left 2s ease-out; */
+    position: fixed; 
+    z-index: 90000000;
+    left: 20px;
+    top: 50%;
+    /* transform: rotate(90deg); */
+    padding-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.socials-container i {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.socials-container .socialsTooltiptext {
+    visibility: hidden;
+    width: 150px;
+    font-size: 12px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 38px;
+    left: 13px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .socials-container:hover .socialsTooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
 
 .rotate-email-container {
     animation: slide-left 2s ease-out;
@@ -391,7 +430,7 @@ section h2, section .h2 {
     color: var(--heading-color);
 }
 
-section p, section .p, section p a, section .p a {
+section p, section .p, section p a, section .p a, .socials-container a {
     /* background: var(--primary-color); */
     color: var(--text-font-color);
 }
