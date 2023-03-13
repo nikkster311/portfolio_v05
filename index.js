@@ -66,12 +66,6 @@ window.addEventListener("load", removeLoader);
         tooltip.innerHTML = "Copy to clipboard";
     }
 
-    // resume hover info
-    function resumeHover() {
-        var tooltip = document.getElementById("resumeToolTip");
-        tooltip.classList.remove('hide');
-    }
-
 // project
     function projHover(proj) {
         // identify project being hovered over

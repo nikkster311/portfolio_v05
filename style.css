@@ -158,7 +158,7 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
     position: fixed; 
     z-index: 90000000;
     left: 20px;
-    top: 50%;
+    top: 48%;
     /* transform: rotate(90deg); */
     padding-bottom: 2px;
     display: flex;
@@ -166,7 +166,7 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
 }
 
 .socials-container i {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -186,19 +186,18 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
     opacity: 0;
     transition: opacity 0.3s;
   }
-  
-  .socials-container:hover .socialsTooltiptext {
+
+  .resumeSocial:hover .socialsTooltiptext {
     visibility: visible;
     opacity: 1;
   }
-
 
 .rotate-email-container {
     animation: slide-left 2s ease-out;
     position: fixed;
     z-index: 90000000;
     right: -55px;
-    top: 50%;
+    top: 56%;
 }
 
 .rotate-email-container:hover #rotate-email{
@@ -441,7 +440,7 @@ section p a:hover, section .p a:hover {
 
 @media screen and (max-width: 700px) {
     section {
-        padding: 30px 45px 30px 35px;
+        padding: 30px 45px 30px 60px;
     }
 }
 
