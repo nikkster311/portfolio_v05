@@ -215,6 +215,9 @@
 
 @media screen and (max-width: 850px) {
     h2 { font-size: 45px;}
+    #grid-shikohin.half {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 450px) {
