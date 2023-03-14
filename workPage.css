@@ -34,6 +34,13 @@
 
 
 
+@media screen and (max-width: 700px) {
+    .one-quarter, .half, .three-quarters, .one-third, .two-thirds, .sixty, .forty {
+        width: 100%;
+    }
+}
+
+
 
 .right {
     /* width: fit-content; */
@@ -41,12 +48,31 @@
     padding-left: 60px;
 }
 
-.work-page-content-wrapper section {
-    /* padding: 65px 40px 65px 40px; */
+.work-page-content-wrapper.no-widescreen {
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .work-page-content-wrapper img{
     max-width: 100%;
+}
+
+.top-padding {padding-top: 60px;}
+
+@media screen and (max-width: 700px) {
+    .work-page-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 45px 50px 60px;
+    }
+    .right {
+        order: 1;
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    .top-padding {
+        padding-top: 30px;
+    }
 }
 
 .text-a {
@@ -87,7 +113,6 @@
   
 
 
-
 .grid {
     display: grid;
     grid-gap: 60px;
@@ -105,8 +130,28 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+
+@media screen and (max-width: 850px) {
+    .grid {
+        grid-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .grid-two, .grid-three, .grid-four {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+
+.centered-div {
+    text-align: center;
+}
+
+
+
 #grid-abs {
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "text-a text-a"
@@ -115,16 +160,11 @@
 }
 
 #grid-jono {
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "text-a text-a"
     "portrait-a portrait-b"
     "portrait-c portrait-d";
-}
-
-#grid-bean, #grid-sailthru {
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #grid-sailthru {
@@ -133,4 +173,60 @@
     "portrait-a portrait-b portrait-c"
     "portrait-d portrait-e  portrait-f"
     "portrait-g landscape-a landscape-a";
+}
+
+
+@media screen and (max-width: 450px) {
+    #grid-abs {
+        grid-template-areas: 
+        "text-a"
+        "portrait-a"
+        "portrait-b"
+        "landscape-a";
+    }
+    #grid-jono {
+        grid-template-areas: 
+        "text-a"
+        "portrait-a"
+        "portrait-b"
+        "portrait-c"
+        "portrait-d";
+    }
+    #grid-sailthru {
+        grid-template-areas: 
+        "text-a"
+        "portrait-a"
+        "portrait-b"
+        "portrait-c"
+        "portrait-d"
+        "portrait-e"
+        "portrait-f"
+        "portrait-g"
+        "landscape-a"
+        "landscape-a";
+    }
+
+}
+
+
+@media screen and (max-width: 950px) {
+    h2 { font-size: 55px;}
+}
+
+@media screen and (max-width: 850px) {
+    h2 { font-size: 45px;}
+}
+
+@media screen and (max-width: 450px) {
+    h2 {
+        font-weight: 600;
+        font-size: 28px;
+    }
+    h1 {
+        font-weight: 300;
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 16px;
+    }
 }
