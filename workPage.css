@@ -51,6 +51,11 @@
     padding-left: 60px;
 }
 
+.work-page-content-wrapper p a {
+    position: relative;
+    z-index: 1;
+}
+
 .work-page-content-wrapper.no-widescreen {
     max-width: 1500px;
     margin: 0 auto;
@@ -67,6 +72,9 @@
         display: flex;
         flex-direction: column;
         padding: 50px 45px 50px 60px;
+    }
+    .work-page-content-wrapper .flex {
+        display: block;
     }
     .right {
         order: 1;
@@ -140,11 +148,16 @@
     }
 }
 
+@media screen and (max-width: 750px) {
+    .grid-large-imgs {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .grid-two, .grid-three, .grid-four {
         grid-template-columns: 1fr;
     }
-    
 }
 
 
