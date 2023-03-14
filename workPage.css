@@ -38,6 +38,9 @@
     .one-quarter, .half, .three-quarters, .one-third, .two-thirds, .sixty, .forty {
         width: 100%;
     }
+    #text-cnprc {
+        width: 92%;
+    }
 }
 
 

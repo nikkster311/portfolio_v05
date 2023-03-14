@@ -566,7 +566,7 @@ section p a:hover, section .p a:hover {
 }
 
 .intro {
-    margin: 70px;
+    margin: 70px 70px 70px 150px;
     width: fit-content;
     padding: 20px 30px;
     background: var(--hover-font-color-op);
@@ -576,6 +576,12 @@ section p a:hover, section .p a:hover {
 .intro h4 {
     margin-top: 15px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .intro {
+        margin-left: 85px;
+    }
 }
 
 @media screen and (max-width: 700px) {
