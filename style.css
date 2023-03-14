@@ -262,7 +262,7 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
 .loader {
     transform: translate(-50%, -50%);
     top: 35%;
-    color: #ffffff;
+    color: var(--text-font-color);
     font-size: 90px;
     text-indent: -9999em;
     overflow: hidden;
@@ -482,10 +482,6 @@ section p a:hover, section .p a:hover {
 }
 
 .hide-loader-functionality {
-    /* display: none!important; */
-    /* transition: 500ms; */
-    /* opacity: 0!impo; */
-    /* transition: display 1s linear; */
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
@@ -502,12 +498,10 @@ section p a:hover, section .p a:hover {
 
 .flex.flex.format-flex div:first-of-type, .flex ul:first-of-type {
     width: 30%;
-    /* background-color: var(--heading-color); */
 }
 
 .flex.flex.format-flex div:nth-child(2), .flex ul:nth-child(2){
     width: 70%;
-    /* background-color: var(--hover-font-color); */
 }
 
 .flex.flex.format-flex ul li {
@@ -575,12 +569,7 @@ section p a:hover, section .p a:hover {
     margin: 70px;
     width: fit-content;
     padding: 20px 30px;
-    /*background: rgba(var(--footer-bg-font-color), 0.4);*/
-    /*background: rgba(var(--hover-font-color), 0.8);*/
     background: var(--hover-font-color-op);
-    /*background: rgba(120, 120, 120, 0.8);*/
-
-    /*opacity: 0.4;*/
     border-radius: 50px;
 }
 
