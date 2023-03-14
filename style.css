@@ -591,6 +591,34 @@ section p a:hover, section .p a:hover {
     overflow: hidden;
 }
 
+#icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#icons div {
+    margin: 0 20px;
+}
+
+#icons .fa-brands {
+    font-size: 4em;;
+}
+
+@media screen and (max-width: 1000px) {
+    #icons {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 700px) {
+    #icons {
+        justify-content: space-around;
+    }
+    
+}
+
 .footer {
     background-color: var(--footer-bg-font-color);
     color: var(--hover-font-color);
