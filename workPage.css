@@ -36,7 +36,7 @@
 
 @media screen and (max-width: 700px) {
     .one-quarter, .half, .three-quarters, .one-third, .two-thirds, .sixty, .forty {
-        width: 100%;
+        min-width: fit-content;
     }
     #text-cnprc {
         width: 92%;
@@ -81,7 +81,7 @@
         padding-left: 0;
         padding-top: 30px;
     }
-    .top-padding {
+    .top-padding, .top-padding-mobile {
         padding-top: 30px;
     }
 }
