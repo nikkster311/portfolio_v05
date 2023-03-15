@@ -49,6 +49,10 @@ document.write('      <section id="footer" class="footer">\
     ></a>\
   </div>\
   <p>Nikkster.tech was Built, Designed, and Created by Nikki Hermann</p>\
+  <p class="psst">Psst.... want to see past versions of my portfolio site? \
+  <a target="_blank" href="https://nikkster311.github.io/portfolio_react_01/"><button class="btn">2019</button></a>\
+  <a target="_blank" href="https://nikkster311.github.io/portfolio_site_2021_revamp"><button class="btn">2020</button></a>\
+  </p>\
 </div>\
 </section>\
 ');
