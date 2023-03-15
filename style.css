@@ -606,11 +606,11 @@ section p a:hover, section .p a:hover, .link-no-styling:hover {
 .intro-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    height: 75vh;
+    min-height: 75vh;
 }
 
 .intro {
-    margin: 70px 70px 70px 150px;
+    margin: 70px 70px 100px 150px;
     width: fit-content;
     padding: 20px 30px;
     background: var(--hover-font-color-op);
@@ -632,6 +632,7 @@ section p a:hover, section .p a:hover, .link-no-styling:hover {
     .intro {
         margin: 0 auto;
         margin-top: 30px;
+        margin-bottom: 30px;
         position: relative;
         top: 20%;
     }
@@ -646,29 +647,46 @@ section p a:hover, section .p a:hover, .link-no-styling:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
+    width: 80vw;
+    margin: 0 auto;
 }
 
 #icons div {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 #icons .fa-brands {
-    font-size: 4em;;
+    font-size: 3.5em;
 }
 
 @media screen and (max-width: 1000px) {
     #icons {
+        margin-top: 75px;
+        margin-bottom: 60px;
         max-width: 650px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 }
 @media screen and (max-width: 700px) {
     #icons {
+        max-width: 350px;
         justify-content: space-around;
+    }
+    #icons .fa-brands {
+        font-size: 2em;
     }
     
 }
 
+@media screen and (max-width: 450px) {
+    #icons {
+        max-width: 230px;
+    }
+    #icons p {
+        font-size: 12px;
+    }
+    
+}
 
 /* FOOTER */
 
