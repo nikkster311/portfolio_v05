@@ -4,7 +4,7 @@ document.write('      <section id="footer" class="footer">\
   <h4>\
     Whether you are looking to hire a thoughtful developer, have a\
     question, or just want to say hello, please reach out. I will do my\
-    best to get back to you in a timely maner!\
+    best to get back to you in a timely manner!\
   </h4>\
   <div class="socials-container-footer">\
     <a\

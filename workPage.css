@@ -37,6 +37,7 @@
 @media screen and (max-width: 700px) {
     .one-quarter, .half, .three-quarters, .one-third, .two-thirds, .sixty, .forty {
         min-width: fit-content;
+        min-width: -webkit-fill-available;
     }
     #text-cnprc {
         width: 92%;
