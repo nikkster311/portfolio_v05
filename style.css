@@ -90,7 +90,8 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
 .btn {
     border: none;
     outline: none;
-    background-color: var(--primary-color);
+    background-color: var(--hover-font-color-op);
+    border: 2px solid var(--primary-color);
     color: var(--text-font-color);
     cursor: pointer;
     padding: 15px;
@@ -114,8 +115,8 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
     display: none;
     position: fixed;
     z-index: 99;
-    background-color: var(--hover-font-color-op);
-    border: 2px solid var(--primary-color);
+    /* background-color: var(--hover-font-color-op);
+    border: 2px solid var(--primary-color); */
 }
 
 .fixedBtn:hover {
@@ -154,12 +155,10 @@ body[data-theme="light"] .intro h4, body[data-theme="light"] .intro h5 {
     }
 }
 .socials-container {
-    /* animation: slide-left 2s ease-out; */
     position: fixed; 
     z-index: 90000000;
     left: 20px;
     top: 48%;
-    /* transform: rotate(90deg); */
     padding-bottom: 2px;
     display: flex;
     flex-direction: column;
@@ -670,8 +669,96 @@ section p a:hover, section .p a:hover, .link-no-styling:hover {
     
 }
 
+
+/* FOOTER */
+
+body[data-theme="light"] .footer h3,  body[data-theme="light"] .socials-container-footer a:hover {
+    color: var(--text-font-color);
+}
+
+body[data-theme="light"] .footer h4 {
+    color: var(--hover-font-color);
+}
+
+body[data-theme="dark"] .footer, body [data-theme="light"] .socials-container-footer a {
+    background-color: var(--text-font-color);
+}
+
+body [data-theme="light"] p {
+    color: var(--primary-color);
+}
+
 .footer {
     background-color: var(--footer-bg-font-color);
     color: var(--hover-font-color);
     padding: 10px;
+    text-align: center;
 }
+
+.footer h3, .footer p  {
+    color: var(--primary-color);
+}
+
+.footer p {
+    font-weight: 100;
+    letter-spacing: .4px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.footer h3 {
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.footer h4, .socials-container-footer a:hover {
+    color: var(--footer-bg-font-color);
+}
+
+.footer-wrapper {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.socials-container-footer {
+    padding-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding: 5px 0 15px 0;
+}
+
+.socials-container-footer a {
+    margin: 15px;
+    color: var(--hover-font-color);
+}
+
+.socials-container-footer a i {
+    font-size: 3em;
+}
+
+.socials-container-footer .btn {
+    color: var(--primary-color);
+}
+
+/* get resume from correct href based on page you are on */
+#index-page-body .resumeSocial.footer-not-homepage, .resumeSocial.resumeSocial.footer-homepage {
+    display: none;
+}
+
+#index-page-body .resumeSocial.footer-homepage {
+    display: block!important;
+}
+
+@media screen and (max-width: 800px) {
+    .socials-container-footer .resumeSocial {
+        width: 60vw;
+    }
+
+    .footer p {
+        width: 100%;
+    }
+}
+
