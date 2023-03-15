@@ -525,6 +525,11 @@ section p a:hover, section .p a:hover, .link-no-styling:hover {
     padding-bottom: 20px;
 }
 
+.project-subtitle {
+    font-size: clamp(20px,2.5vw,30px);
+    margin-top: 0;
+}
+
 .flex.flex.format-flex ul a, .link-no-styling {
     text-decoration: none;
 }
@@ -573,6 +578,7 @@ section p a:hover, section .p a:hover, .link-no-styling:hover {
   
   .card-wrapper {
     padding: 2px 16px;
+    justify-content: space-around;
   }
 
   .card-link {
