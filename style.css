@@ -575,6 +575,10 @@ section p a:hover, section .p a:hover, .link-no-styling:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     background-color: var(--hover-font-color-less-op);
   }
+
+  #volunteer .card:hover{
+    background-color: var(--hover-font-color-op);
+  }
   
   .card-wrapper {
     padding: 2px 16px;
