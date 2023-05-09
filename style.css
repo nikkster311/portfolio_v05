@@ -679,6 +679,7 @@ section p a:hover, section .p a:hover, .link-no-styling:hover {
     text-align: center;
     width: 80vw;
     margin: 0 auto;
+    max-width: -webkit-fill-available;
 }
 
 #icons div {
