@@ -1,0 +1,84 @@
+.parallax {
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* INTRO */
+
+.intro-background-wrapper {
+    background-image: url('imgs/hireme/retrosupply-kZvmEpyfiJs-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.main-content section:nth-of-type(3n) {
+  background-color: var(--hover-font-color-op);
+}
+
+.intro-wrapper {
+    min-height: auto;
+}
+
+.intro-wrapper:nth-child(1) {
+    display: flex;
+    justify-content: right;
+    /* max-width: 100%; */
+}
+
+.intro-wrapper:nth-child(1) .intro {
+    /* margin-left: 34vw; */
+    /* margin-top: 0; */
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.intro {
+    margin: 70px 12vw 100px 15vw;
+    background: var(--hover-font-color-less-op);
+}
+
+.intro h5 {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 700px) {
+    .intro {
+        margin-left: 15vw!important;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .intro-wrapper:nth-child(2) .intro {
+        margin: 70px 12vw 70px 70px;
+    }
+}
+
+
+/* CARDS */
+
+
+.card-wrapper {
+    flex-wrap: wrap;
+    row-gap: 60px;
+}
+
+.card {
+    width: 30vw;
+}
+
+@media screen and (max-width: 700px) {
+    .card-wrapper  {
+        row-gap: 0;
+    }
+    .card {
+        width: inherit;
+    }
+}
