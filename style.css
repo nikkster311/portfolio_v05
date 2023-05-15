@@ -55,10 +55,6 @@ h2,
   margin: 0;
 }
 
-h2.tagline {
-  font-family: "Monserrat";
-}
-
 h2,
 h3,
 .h2,
@@ -113,6 +109,14 @@ body[data-theme="light"] .intro h2 {
 body[data-theme="light"] .intro h4,
 body[data-theme="light"] .intro h5 {
   color: var(--heading-color);
+}
+
+.tagline {
+  font-family: "Monserrat";
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
 }
 
 .btn {
