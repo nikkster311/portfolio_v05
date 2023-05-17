@@ -1,3 +1,9 @@
+section h2 {
+  letter-spacing: 2px;
+  text-align: center;
+  width: auto;
+}
+
 .parallax {
   min-height: 300px;
 
@@ -8,15 +14,14 @@
   background-size: cover;
 }
 
-
 /* INTRO */
 
 .intro-background-wrapper {
-    background-image: url('imgs/hireme/retrosupply-kZvmEpyfiJs-unsplash.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px 0;
+  background-image: url("imgs/hireme/retrosupply-kZvmEpyfiJs-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
 }
 
 .main-content section:nth-of-type(3n) {
@@ -24,61 +29,146 @@
 }
 
 .intro-wrapper {
-    min-height: auto;
+  min-height: auto;
 }
 
 .intro-wrapper:nth-child(1) {
-    display: flex;
-    justify-content: right;
-    /* max-width: 100%; */
+  display: flex;
+  justify-content: right;
+  /* max-width: 100%; */
 }
 
 .intro-wrapper:nth-child(1) .intro {
-    /* margin-left: 34vw; */
-    /* margin-top: 0; */
-    margin-bottom: 0;
-    margin-left: 0;
+  /* margin-left: 34vw; */
+  /* margin-top: 0; */
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .intro {
-    margin: 70px 12vw 100px 15vw;
-    background: var(--hover-font-color-less-op);
+  margin: 70px 12vw 100px 15vw;
+  background: var(--hover-font-color-less-op);
 }
 
 .intro h5 {
-    margin: 10px 0;
+  margin: 10px 0;
+}
+
+.intro h4 {
+  margin-top: 5px;
+}
+
+.intro h1 {
+  margin: 5px 0 5px;
+  letter-spacing: 1px;
+}
+
+body[data-theme="light"] .intro {
+  background-color: var(--primary-color);
 }
 
 @media screen and (max-width: 700px) {
-    .intro {
-        margin-left: 15vw!important;
-    }
+  .intro {
+    margin-left: 15vw !important;
+  }
 }
 
 @media screen and (min-width: 1500px) {
-    .intro-wrapper:nth-child(2) .intro {
-        margin: 70px 12vw 70px 70px;
-    }
+  .intro-wrapper:nth-child(2) .intro {
+    margin: 70px 12vw 70px 70px;
+  }
 }
 
+/* Services Section */
 
-/* CARDS */
-
-
-.card-wrapper {
-    flex-wrap: wrap;
-    row-gap: 60px;
+#services i {
+  font-size: 2.5rem;
 }
 
-.card {
-    width: 30vw;
+/* testimonials */
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
-@media screen and (max-width: 700px) {
-    .card-wrapper  {
-        row-gap: 0;
-    }
-    .card {
-        width: inherit;
-    }
+.swiper-wrapper .swiper-slide {
+  margin-bottom: 50px; /* Adjust this value as needed */
+}
+
+.swiper-slide {
+  height: 100% !important;
+  align-self: center;
+  padding: 0 60px;
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide content vertically */
+  justify-content: center;
+  align-items: center;
+
+  width: max-content;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 10000;
+}
+
+body[data-theme="light"] .swiper-button-next:after,
+body[data-theme="light"] .swiper-button-prev::after {
+  color: var(--footer-bg-font-color);
+}
+
+body[data-theme="light"] .swiper-pagination-bullet-active {
+  background-color: var(--footer-bg-font-color) !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev::after {
+  color: var(--heading-color);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--heading-color) !important;
+}
+
+.swiper i {
+  color: var(--heading-color);
+  font-size: 50px;
+  position: absolute;
+  left: 25px;
+  top: -5px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide {
+    width: 100%;
+    padding: 0 35px;
+  }
+
+  .swiper-slide p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .swiper-slide h3 {
+    font-size: 18px;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev::after {
+    font-size: 20px !important;
+  }
+}
+
+/* who am I */
+
+#whoAmI .flex {
+  flex-direction: row-reverse;
+  align-items: center;
 }
