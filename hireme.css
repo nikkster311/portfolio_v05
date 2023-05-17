@@ -172,3 +172,42 @@ body[data-theme="light"] .swiper-pagination-bullet-active {
   flex-direction: row-reverse;
   align-items: center;
 }
+
+/* FAQ */
+
+.accordion button {
+  background-color: transparent;
+  color: var(--heading-color);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion button.active,
+.accordion button:hover {
+  background-color: var(--footer-bg-font-color);
+  color: var(--heading-color);
+}
+
+.accordion .flex {
+  justify-content: space-between;
+}
+
+.panel-wrapper {
+  border-bottom: 1px solid var(--footer-bg-font-color);
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: var(--primary-color);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* contact page */
