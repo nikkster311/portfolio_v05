@@ -86,10 +86,6 @@ h5,
     font-size: 30px;
   }
 
-  h3,
-  .h3 {
-  }
-
   h4,
   .h4 {
     font-size: 18px;
@@ -112,10 +108,10 @@ body[data-theme="light"] .intro h5 {
 }
 
 .tagline {
-  font-family: "Monserrat";
+  font-family: "Monserrat", "Merriweather", serif;
   font-weight: 500;
   font-size: 22px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   line-height: 30px;
 }
 
@@ -192,7 +188,7 @@ body[data-theme="light"] .intro h5 {
 }
 .socials-container {
   position: fixed;
-  z-index: 90000000;
+  z-index: 9000;
   left: 20px;
   top: 48%;
   padding-bottom: 2px;
@@ -230,7 +226,7 @@ body[data-theme="light"] .intro h5 {
 .rotate-email-container {
   animation: slide-left 2s ease-out;
   position: fixed;
-  z-index: 90000000;
+  z-index: 9000;
   right: -55px;
   top: 56%;
 }
