@@ -17,14 +17,26 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <script src="index.js"></script>
+    <script src="hireme.js" defer></script>
   </head>
 
   <body id="hire-me-page-body" class="no-scroll" data-theme="">
     <script src="localS.js"></script>
-    <!-- <script src="homeBtn.js"></script> -->
+    <script src="homeBtn.js"></script>
     <script src="hiremenav.js"></script>
-
+    <script src="topBtnContact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <div id="loader-wrapper">
       <div class="loader"></div>
     </div>
@@ -88,6 +100,7 @@
               </div>
             </div>
           </div>
+          <button class="btn">Build Your Perfect Website</button>
         </section>
 
         <div
@@ -103,51 +116,45 @@
             <h2>Services I Offer</h2>
             <h3 class="tagline">
               My services include website and e-commerce website development,
-              website upgrades (using HTML, CSS, and JavaScript), SEO, and
+              website upgrades and edits (using HTML, CSS, and JavaScript), and
               website consultations.
             </h3>
-            <div class="flex flex-wrap">
-              <div class="card-wrapper">
-                <div class="card">
-                  <div class="card-text-wrapper">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h3>Custom Website Build</h3>
-                    <p class="card-text">
-                      For website builders like shopify and wordpress or a
-                      custom site built from scratch
-                    </p>
-                  </div>
+            <div class="card-wrapper flex">
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <h3>Custom Website Build</h3>
+                  <p class="card-text">
+                    For website builders like Shopify and WordPress or a custom
+                    site built from scratch
+                  </p>
                 </div>
               </div>
-              <div class="card-wrapper">
-                <div class="card">
-                  <div class="card-text-wrapper">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    <h3>Custom Website Edits</h3>
-                    <p class="card-text">
-                      Have a website already but you want to change a few things
-                      up? Leave it to me - I'll get it done well and right, so
-                      that it's sleek on all devices.
-                    </p>
-                  </div>
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  <h3>Custom Website Edits</h3>
+                  <p class="card-text">
+                    Have a website already but you want to change a few things
+                    up? Leave it to me - I'll get it done right, so that it's
+                    sleek on all devices.
+                  </p>
                 </div>
               </div>
-              <div class="card-wrapper">
-                <div class="card">
-                  <div class="card-text-wrapper">
-                    <i class="fa-solid fa-comments"></i>
-                    <h3>Consulting</h3>
-                    <p class="card-text">
-                      Does something look off but you can't pinpoint what it is?
-                      Book a consult to get advice on best practices for your
-                      site based on my experience working with designers and
-                      developers from various industries.
-                    </p>
-                  </div>
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <i class="fa-solid fa-comments"></i>
+                  <h3>Website Consulting</h3>
+                  <p class="card-text">
+                    Does something look off but you can't pinpoint what it is?
+                    Book a consult to get advice on best practices for your
+                    site.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+          <button class="btn">Build Your Perfect Website</button>
         </section>
 
         <div
@@ -163,15 +170,15 @@
             <h2>What I Can Do For You</h2>
             <p>
               I can build and edit sites from scratch or made with website
-              builders. I excel at working on Shopify and WordPress sites, but
-              have experience with Wix, Weebly, WebFlow, and SquareSpace as well
-              and am happy to work on those sites.
+              builders. I excel at working on Shopify and WordPress sites, but I
+              also have experience with Wix, Weebly, WebFlow, and SquareSpace as
+              well and am happy to work on those sites.
             </p>
           </div>
         </section>
         <section>
           <div class="appear-on-scroll">
-            <h2>When You Hire Me, You Will Get..</h2>
+            <h2>When You Hire Me, You'll Get...</h2>
             <ul>
               <li>An intro call to go over basics</li>
               <li>
@@ -224,106 +231,138 @@
         <div
           class="parallax"
           style="
-            background-image: url('./imgs/hireme/kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg');
+            background-image: url('./imgs/hireme/ilya-pavlov-OqtafYT5kTw-unsplash.jpg');
             opacity: 0.5;
           "
         ></div>
 
-        <section id="services">
+        <section>
           <div class="appear-on-scroll">
-            <h1>Services</h1>
-            <div class="flex card-wrapper">
-              <div class="card">
-                <p class="project-title">
-                  Shopify E-Commerce Website Development
-                </p>
-                <div class="card-text-wrapper">
-                  <div class="card-text">
-                    <p>Website Development</p>
-                    <p>
-                      <span class="light" style="font-style: bold"
-                        >Codebase:</span
-                      >
-                      React, dotenv, CSS, responsive design, and media queries
-                    </p>
-                  </div>
+            <h2>What My Clients Are Saying:</h2>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>
+                    "Nikki was a diligent programmer who quickly adapted to the
+                    teams way of working. Nikki wrote excellent documentation
+                    and her code quality was excellent. Nikki worked on both
+                    independant new projects and worked on porting legacy
+                    functionality to modern systems in Java, Typescript, HTML,
+                    CSS and Angular. Nikki always worked closely with the team
+                    to perform data mapping and build ETL pipelines using Apache
+                    NIFI. I would recommend Nikki to anyone with a collaborative
+                    team who needs someone with a strong work ethic."
+                  </p>
+                  <h3 class="light">
+                    Alexander H. | Application Program Manager
+                  </h3>
+                </div>
+                <div class="swiper-slide">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>
+                    "I hired Nicole H. to help me on two different front-end web
+                    development projects: one greenfield site, and another
+                    Shopify ecommerce re-design. She is a reliable developer and
+                    a great colleague in meetings with clients and more. Highly
+                    recommend."
+                  </p>
+                  <h3 class="light">Machiko Y. | Web Developer</h3>
+                </div>
+                <div class="swiper-slide">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>
+                    "Nikki was hired to revamp my site and make it responsive
+                    for mobile devices. She was a great communicator and
+                    consistently demonstrated her expertise in UX/UI and working
+                    with code. She talked through options with me and gave me
+                    ideas on what would be best based on what I wanted, and
+                    fixed small things that made my site look much better on all
+                    device sizes.
+                  </p>
+                  <p>
+                    highly recommend her to anyone looking for a developer who
+                    can deliver high-quality results in a timely and
+                    cost-effective manner."
+                  </p>
+                  <h3 class="light">Morgan B. | Researcher and Ph.D Student</h3>
                 </div>
               </div>
-              <div class="card">
-                <p class="project-title">WordPress Development</p>
-                <div class="card-text-wrapper">
-                  <div class="card-text">
-                    <p>Website Development</p>
-                    <p>
-                      <span class="light" style="font-style: bold"
-                        >Codebase:</span
-                      >
-                      React, dotenv, CSS, responsive design, and media queries
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <p class="project-title">Website Updates</p>
-                <div class="card-text-wrapper">
-                  <div class="card-text">
-                    <p>
-                      Identify a plant's name based on its characteristics
-                      (Pacific Northwest plants)
-                    </p>
-                    <p>
-                      <span class="light" style="font-style: bold"
-                        >Codebase:</span
-                      >
-                      React, CSS, and responsive design
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <p class="project-title">Website Development</p>
-                <div class="card-text-wrapper">
-                  <div class="card-text">
-                    <p>Website Development</p>
-                    <p>
-                      <span class="light" style="font-style: bold"
-                        >Codebase:</span
-                      >
-                      React, dotenv, CSS, responsive design, and media queries
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <p class="project-title">Web Consulting</p>
-                <div class="card-text-wrapper">
-                  <div class="card-text">
-                    <p>Take 15 seconds to stop and smell the roses.</p>
-                    <p>
-                      <span class="light" style="font-style: bold"
-                        >Codebase:</span
-                      >
-                      React, CSS, and responsive design
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
+
+            <script>
+              const swiper = new Swiper(".swiper", {
+                loop: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                },
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+              });
+            </script>
           </div>
         </section>
+        <div
+          class="parallax"
+          style="
+            background-image: url('./imgs/hireme/screenphone.jpg');
+            opacity: 0.5;
+          "
+        ></div>
 
-        <section id="personalProjects">
+        <section id="whoAmI">
           <div class="appear-on-scroll">
-            <h1>Services</h1>
-            <p>
-              Here are some of the projects I've worked on recently: [Project
-              Name 1]: [Description of project and how it helped the client
-              achieve their goals] [Project Name 2]: [Description of project and
-              how it helped the client achieve their goals] [Project Name 3]:
-              [Description of project and how it helped the client achieve their
-              goals] Each project includes a link to the live website so you can
-              see the work in action.
-            </p>
+            <h2>Who Am I?</h2>
+
+            <!-- <section id="about">
+          <div class="appear-on-scroll flex">
+            <h1>What I Can Do</h1>
+            <p>alskdfj;lkasdjf;sldakfj lak;djf as;ldkjf as;lkdjf as;lj</p>
+          </div>
+        </section>
+         -->
+
+            <div class="border-top-right flex">
+              <div class="portrait-img-wrapper">
+                <img class="portrait-img" src="./imgs/profeditcrop.jpg" />
+              </div>
+              <div>
+                <p>
+                  Hi, I'm Nikki! I'm a Shopify and WordPress website developer
+                  for small businesses and independent contractors who want to
+                  take their business to the next level. We will work together
+                  to make your website stand out so that you can gain more
+                  customers and get rid of any tech roadblocks. I am passionate
+                  about building things that automate the mundane and building
+                  beautiful, thoughtful websites that work flawlessly on all
+                  devices.
+                </p>
+                <p>
+                  Previously I worked as a park ranger which allowed me to spend
+                  quality time outdoors and experience life in different parts
+                  of the United States. The outdoors inspires my work and drives
+                  me to build beautiful, thoughtful creations.
+                </p>
+                <p>
+                  My experience as a park ranger and classroom educator gave me
+                  extensive experience with organizing and leading teams, public
+                  speaking, and being flexible/problem solving when last minute
+                  changes arose.
+                </p>
+                <p>
+                  Since 2020 I have worked on web apps and websites using
+                  frameworks including React and Angular, as well as HTML, CSS,
+                  Javascript. I have also worked on numerous Shopify sites,
+                  ensuring that my clients' customers have flawless shopping
+                  experiences on all devices.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
         <section>
@@ -410,18 +449,6 @@
         </section>
         <section>
           <div class="appear-on-scroll"></div>
-        </section>
-
-        <section id="about">
-          <div class="appear-on-scroll flex">
-            <div class="border-top-right">
-              <h1>What I Can Do</h1>
-              <p>alskdfj;lkasdjf;sldakfj lak;djf as;ldkjf as;lkdjf as;lj</p>
-            </div>
-            <div class="portrait-img-wrapper">
-              <img class="portrait-img" src="./imgs/profeditcrop.jpg" />
-            </div>
-          </div>
         </section>
 
         <div
