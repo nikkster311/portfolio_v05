@@ -1,20 +1,29 @@
 :root {
-    --primary-color: #ead2d1;
-    --footer-bg-font-color: #284c4c;
-    --hover-font-color-op: rgba(132, 140, 141, 0.1);
-    --hover-font-color-less-op: rgba(134, 140, 141, 0.5);
-    --hover-font-color: #848c8d;
-    --text-font-color: #a45e5f;
-    --heading-color: #4a4849;
-
+  --primary-color: #ead2d1;
+  --footer-bg-font-color: #284c4c;
+  --hover-font-color-op: rgba(132, 140, 141, 0.1);
+  --hover-font-color-less-op: rgba(134, 140, 141, 0.5);
+  --hover-font-color: #848c8d;
+  --text-font-color: #a45e5f;
+  --heading-color: #4a4849;
 }
 
 [data-theme="dark"] {
-    --primary-color: #004c4c;
-    --footer-bg-font-color: #006666;
-    --hover-font-color-op: rgba(0,102,102, 0.5);
-    --hover-font-color-less-op: rgba(0,102,102, 0.8);
-    --hover-font-color: #008080;
-    --text-font-color: #66b2b2;
-    --heading-color: #b2d8d8;
+  --primary-color: #004c4c;
+  --footer-bg-font-color: #006666;
+  --hover-font-color-op: rgba(0, 102, 102, 0.5);
+  --hover-font-color-less-op: rgba(0, 102, 102, 0.8);
+  --hover-font-color: #008080;
+  --text-font-color: #66b2b2;
+  --heading-color: #b2d8d8;
+}
+
+[data-theme="green"] {
+  --primary-color: #003314;
+  --footer-bg-font-color: #0b4c25;
+  --hover-font-color-op: rgba(5, 59, 27, 0.5);
+  --hover-font-color-less-op: rgba(5, 59, 27, 0.8);
+  --hover-font-color: #58ad7a;
+  --text-font-color: #a7d4b9;
+  --heading-color: #ffffff;
 }

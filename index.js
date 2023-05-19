@@ -4,18 +4,33 @@ const toggleTheme = () => {
   let dataTheme = rootElem.getAttribute("data-theme"),
     newTheme;
 
-  newTheme = dataTheme === "light" ? "dark" : "light";
+  if (dataTheme === "light") {
+    dataTheme = "dark";
+  } else if (dataTheme === "dark") {
+    dataTheme = "green";
+  } else {
+    dataTheme = "light";
+  }
+
+  newTheme = dataTheme;
 
   rootElem.setAttribute("data-theme", newTheme);
 
   var lightIcon = document.getElementById("light-icon");
   var darkIcon = document.getElementById("dark-icon");
-  lightIcon
-    ? (lightIcon.style.display = newTheme === "light" ? "none" : "block")
-    : console.log("light icon not here");
-  darkIcon
-    ? (darkIcon.style.display = newTheme === "light" ? "block" : "none")
-    : console.log("dark icon doesnt exist");
+  var greenIcon = document.getElementById("green-icon");
+
+  lightIcon.style.display = "none";
+  darkIcon.style.display = "none";
+  greenIcon.style.display = "none";
+
+  if (newTheme === "light") {
+    darkIcon.style.display = "block";
+  } else if (newTheme === "dark") {
+    greenIcon.style.display = "block";
+  } else {
+    lightIcon.style.display = "block";
+  }
 
   localStorage.setItem("theme", newTheme);
 };
@@ -24,8 +39,6 @@ const toggleTheme = () => {
 function removeLoader() {
   var loader = document.getElementById("loader-wrapper");
   var pageWrapper = document.getElementById("page-wrapper");
-  console.log(loader);
-  console.log(pageWrapper);
   setTimeout(() => {
     loader.classList.add("hide-loader-functionality");
     pageWrapper.classList.remove("hide-loader-functionality");
