@@ -451,7 +451,7 @@ body[data-theme="light"] .intro h5 {
   text-decoration: none;
 }
 
-.topnav a:hover {
+.topnav a:not(.hire-me):hover {
   background-color: var(--primary-color);
   color: var(--hover-font-color);
 }
@@ -461,6 +461,10 @@ body[data-theme="light"] .intro h5 {
   color: var(--primary-color);
   margin: 7px;
   padding: 7px;
+}
+
+.topnav .hire-me:hover {
+  background-color: var(--heading-color);
 }
 
 /* #hire-me-page-body .topnav .hire-me { display: none; } */

@@ -5,7 +5,7 @@ section h2 {
 }
 
 .parallax {
-  min-height: 300px;
+  min-height: 450px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -44,6 +44,7 @@ section h2 {
   display: flex;
   justify-content: center;
   padding-top: 45px;
+  text-align: center;
 }
 
 .btn-wrapper-hireme .btn {
@@ -95,9 +96,9 @@ body[data-theme="light"] .btn-wrapper-hireme .btn:hover {
   padding: 100px 0;
 }
 
-.main-content section:nth-of-type(3n) {
+/* .main-content section:nth-of-type(3n) {
   background-color: var(--hover-font-color-op);
-}
+} */
 
 .intro-wrapper {
   min-height: auto;
@@ -232,6 +233,11 @@ body[data-theme="light"] .swiper-pagination-bullet-active {
   .swiper-button-prev::after {
     font-size: 20px !important;
   }
+
+  .swiper i {
+    left: 0px;
+    top: -5px;
+  }
 }
 
 /* who am I */
@@ -260,13 +266,25 @@ body[data-theme="light"] .swiper-pagination-bullet-active {
   padding-right: 40px;
 }
 
+.border-top-left:after,
+.border-top-right:after {
+  height: 45%;
+}
+
 @media screen and (max-width: 700px) {
   .who-am-i-text-wrapper {
     padding: 10px 0 0 0;
   }
   .who-am-i-img-wrapper {
     padding-top: 15px;
-    width: 100%;
+    width: 88%;
+  }
+  .flex-reverse .who-am-i-text-wrapper {
+    padding-right: 0px;
+  }
+  .border-top-left:after,
+  .border-top-right:after {
+    top: -8px;
   }
 }
 
@@ -314,6 +332,11 @@ body[data-theme="light"] .swiper-pagination-bullet-active {
   color: var(--heading-color);
 }
 
+body[data-theme="light"] .accordion button.active,
+body[data-theme="light"] .accordion button:hover {
+  color: var(--primary-color);
+}
+
 .accordion .flex {
   justify-content: space-between;
 }
@@ -328,6 +351,29 @@ body[data-theme="light"] .swiper-pagination-bullet-active {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+/* contact section */
+
+#contact a:not(.btn) {
+  color: var(--heading-color);
+}
+
+#contact a:not(.btn):hover {
+  color: var(--text-font-color);
+}
+
+#contact .tagline {
+  padding: 20px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  #contact .tagline {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 30px;
+  }
 }
 
 /* contact page */
@@ -355,5 +401,9 @@ body[data-theme="light"] .swiper-pagination-bullet-active {
 @media screen and (max-width: 700px) {
   .card {
     padding: 40px 25px;
+  }
+
+  #contact-page-body .topnav {
+    justify-content: end;
   }
 }

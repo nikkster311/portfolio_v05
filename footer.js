@@ -1,8 +1,9 @@
-document.write('      <section id="footer" class="footer">\
+document.write(
+  '      <section id="footer" class="footer">\
 <div class="footer-wrapper">\
   <h3>Reach Out</h3>\
   <h4>\
-    Whether you are looking to hire a thoughtful developer, have a\
+    Whether you are looking to <a class="footer-link" href="https://nikkster.tech/hireme">hire a thoughtful developer</a>, have a\
     question, or just want to say hello, please reach out. I will do my\
     best to get back to you in a timely manner!\
   </h4>\
@@ -55,5 +56,5 @@ document.write('      <section id="footer" class="footer">\
   </p>\
 </div>\
 </section>\
-');
-
+'
+);
