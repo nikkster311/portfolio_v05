@@ -10,11 +10,9 @@ const toggleTheme = () => {
 
   var lightIcon = document.getElementById("light-icon");
   var darkIcon = document.getElementById("dark-icon");
-  console.log(lightIcon);
-  console.log(darkIcon);
   lightIcon
     ? (lightIcon.style.display = newTheme === "light" ? "none" : "block")
-    : console.log("kight icon not here");
+    : console.log("light icon not here");
   darkIcon
     ? (darkIcon.style.display = newTheme === "light" ? "block" : "none")
     : console.log("dark icon doesnt exist");

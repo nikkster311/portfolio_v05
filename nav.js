@@ -1,4 +1,6 @@
-document.write('<div class="topnav flex" id="nav">\
+document.write(
+  '<div class="topnav flex" id="nav">\
+<a class="btn hire-me" href="./hireme">hire me</a>\
 <a href="#about">about</a>\
 <a href="#experience">experience</a>\
 <a class="media-show" href ="#personalProjects">projects</a>\
@@ -9,5 +11,5 @@ document.write('<div class="topnav flex" id="nav">\
     <i id="dark-icon" style="display: none" class="show fa-solid fa-toggle-on"></i>\
 </button>\
 </div>\
-');
-
+'
+);

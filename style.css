@@ -280,6 +280,23 @@ body[data-theme="light"] .intro h5 {
   border-left: 3px solid var(--text-font-color);
 }
 
+.border-top-left {
+  position: relative;
+  margin: 20px;
+}
+
+.border-top-left:after {
+  display: block;
+  content: "";
+  width: 45%;
+  height: 75%;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  border-top: 3px solid var(--text-font-color);
+  border-right: 3px solid var(--text-font-color);
+}
+
 /* LOADER */
 
 #loader-wrapper {
