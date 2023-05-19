@@ -14,6 +14,77 @@ section h2 {
   background-size: cover;
 }
 
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 700px) {
+  .flex-mobile {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .right {
+    padding-left: 15px;
+  }
+
+  .left {
+    padding-right: 15px;
+  }
+}
+
+/* btns */
+.intro.btn-wrapper-hireme {
+  padding: 0;
+  border-radius: 10px;
+}
+
+.btn-wrapper-hireme {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+}
+
+.btn-wrapper-hireme .btn {
+  background-color: var(--heading-color);
+  border: 2px solid var(--primary-color);
+  color: var(--footer-bg-font-color);
+  font-weight: 900;
+  border-width: 3px;
+  text-decoration: none;
+}
+
+.btn-wrapper-hireme .btn:hover {
+  background-color: var(--primary-color);
+  color: var(--text-font-color);
+  border-color: var(--hover-font-color);
+}
+
+body[data-theme="light"] .btn-wrapper-hireme .btn {
+  background-color: var(--text-font-color);
+  color: var(--primary-color);
+  border-color: var(--heading-color);
+}
+
+body[data-theme="light"] .btn-wrapper-hireme .btn:hover {
+  background-color: var(--primary-color);
+  color: var(--text-font-color);
+  border-color: var(--text-font-color);
+}
+
+@media screen and (max-width: 700px) {
+  .intro.btn-wrapper-hireme {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto !important;
+  }
+
+  .btn-wrapper-hireme {
+    padding: 25px 0;
+  }
+}
+
 /* INTRO */
 
 .intro-background-wrapper {
@@ -35,12 +106,9 @@ section h2 {
 .intro-wrapper:nth-child(1) {
   display: flex;
   justify-content: right;
-  /* max-width: 100%; */
 }
 
 .intro-wrapper:nth-child(1) .intro {
-  /* margin-left: 34vw; */
-  /* margin-top: 0; */
   margin-bottom: 0;
   margin-left: 0;
 }
@@ -168,9 +236,61 @@ body[data-theme="light"] .swiper-pagination-bullet-active {
 
 /* who am I */
 
-#whoAmI .flex {
-  flex-direction: row-reverse;
+.who-am-i-wrapper .flex {
   align-items: center;
+}
+
+.who-am-i-wrapper h2 {
+  padding-bottom: 20px;
+}
+
+.who-am-i-img {
+  width: -webkit-fill-available;
+}
+
+.who-am-i-img-wrapper {
+  width: 40%;
+}
+
+.who-am-i-text-wrapper {
+  padding-left: 40px;
+}
+
+.flex-reverse .who-am-i-text-wrapper {
+  padding-right: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  .who-am-i-text-wrapper {
+    padding: 10px 0 0 0;
+  }
+  .who-am-i-img-wrapper {
+    padding-top: 15px;
+    width: 100%;
+  }
+}
+
+/* stats */
+
+#stats .flex.flex-wrap {
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.stat {
+  padding: 0 20px;
+}
+
+.stat h1 {
+  padding-right: 8px;
+  margin: 9px 0;
+}
+
+@media screen and (max-width700px) {
+  #stats .flex.flex-wrap {
+    width: 90%;
+  }
 }
 
 /* FAQ */
@@ -211,3 +331,29 @@ body[data-theme="light"] .swiper-pagination-bullet-active {
 }
 
 /* contact page */
+
+#contact-page-body h2,
+.h2 {
+  font-size: 50px;
+}
+
+#contact-page-body .main-content {
+  text-align: center;
+}
+
+/* icons */
+
+@media screen and (max-width: 1000px) {
+  #hire-me-page-body #icons {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/* cards */
+
+@media screen and (max-width: 700px) {
+  .card {
+    padding: 40px 25px;
+  }
+}
