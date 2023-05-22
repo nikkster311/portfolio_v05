@@ -5,6 +5,7 @@ function detectPage() {
   var contact = document.getElementById("contact-page-body");
   if (index) {
     document.getElementById("home-btn-sidenav").style.display = "none";
+    document.getElementById("yelp-btn").style.display = "none";
   }
   if (hireme) {
     document.getElementById("hire-me-btn-sidenav").style.display = "none";
@@ -23,6 +24,8 @@ document.write(
 <div class="socials-container">\
 <a href="./hireme" id="hire-me-btn-sidenav" class="hire-me"><i class="fa-solid fa-handshake"></i></a>\
   <a class="hire-me" id="home-btn-sidenav" href="https://nikkster.tech"><i class="fa-solid fa-house-chimney-window"></i></a>\
+  <a target="_blank" rel="noopener noreferrer" id="yelp-btn" href="https://www.yelp.com/biz/nikkster-tech-marysville">\
+  <i class="fa-brands fa-yelp"></i></a>\
 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nicole-hermann/">\
 <i class="fa-brands fa-linkedin"></i></a>\
 <a class="resumeSocial" target="_blank" rel="noopener noreferrer" href="./Hermann_resume.pdf" download="Hermann_resume">\
