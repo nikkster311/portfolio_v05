@@ -9,6 +9,10 @@ function detectPage() {
   }
   if (hireme) {
     document.getElementById("hire-me-btn-sidenav").style.display = "none";
+    document.getElementById("resume-icon").style.display = "none";
+  }
+  if (contact) {
+    document.getElementById("resume-icon").style.display = "none";
   }
 }
 
@@ -28,7 +32,7 @@ document.write(
   <i class="fa-brands fa-yelp"></i></a>\
 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nicole-hermann/">\
 <i class="fa-brands fa-linkedin"></i></a>\
-<a class="resumeSocial" target="_blank" rel="noopener noreferrer" href="./Hermann_resume.pdf" download="Hermann_resume">\
+<a id="resume-icon" class="resumeSocial" target="_blank" rel="noopener noreferrer" href="./Hermann_resume.pdf" download="Hermann_resume">\
 <i class="fa-solid fa-file"></i>\
   <span class="socialsTooltiptext" id="resumeToolTip">\
     Download my resume\
