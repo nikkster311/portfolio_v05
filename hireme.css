@@ -181,6 +181,10 @@ body[data-theme="light"] .intro {
 
 /* testimonials */
 
+.fa-star {
+  color: #ffbe00;
+}
+
 .swiper-pagination {
   position: absolute;
   bottom: 0;
