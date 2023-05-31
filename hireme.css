@@ -148,6 +148,31 @@ body[data-theme="light"] .intro {
   }
 }
 
+/* typewriter */
+
+.typewriter-section {
+  margin: 0 20vw;
+}
+
+.typewriter-section .tagline {
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.typewriter-section h1 {
+  text-align: center;
+}
+
+.typewriter-section .btn-wrapper-hireme {
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .typewriter-section {
+    margin: 0 10vw;
+  }
+}
+
 /* Services Section */
 
 #services i {
