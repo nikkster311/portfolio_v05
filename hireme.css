@@ -150,6 +150,17 @@ body[data-theme="light"] .intro {
 
 /* typewriter */
 
+.typewriter-text-wrapper {
+  position: relative;
+}
+
+.typewriter-section .tagline {
+  position: absolute;
+  top: -225px;
+  /* font-size: 16px;
+  line-height: 28px; */
+}
+
 .typewriter-section {
   margin: 0 20vw;
 }
@@ -161,6 +172,7 @@ body[data-theme="light"] .intro {
 
 .typewriter-section h1 {
   text-align: center;
+  margin-top: 200px;
 }
 
 .typewriter-section .btn-wrapper-hireme {
@@ -168,8 +180,23 @@ body[data-theme="light"] .intro {
 }
 
 @media screen and (max-width: 767px) {
+  .typewriter-text-wrapper {
+    position: relative;
+  }
+
+  .typewriter-section .tagline {
+    position: absolute;
+    top: -125px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .typewriter-section h1 {
+    margin-top: 110px;
+  }
+
   .typewriter-section {
-    margin: 0 10vw;
+    margin: 0;
   }
 }
 
