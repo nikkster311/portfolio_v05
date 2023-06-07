@@ -298,6 +298,10 @@ body[data-theme="light"] .swiper-pagination-bullet-active {
     right: 2px;
     top: 7px;
   }
+
+  #testimonialsSection {
+    padding: 30px 15px;
+  }
 }
 
 /* who am I */
@@ -447,12 +451,49 @@ body[data-theme="light"] .accordion button:hover {
   text-align: center;
 }
 
-/* icons */
+/* icons and nav*/
 
 @media screen and (max-width: 1000px) {
   #hire-me-page-body #icons {
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #hire-me-page-body #rotate-email {
+    transform: none;
+    font-size: 13px;
+    padding-left: 5px;
+  }
+
+  #hire-me-page-body .rotate-email-container .tooltiptext {
+    top: -30%;
+    left: 24%;
+  }
+
+  #hire-me-page-body .rotate-email-container {
+    bottom: 0;
+    z-index: 1;
+    right: 0;
+    top: auto;
+    width: 100%;
+    background: var(--hover-font-color-less-op);
+    padding: 10px;
+  }
+
+  #hire-me-page-body .socials-container {
+    z-index: 9000;
+    bottom: 0;
+    justify-content: space-between;
+    width: 40%;
+    margin: 3px 39%;
+    flex-direction: row;
+    top: auto;
+  }
+
+  #hire-me-page-body .footer-wrapper {
+    padding-bottom: 85px;
   }
 }
 
@@ -465,5 +506,13 @@ body[data-theme="light"] .accordion button:hover {
 
   #contact-page-body .topnav {
     justify-content: end;
+  }
+}
+
+/* footer */
+
+@media screen and (max-width: 700px) {
+  #hire-me-page-body .socials-container-footer {
+    font-size: 12px;
   }
 }

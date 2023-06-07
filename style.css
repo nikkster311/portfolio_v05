@@ -480,8 +480,7 @@ body[data-theme="light"] .intro h5 {
   .topnav {
     justify-content: space-around;
     align-items: center;
-    padding-left: 10px;
-    padding-top: 8px;
+    padding: 8px 0 8px 10px;
   }
   .topnav a {
     font-size: 14px;
@@ -929,9 +928,12 @@ body[data-theme="green"] .footer .btn:hover {
   display: none;
 }
 
-#index-page-body .resumeSocial.footer-homepage,
-#hire-me-page-body .resumeSocial.footer-homepage {
+#index-page-body .resumeSocial.footer-homepage {
   display: block !important;
+}
+
+#hire-me-page-body .resumeSocial.footer-homepage {
+  display: none !important;
 }
 
 .footer .psst {

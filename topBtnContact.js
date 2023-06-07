@@ -10,6 +10,8 @@ function detectPage() {
   if (hireme) {
     document.getElementById("hire-me-btn-sidenav").style.display = "none";
     document.getElementById("resume-icon").style.display = "none";
+    document.getElementById("githubIcon").style.display = "none";
+    document.getElementById("envelopeIcon").style.display = "none";
   }
   if (contact) {
     document.getElementById("resume-icon").style.display = "none";
@@ -32,14 +34,14 @@ document.write(
   <i class="fa-brands fa-yelp"></i></a>\
 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nicole-hermann/">\
 <i class="fa-brands fa-linkedin"></i></a>\
+<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/nikksterDotTech"><i class="fa-brands fa-twitter"></i></a>\
 <a id="resume-icon" class="resumeSocial" target="_blank" rel="noopener noreferrer" href="./Hermann_resume.pdf" download="Hermann_resume">\
 <i class="fa-solid fa-file"></i>\
   <span class="socialsTooltiptext" id="resumeToolTip">\
     Download my resume\
   </span></a>\
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/nikkster311"><i class="fa-brands fa-github"></i></a>\
-<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/nikksterDotTech"><i class="fa-brands fa-twitter"></i></a>\
-<a href="mailto:nikki@nikkster.tech"><i class="fa-regular fa-envelope"></i></a>\
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/nikkster311"><i class="fa-brands fa-github" id="githubIcon"></i></a>\
+<a href="mailto:nikki@nikkster.tech"><i id="envelopeIcon" class="fa-regular fa-envelope"></i></a>\
 </div>\
 '
 );
