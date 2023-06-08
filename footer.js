@@ -50,6 +50,8 @@ document.write(
     ></a>\
   </div>\
   <p>Nikkster.tech was Built, Designed, and Created by Nikki Hermann</p>\
+  <br>\
+  <p class="footer-btn-wrapper"><a class="btn footer-not-homepage" href="https://ko-fi.com/nikkster" target="_blank"><i class="fa-solid fa-mug-hot"></i> Send me a thank you</a></p>\
   <p class="psst">Psst.... want to see past versions of my portfolio site? \
   <a target="_blank" href="https://nikkster311.github.io/portfolio_react_01/"><button class="btn">2019</button></a>\
   <a target="_blank" href="https://nikkster311.github.io/portfolio_site_2021_revamp"><button class="btn">2021</button></a>\

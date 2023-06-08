@@ -923,7 +923,9 @@ body[data-theme="green"] .footer .btn:hover {
 
 /* get resume from correct href based on page you are on */
 #index-page-body .resumeSocial.footer-not-homepage,
+#index-page-body .footer-btn-wrapper,
 #hire-me-page-body .resumeSocial.footer-not-homepage,
+#contact-page-body .resumeSocial.footer-not-homepage,
 .resumeSocial.resumeSocial.footer-homepage {
   display: none;
 }

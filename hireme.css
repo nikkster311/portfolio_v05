@@ -511,6 +511,15 @@ body[data-theme="light"] .accordion button:hover {
 
 /* footer */
 
+.footer-not-homepage {
+  text-decoration: none;
+}
+
+.footer-btn-wrapper {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
 @media screen and (max-width: 700px) {
   #hire-me-page-body .socials-container-footer {
     font-size: 12px;
