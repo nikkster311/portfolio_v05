@@ -208,7 +208,7 @@ body[data-theme="light"] .intro {
 
 /* testimonials */
 
-.fa-star {
+#testimonialsSection .fa-star {
   color: #ffbe00;
 }
 
