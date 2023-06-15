@@ -12,10 +12,10 @@ document.write(
               <a class="footer-link" href="../#experience">Portfolio</a>\
           </h4>\
           <h4>\
-              <a class="footer-link" href="./hireme/#whoAmI">About</a>\
+              <a class="footer-link" href="./hireme#whoAmI">About</a>\
           </h4>\
           <h4>\
-              <a class="footer-link" href="./hireme/#faq">FAQ</a>\
+              <a class="footer-link" href="./hireme#faq">FAQ</a>\
           </h4>\
           <h4>\
               <a class="footer-link" href="./contact">Contact</a>\
