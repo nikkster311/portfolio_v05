@@ -57,10 +57,8 @@ window.onload = function () {
   css.type = "text/css";
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
-};
 
-// FAQ
-window.onload = function () {
+  // FAQ
   var acc = document.getElementsByClassName("accordion");
   var i;
 
