@@ -407,10 +407,12 @@ body[data-theme="light"] .intro h5 {
 }
 
 .brand-logo {
-  width: 80vw;
-  max-width: 600px;
-  margin: 0 auto;
+  width: 40vw;
+  margin-right: auto;
   display: flex;
+  height: fit-content;
+  height: -webkit-fill-available;
+  align-self: center;
 }
 
 /* ---------------- */
@@ -421,6 +423,14 @@ body[data-theme="light"] .intro h5 {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-rows {
+  flex-direction: row;
+}
+
+.flex-cols {
+  flex-direction: column;
 }
 
 .one-third {
