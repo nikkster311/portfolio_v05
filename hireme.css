@@ -206,6 +206,10 @@ body[data-theme="light"] .intro {
   font-size: 2.5rem;
 }
 
+#services h3 {
+  letter-spacing: 0.75px;
+}
+
 /* testimonials */
 
 #testimonialsSection .fa-star {
