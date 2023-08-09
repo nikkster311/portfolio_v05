@@ -212,7 +212,7 @@ body[data-theme="light"] .intro h5 {
   padding: 5px;
   position: absolute;
   z-index: 1;
-  top: 38px;
+  top: 115px;
   left: 13px;
   opacity: 0;
   transition: opacity 0.3s;
@@ -521,7 +521,7 @@ body[data-theme="light"] .intro h5 {
 section {
   overflow: hidden;
   background-color: var(--primary-color);
-  padding: 65px 100px 65px 65px;
+  padding: 65px;
 }
 
 section h1 {
