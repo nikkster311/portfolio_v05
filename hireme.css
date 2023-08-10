@@ -837,7 +837,7 @@ body[data-theme="green"] .slideshow-container .card:hover {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
   .card {
     padding: 20px 10px;
   }
