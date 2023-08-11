@@ -680,13 +680,13 @@ p.card-text {
 
 @media screen and (max-width: 700px) {
   #footer-hireme-contact .footer-wrapper {
-    padding: 20px 30px 80px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  #footer-hireme-contact .footer-wrapper {
+    padding: 20px 50px 80px;
     flex-direction: column-reverse;
+  }
+
+  #footer-hireme-contact h4 {
+    font-size: 14px;
+    margin-right: 10px;
   }
 
   #footer-hireme-contact .brand-logo {
