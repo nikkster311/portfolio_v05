@@ -726,7 +726,8 @@ body[data-theme="green"] .slideshow-container .card {
 }
 
 body[data-theme="dark"] .slideshow-container .card:hover,
-body[data-theme="green"] .slideshow-container .card:hover {
+body[data-theme="green"] .slideshow-container .card:hover,
+.service-active {
   background-color: var(--primary-color);
 }
 
@@ -740,7 +741,8 @@ body[data-theme="green"] .slideshow-container .card:hover {
   margin: 0;
 }
 
-.slideshow-container .tagline {
+.slideshow-container .tagline,
+#services .tagline {
   text-align: center;
 }
 

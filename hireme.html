@@ -140,7 +140,7 @@
               JavaScript), and professional website consultations.
             </h3>
             <div class="card-wrapper flex">
-              <div class="card">
+              <div id="serviceCardNew" class="card service-active">
                 <div class="card-text-wrapper">
                   <i class="fa-solid fa-laptop-code"></i>
                   <h3>Build Me A Brand New Website</h3>
@@ -150,13 +150,18 @@
                     from scratch.
                   </p>
                   <div class="btn-wrapper-hireme">
-                    <button onclick="currentSlide(1)" class="btn">
-                      See Pricing
+                    <button
+                      onclick="currentSlide(1)
+                      ; changeActiveCard('New')
+                      "
+                      class="btn"
+                    >
+                      Pricing Below
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="card">
+              <div id="serviceCardRedesign" class="card">
                 <div class="card-text-wrapper">
                   <i class="fa-solid fa-pencil"></i>
                   <h3>Redesign My Existing Website</h3>
@@ -165,13 +170,18 @@
                     and WordPress or a custom site built from scratch.
                   </p>
                   <div class="btn-wrapper-hireme">
-                    <button onclick="currentSlide(2)" class="btn">
+                    <button
+                      onclick="currentSlide(2)
+                      ; changeActiveCard('Redesign')
+                      "
+                      class="btn"
+                    >
                       See Pricing
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="card">
+              <div id="serviceCardEdit" class="card">
                 <div class="card-text-wrapper">
                   <i class="fa-solid fa-wand-magic-sparkles"></i>
                   <h3>Edit A Few Things On My Website</h3>
@@ -181,13 +191,18 @@
                     perfect on all devices.
                   </p>
                   <div class="btn-wrapper-hireme">
-                    <button onclick="currentSlide(3)" class="btn">
+                    <button
+                      onclick="currentSlide(3)
+                      ; changeActiveCard('Edit')
+                      "
+                      class="btn"
+                    >
                       See Pricing
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="card">
+              <div id="serviceCardConsultant" class="card">
                 <div class="card-text-wrapper">
                   <i class="fa-solid fa-comments"></i>
                   <h3>I Need A Professional Website Consultant</h3>
@@ -197,13 +212,26 @@
                     site.
                   </p>
                   <div class="btn-wrapper-hireme">
-                    <button onclick="currentSlide(4)" class="btn">
+                    <button
+                      onclick="currentSlide(4)
+                      ; changeActiveCard('Consultant')
+                      "
+                      class="btn"
+                    >
                       See Pricing
                     </button>
                   </div>
                 </div>
               </div>
             </div>
+            <br />
+            <h3 class="tagline dark">
+              Are you looking for something you don't see listed?
+              <span class="light">
+                <a class="light" href="./contact">Contact me anyway</a> - we'll
+                see if I can help you out.
+              </span>
+            </h3>
           </div>
         </section>
         <section id="slideshowSection">

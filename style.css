@@ -690,7 +690,8 @@ section .p a:hover,
   background-color: var(--hover-font-color-op);
 }
 
-.card:hover {
+.card:hover,
+.service-active {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   background-color: var(--hover-font-color-less-op);
 }
