@@ -67,7 +67,8 @@ section h2 {
   text-decoration: none;
 }
 
-.btn-wrapper-hireme .btn:hover {
+.btn-wrapper-hireme .btn:hover,
+.service-active .btn {
   background-color: var(--primary-color);
   color: var(--text-font-color);
   border-color: var(--hover-font-color);
@@ -221,7 +222,8 @@ body[data-theme="light"] .intro {
   letter-spacing: 0.75px;
 }
 
-#services .appear-on-scroll {
+#services .appear-on-scroll,
+#myWork .appear-on-scroll {
   max-width: fit-content;
 }
 
@@ -923,5 +925,76 @@ body[data-theme="green"] .slideshow-container .card:hover,
 
   #reviewScreenshots img {
     width: 100%;
+  }
+}
+
+/* mhy work */
+
+.work-menu {
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 30px 10px;
+}
+
+.work-menu li {
+  list-style: none;
+  padding: 7px 12px;
+}
+
+.work-wrapper .card {
+  margin: 20px;
+  width: 30%;
+}
+.work-wrapper .card img {
+  width: 100%;
+}
+
+.work-wrapper .card p.card-text {
+  text-align: left;
+}
+
+.work-img-tags-wrapper {
+  position: relative;
+}
+
+.work-tags {
+  position: absolute;
+  bottom: 8px;
+  left: 5px;
+  flex-wrap: wrap;
+}
+
+.work-tags .btn {
+  padding: 2px 5px;
+  font-size: 12px;
+  margin: 5px 5px 0 0;
+  color: white;
+  background: var(--hover-font-color-less-op);
+}
+
+div.card-text-wrapper .work-tags .btn:hover {
+  cursor: auto;
+}
+
+a.card-text-wrapper {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1365px) {
+  .work-wrapper .card {
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 909px) {
+  .work-wrapper .card {
+    width: 42%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .work-wrapper .card {
+    width: auto;
   }
 }
