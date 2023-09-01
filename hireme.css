@@ -8,6 +8,12 @@ section h2 {
   width: auto;
 }
 
+h2.h2-small {
+  /* margin: 50px 0; */
+  max-width: 850px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 450px) {
   section {
     padding-left: 35px;
@@ -996,5 +1002,11 @@ a.card-text-wrapper {
 @media screen and (max-width: 700px) {
   .work-wrapper .card {
     width: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .work-wrapper .card {
+    margin: 7px 0px;
   }
 }
