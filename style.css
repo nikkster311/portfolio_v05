@@ -94,6 +94,10 @@ h5,
   letter-spacing: 0.75px;
 }
 
+.large {
+  font-size: 3em;
+}
+
 .xlarge {
   font-size: 5em;
 }
@@ -208,7 +212,7 @@ body[data-theme="light"] .intro h5 {
 @media screen and (max-width: 700px) {
   .btn {
     font-size: 16px;
-    padding: 10px;
+    padding: 10px 10px 7px 10px;
   }
   #topBtn {
     bottom: 13px;
@@ -526,7 +530,7 @@ body[data-theme="light"] .intro h5 {
     padding: 0;
   }
   .topnav .btn {
-    padding: 5px;
+    padding: 5px 5px 1px 5px;
   }
   .topnav .hire-me {
     margin: 0;
@@ -801,6 +805,7 @@ section .p a:hover,
 @media screen and (max-width: 900px) {
   .intro {
     margin-left: 85px;
+    max-width: 80vw;
   }
 }
 
