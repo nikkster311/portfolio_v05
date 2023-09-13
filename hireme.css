@@ -233,6 +233,12 @@ body[data-theme="light"] .intro {
   max-width: fit-content;
 }
 
+@media screen and (max-width: 500px) {
+  #myWork {
+    padding: 30px 20px;
+  }
+}
+
 /* testimonials */
 
 #testimonialsSection .fa-star {
@@ -1007,6 +1013,6 @@ a.card-text-wrapper {
 
 @media screen and (max-width: 700px) {
   .work-wrapper .card {
-    margin: 7px 0px;
+    margin: 20px 0px;
   }
 }

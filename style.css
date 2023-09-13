@@ -94,6 +94,12 @@ h5,
   letter-spacing: 0.75px;
 }
 
+p,
+ul li {
+  letter-spacing: 0.75px;
+  font-weight: 600;
+}
+
 .large {
   font-size: 3em;
 }
@@ -710,7 +716,7 @@ section .p a:hover,
 
 .scroll-wrapper {
   display: flex;
-  height: 510px;
+  height: 625px;
   overflow: auto;
 }
 
