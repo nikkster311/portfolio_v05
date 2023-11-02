@@ -100,6 +100,10 @@ ul li {
   font-weight: 600;
 }
 
+.thin {
+  font-weight: 400;
+}
+
 .large {
   font-size: 3em;
 }
