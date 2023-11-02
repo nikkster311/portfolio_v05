@@ -767,6 +767,10 @@ body[data-theme="green"] .slideshow-container .card:hover,
   margin: auto;
 }
 
+.slideshow-container h2 {
+  padding: 20px 0;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
