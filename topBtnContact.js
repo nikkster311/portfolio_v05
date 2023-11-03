@@ -28,7 +28,7 @@ document.write(
 </div>\
 <button class="btn fixedBtn" onclick="topFunction()" id="topBtn" title="Go to top">Top</button>\
 <div class="socials-container">\
-<a href="./hireme" id="hire-me-btn-sidenav" class="hire-me"><i class="fa-solid fa-handshake"></i></a>\
+<a href="https://nikkster.tech/hireme" id="hire-me-btn-sidenav" class="hire-me"><i class="fa-solid fa-handshake"></i></a>\
   <a class="hire-me" id="home-btn-sidenav" href="https://nikkster.tech"><i class="fa-solid fa-house-chimney-window"></i></a>\
   <a target="_blank" rel="noopener noreferrer" id="yelp-btn" href="https://www.yelp.com/biz/nikkster-tech-marysville">\
   <i class="fa-brands fa-yelp"></i></a>\
