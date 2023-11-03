@@ -83,6 +83,7 @@ h3,
 .h2,
 .h3 {
   color: var(--heading-color);
+  font-weight: 200;
 }
 
 h4,
@@ -101,7 +102,7 @@ h5,
 p,
 ul li {
   letter-spacing: 0.75px;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 .thin {
