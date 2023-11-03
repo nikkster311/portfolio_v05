@@ -40,6 +40,10 @@ body {
   font-family: "Biryani", sans-serif;
 }
 
+.alt-font-merriweather {
+  font-family: "Merriweather", serif;
+}
+
 /*light dark transition*/
 body[data-theme],
 div,
@@ -104,6 +108,11 @@ ul li {
   font-weight: 400;
 }
 
+.quote {
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
 .large {
   font-size: 3em;
 }
@@ -115,6 +124,10 @@ ul li {
 @media screen and (max-width: 500px) {
   .xlarge {
     font-size: 3.5em;
+  }
+
+  .quote {
+    font-size: 1em;
   }
 }
 
@@ -605,7 +618,7 @@ section .p a:hover,
 
 /*------------------------------------------*/
 
-@media screen and (min-width: 699px) {
+@media screen and (min-width: 849px) {
   .media-show {
     display: none !important;
   }
@@ -615,7 +628,7 @@ section .p a:hover,
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   .media-show {
     display: block;
   }
