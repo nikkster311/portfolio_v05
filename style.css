@@ -501,6 +501,10 @@ body[data-theme="light"] .intro h5 {
 .topnav {
   overflow: hidden;
   justify-content: right;
+  position: fixed;
+  background: var(--hover-font-color-less-op);
+  width: 100%;
+  z-index: 100;
 }
 
 .topnav a {
@@ -800,7 +804,7 @@ section .p a:hover,
 }
 
 .intro {
-  margin: 70px 70px 100px 150px;
+  margin: 115px 70px 100px 150px;
   width: fit-content;
   padding: 20px 30px;
   background: var(--hover-font-color-op);
@@ -822,7 +826,7 @@ section .p a:hover,
 @media screen and (max-width: 700px) {
   .intro {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 85px;
     margin-bottom: 30px;
     position: relative;
     top: 20%;
