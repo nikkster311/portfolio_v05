@@ -41,6 +41,10 @@
   margin: 20px;
 }
 
+.tagline {
+  margin: 2px 0;
+}
+
 @media screen and (max-width: 850px) {
   .one-quarter,
   .half,
@@ -58,6 +62,9 @@
   .card {
     width: inherit;
     padding: 20px;
+  }
+  h2:not(.large) {
+    font-size: 50px;
   }
 }
 
