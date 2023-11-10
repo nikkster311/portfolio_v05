@@ -145,6 +145,11 @@ body[data-theme="light"] .btn-wrapper-hireme .btn:hover {
   text-align: right;
 }
 
+#pricing-page-body .intro h2 {
+  font-family: "Poiret One", sans-serif;
+  font-size: 5em;
+}
+
 .intro h1 {
   margin: 5px 0 5px;
   letter-spacing: 8px;
@@ -254,9 +259,26 @@ body[data-theme="light"] .intro {
 
 #services .appear-on-scroll,
 #myWork .appear-on-scroll,
-#why .appear-on-scroll,
-#whyTwo .appear-on-scroll {
+#why .appear-on-scroll {
   max-width: fit-content;
+}
+
+.services-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.services-wrapper p {
+  letter-spacing: 0.75px;
+  font-weight: 200;
+  border: 1px solid;
+  padding: 15px 10px 10px 10px;
+  margin: 8px;
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 500px) {
@@ -744,6 +766,10 @@ p.card-text {
 
 /* SLIDESHOW PRICING */
 
+#slideshowSection {
+  padding-top: 15px;
+}
+
 .slideshow-container .flex ul {
   width: 100%;
   text-align: left;
@@ -918,7 +944,7 @@ body[data-theme="green"] .slideshow-container .card:hover,
 }
 
 .image-block-large .image-block {
-  width: 70vw;
+  width: 60vw;
 }
 
 #why {
