@@ -107,34 +107,24 @@ body[data-theme="light"] .btn-wrapper-hireme .btn:hover {
 /* INTRO */
 
 .intro-background-wrapper {
-  background-image: url("imgs/hireme/retrosupply-kZvmEpyfiJs-unsplash.jpg");
+  background-image: url("imgs/backgroundimg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px 0 100px 0;
+  padding: 180px 0 80px 0;
+  text-align: right;
 }
-
-/* .main-content section:nth-of-type(3n) {
-  background-color: var(--hover-font-color-op);
-} */
 
 .intro-wrapper {
   min-height: auto;
-}
-
-.intro-wrapper:nth-child(1) {
-  display: flex;
-  justify-content: right;
-}
-
-.intro-wrapper:nth-child(1) .intro {
-  margin-bottom: 0;
-  margin-left: 0;
+  width: 100%;
 }
 
 .intro {
-  margin: 70px 12vw 100px 15vw;
-  background: var(--hover-font-color-less-op);
+  margin: 0;
+  width: 100%;
+  padding-right: 80px;
+  background-color: transparent;
 }
 
 .intro h5 {
@@ -145,9 +135,21 @@ body[data-theme="light"] .btn-wrapper-hireme .btn:hover {
   margin-top: 5px;
 }
 
+.intro h2 {
+  font-size: 4em;
+  font-family: "Biryani", sans-serif;
+  line-height: 1;
+  float: right;
+  width: 80%;
+  padding: 20px 0 70px 0;
+  text-align: right;
+}
+
 .intro h1 {
   margin: 5px 0 5px;
-  letter-spacing: 1px;
+  letter-spacing: 8px;
+  font-size: 3.75em;
+  font-weight: 100;
 }
 
 body[data-theme="light"] .intro {
@@ -156,13 +158,35 @@ body[data-theme="light"] .intro {
 
 @media screen and (max-width: 700px) {
   .intro {
-    margin-left: 15vw !important;
+    padding-right: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .intro h1 {
+    font-size: 3em;
+  }
+  .intro h2 {
+    font-size: 3em;
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 1500px) {
-  .intro-wrapper:nth-child(2) .intro {
-    margin: 70px 12vw 70px 70px;
+@media screen and (max-width: 700px) {
+  .intro {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .intro h1 {
+    font-size: 2em;
+    letter-spacing: 6px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .intro {
+    max-width: 100%;
   }
 }
 
@@ -229,7 +253,9 @@ body[data-theme="light"] .intro {
 }
 
 #services .appear-on-scroll,
-#myWork .appear-on-scroll {
+#myWork .appear-on-scroll,
+#why .appear-on-scroll,
+#whyTwo .appear-on-scroll {
   max-width: fit-content;
 }
 
@@ -891,6 +917,17 @@ body[data-theme="green"] .slideshow-container .card:hover,
   width: 100%;
 }
 
+.image-block-large .image-block {
+  width: 70vw;
+}
+
+#why {
+  padding: 0 65px 0 0;
+}
+
+#why .image-text-block {
+  padding: 0;
+}
 @media screen and (max-width: 700px) {
   .image-text-block {
     flex-direction: column;
