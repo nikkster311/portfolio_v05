@@ -106,8 +106,19 @@ body[data-theme="light"] .btn-wrapper-hireme .btn:hover {
 
 /* INTRO */
 
+body[data-theme="light"] .intro-background-wrapper {
+  background-image: url("imgs/hero_bg_pink.jpg");
+}
+
+body[data-theme="dark"] .intro-background-wrapper {
+  background-image: url("imgs/hero_bg_teal.jpg");
+}
+
+body[data-theme="green"] .intro-background-wrapper {
+  background-image: url("imgs/hero_bg_green.jpg");
+}
+
 .intro-background-wrapper {
-  background-image: url("imgs/backgroundimg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,7 +135,7 @@ body[data-theme="light"] .btn-wrapper-hireme .btn:hover {
   margin: 0;
   width: 100%;
   padding-right: 80px;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .intro h5 {
