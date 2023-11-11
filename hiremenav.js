@@ -3,6 +3,7 @@ document.write(
 <a href="#services">services</a>\
 <a href="#testimonialsSection">reviews</a>\
 <a href="#myWork">my work</a>\
+<a href="./pricing">pricing</a>\
 <a href="#faq">faq</a>\
 <a href="./contact">contact</a>\
 <button class="btn" onclick="toggleTheme()">\
