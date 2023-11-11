@@ -268,11 +268,12 @@ body[data-theme="light"] .intro {
   padding: 0;
 }
 
-#services i {
+#pricing i {
   font-size: 2.5rem;
 }
 
-#services h3 {
+#services h3,
+#pricing h3 {
   letter-spacing: 0.75px;
 }
 
@@ -596,25 +597,29 @@ body[data-theme="light"] .accordion button:hover {
 /* icons and nav*/
 
 @media screen and (max-width: 1000px) {
-  #hire-me-page-body #icons {
+  #hire-me-page-body #icons,
+  #pricing-page-body #icons {
     margin-top: 5px;
     margin-bottom: 5px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  #hire-me-page-body #rotate-email {
+  #hire-me-page-body #rotate-email,
+  #pricing-page-body #rotate-email {
     transform: none;
     font-size: 13px;
     padding-left: 5px;
   }
 
-  #hire-me-page-body .rotate-email-container .tooltiptext {
+  #hire-me-page-body .rotate-email-container .tooltiptext,
+  #pricing-page-body .rotate-email-container .tooltiptext {
     top: -30%;
     left: 24%;
   }
 
-  #hire-me-page-body .rotate-email-container {
+  #hire-me-page-body .rotate-email-container,
+  #pricing-page-body .rotate-email-container {
     bottom: 0;
     z-index: 1;
     right: 0;
@@ -624,7 +629,8 @@ body[data-theme="light"] .accordion button:hover {
     padding: 10px;
   }
 
-  #hire-me-page-body .socials-container {
+  #hire-me-page-body .socials-container,
+  #pricing-page-body .socials-container {
     z-index: 9000;
     bottom: 0;
     justify-content: space-between;
@@ -634,7 +640,8 @@ body[data-theme="light"] .accordion button:hover {
     top: auto;
   }
 
-  #hire-me-page-body .footer-wrapper {
+  #hire-me-page-body .footer-wrapper,
+  #pricing-page-body .footer-wrapper {
     padding-bottom: 85px;
   }
 }
@@ -754,22 +761,26 @@ p.card-text {
 }
 
 @media screen and (max-width: 1400px) {
-  #hire-me-page-body .footer-grid-wrapper {
+  #hire-me-page-body .footer-grid-wrapper,
+  #pricing-page-body .footer-grid-wrapper {
     align-self: auto;
   }
 }
 
 @media screen and (max-width: 1060px) {
-  #hire-me-page-body .footer-links-a h4 {
+  #hire-me-page-body .footer-links-a h4,
+  #pricing-page-body .footer-links-a h4 {
     margin-left: 10px;
     font-size: 15px;
   }
 
-  #hire-me-page-body .socials-container-footer a i {
+  #hire-me-page-body .socials-container-footer a i,
+  #pricing-page-body .socials-container-footer a i {
     font-size: 1.5em;
   }
 
-  #footer-hireme-contact .footer-buttons .btn {
+  #footer-hireme-contact .footer-buttons .btn,
+  #pricing-page-body .footer-buttons .btn {
     font-size: 15px;
   }
 }
@@ -837,7 +848,7 @@ p.card-text {
   padding-left: 15px;
   margin: 0;
 }
-.slideshow-container .flex ul li {
+#hire-me-page-body .slideshow-container .flex ul li {
   padding-bottom: 10px;
 }
 
@@ -882,6 +893,20 @@ body[data-theme="green"] .slideshow-container .card:hover,
 
 .slideshow-container h2 {
   padding: 20px 0;
+}
+
+.slideshow-container p {
+  padding-top: 12px;
+}
+
+@media screen and (max-width: 500px) {
+  .slideshow-container h1 {
+    font-size: 25px;
+  }
+
+  .slideshow-container h2 {
+    font-size: 2.3em;
+  }
 }
 
 /* Hide the images by default */
