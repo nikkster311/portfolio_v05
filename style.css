@@ -122,6 +122,9 @@ ul li {
   font-size: 5em;
 }
 
+.work-page-content-wrapper h5 {
+  line-height: 1.5;
+}
 @media screen and (max-width: 500px) {
   .xlarge {
     font-size: 3.5em;
@@ -132,8 +135,9 @@ ul li {
   }
 
   p,
-  ul li {
-    line-height: 1.5;
+  ul li,
+  .work-page-content-wrapper h5 {
+    line-height: 1.35;
     font-size: 14px;
   }
 }

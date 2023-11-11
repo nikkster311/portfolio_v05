@@ -417,6 +417,10 @@ body[data-theme="light"] .swiper-pagination-bullet-active {
   z-index: -1;
 }
 
+.swiper-slide p {
+  line-height: 1.3;
+}
+
 @media screen and (max-width: 767px) {
   .swiper-slide {
     width: 100%;
@@ -424,12 +428,14 @@ body[data-theme="light"] .swiper-pagination-bullet-active {
   }
 
   .swiper-slide p {
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.3;
   }
 
   .swiper-slide h3 {
     font-size: 18px;
+    line-height: 1.3;
+    margin-top: 25px;
   }
 
   .swiper-button-next:after,
@@ -444,6 +450,10 @@ body[data-theme="light"] .swiper-pagination-bullet-active {
 
   #testimonialsSection {
     padding: 30px 15px;
+  }
+
+  .swiper-slide-content {
+    padding: 10px 5px 0;
   }
 }
 
@@ -1114,8 +1124,9 @@ body[data-theme="green"] .slideshow-container .card:hover,
 }
 
 .work-wrapper .card {
-  margin: 15px;
+  margin: 10px;
   width: 30%;
+  padding: 15px;
 }
 .work-wrapper .card img {
   width: 100%;
@@ -1155,7 +1166,7 @@ a.card-text-wrapper {
 .card-text-wrapper h3 {
   letter-spacing: 1.5px;
   line-height: 1.35;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .card-text-wrapper p {
@@ -1165,15 +1176,11 @@ a.card-text-wrapper {
 .card-text-wrapper .card-description {
   font-size: 14px;
   margin: 0 0 10px 0;
-  text-align: right;
 }
 
 .card-text-wrapper .card-description p {
   margin: 0;
   /* justify-content: space-evenly; */
-}
-.card-text-wrapper .card-description p:last-of-type {
-  padding-left: 5px;
 }
 
 @media screen and (max-width: 1365px) {
@@ -1185,17 +1192,28 @@ a.card-text-wrapper {
 @media screen and (max-width: 909px) {
   .work-wrapper .card {
     width: 42%;
+    padding: 10px;
   }
 }
 
 @media screen and (max-width: 700px) {
+  #myWork {
+    padding: 30px 0;
+  }
+  .card-wrapper {
+    flex-direction: row;
+  }
   .work-wrapper .card {
-    width: auto;
+    width: 42vw;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
+  #myWork {
+    padding: 30px 10px;
+  }
   .work-wrapper .card {
-    margin: 20px 0px;
+    margin: 10px 0px;
+    width: 100%;
   }
 }
