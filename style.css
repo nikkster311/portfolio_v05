@@ -172,6 +172,10 @@ body[data-theme="light"] .intro h5 {
   line-height: 30px;
 }
 
+.no-padding {
+  padding: 0;
+}
+
 .btn {
   border: none;
   outline: none;

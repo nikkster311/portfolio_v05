@@ -248,6 +248,14 @@ body[data-theme="light"] .intro {
 }
 
 /* Services Section */
+#services {
+  padding-right: 45px;
+}
+
+#services .image-text-block,
+#services .image-block {
+  padding: 0;
+}
 
 #services i {
   font-size: 2.5rem;
@@ -263,6 +271,10 @@ body[data-theme="light"] .intro {
   max-width: fit-content;
 }
 
+#services .btn-wrapper-hireme {
+  padding-top: 20px;
+}
+
 .services-wrapper {
   display: flex;
   justify-content: center;
@@ -270,6 +282,7 @@ body[data-theme="light"] .intro {
   flex-wrap: wrap;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 7px;
 }
 
 .services-wrapper p {
@@ -279,6 +292,43 @@ body[data-theme="light"] .intro {
   padding: 15px 10px 10px 10px;
   margin: 8px;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 980px) {
+  .services-wrapper p {
+    padding: 9px 9px 5px 9px !important;
+  }
+
+  /* #services .image-block-large .image-block {
+    width: 40vw;
+  }
+ min-height: 700px;
+    object-fit: cover;
+    object-position: right;
+  } */
+  #services .text-block {
+    width: 55vw;
+  }
+
+  #services img {
+    height: auto;
+  }
+
+  #services .btn-wrapper-hireme {
+    padding-bottom: 50px;
+  }
+}
+.services-wrapper p {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 700px) {
+  #services .text-block {
+    width: 90%;
+  }
+  #services {
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -945,6 +995,12 @@ body[data-theme="green"] .slideshow-container .card:hover,
 
 .image-block-large .image-block {
   width: 60vw;
+}
+
+@media screen and (max-width: 980px) {
+  .image-block-large .image-block {
+    width: 50vw;
+  }
 }
 
 #why {
