@@ -317,9 +317,9 @@ body[data-theme="light"] .intro {
   #services .btn-wrapper-hireme {
     padding-bottom: 50px;
   }
-}
-.services-wrapper p {
-  font-size: 12px;
+  .services-wrapper p {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 700px) {
