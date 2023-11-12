@@ -536,6 +536,10 @@ body[data-theme="light"] .intro h5 {
   z-index: 100;
 }
 
+body[data-theme="light"] .topnav {
+  background: var(--primary-color);
+}
+
 .topnav a {
   color: var(--text-font-color);
   display: block;

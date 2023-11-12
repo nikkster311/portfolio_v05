@@ -792,6 +792,10 @@ p.card-text {
   text-align: left;
 }
 
+#footer-hireme-contact .footer-link {
+  text-underline-offset: 3px;
+}
+
 body[data-theme="green"] #footer-hireme-contact .footer-btn-wrapper .btn {
   background-color: var(--primary-color);
   border-color: var(--heading-color);
