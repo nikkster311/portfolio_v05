@@ -705,32 +705,41 @@ p.card-text {
 }
 
 #footer-hireme-contact .footer-grid {
-  position: absolute;
   bottom: 0;
   max-width: 700px;
   height: 100%;
   max-height: 375px;
+  padding-top: 25px;
+  padding-right: 45px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 0.75fr 0.75fr 1fr;
   grid-template-areas:
-    " footer-buttons footer-links-a"
-    " footer-buttons socials-container-footer  "
-    " footer-buttons ."
+    " footer-links-b footer-links-a"
+    "footer-buttons footer-buttons"
+    "socials-container-footer socials-container-footer "
     "footer-made-by footer-made-by  ";
 }
 
 #footer-hireme-contact .footer-links-a {
   grid-area: footer-links-a;
+}
+
+#footer-hireme-contact .footer-links-b {
+  grid-area: footer-links-b;
+}
+
+#footer-hireme-contact .footer-links-a,
+#footer-hireme-contact .footer-links-b {
   display: flex;
-  align-self: center;
-  margin-left: auto;
+  flex-direction: column;
 }
 
 #footer-hireme-contact .footer-buttons {
   grid-area: footer-buttons;
   text-align: left;
   display: flex;
+  padding: 25px 0 15px;
   justify-content: space-evenly;
   flex-direction: column;
 }
@@ -738,6 +747,9 @@ p.card-text {
 #footer-hireme-contact .footer-buttons .btn {
   font-weight: 800;
   letter-spacing: 0.8px;
+  padding: 9px 12px 5px 12px;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 #footer-hireme-contact .footer-made-by {
@@ -757,6 +769,7 @@ p.card-text {
   justify-content: space-between;
   grid-area: socials-container-footer;
   align-self: end;
+  padding: 0;
 }
 
 #footer-hireme-contact.footer p {
@@ -772,10 +785,10 @@ p.card-text {
 }
 
 #footer-hireme-contact h4 {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1px;
   font-weight: 600;
-  margin: 12px 0 16px 20px;
+  margin: 1px 0;
   text-align: left;
 }
 
@@ -788,8 +801,9 @@ p.card-text {
 
 @media screen and (max-width: 1060px) {
   #hire-me-page-body .footer-links-a h4,
-  #pricing-page-body .footer-links-a h4 {
-    margin-left: 10px;
+  #pricing-page-body .footer-links-a h4,
+  #hire-me-page-body .footer-links-b h4,
+  #pricing-page-body .footer-links-b h4 {
     font-size: 15px;
   }
 
@@ -814,27 +828,28 @@ p.card-text {
     position: inherit;
   }
 
-  #footer-hireme-contact .footer-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr 2fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "footer-buttons"
-      "footer-links-a"
-      "socials-container-footer  "
-      "."
-      "footer-made-by";
-  }
-
   #footer-hireme-contact .footer-buttons {
-    text-align: right;
     margin-right: 2px;
   }
 }
 
 @media screen and (max-width: 700px) {
+  #footer-hireme-contact .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 2fr 1fr 1fr 1fr;
+    padding-right: 0;
+    grid-template-areas:
+      "footer-links-b footer-links-a"
+      "footer-buttons footer-buttons"
+      "socials-container-footer socials-container-footer"
+      ". ."
+      "footer-made-by footer-made-by";
+  }
+
   #footer-hireme-contact .footer-wrapper {
     padding: 20px 50px 80px;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
   }
 
   #footer-hireme-contact h4 {
@@ -850,8 +865,38 @@ p.card-text {
     width: 100%;
   }
 
+  #footer-hireme-contact .footer-buttons {
+    padding: 0;
+  }
+
   #footer-hireme-contact .footer-made-by {
     width: 100% !important;
+  }
+
+  #footer-hireme-contact .brand-logo {
+    width: 40%;
+  }
+
+  #footer-hireme-contact .footer-grid-wrapper {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #footer-hireme-contact .footer-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  #footer-hireme-contact .brand-logo {
+    width: 100%;
+  }
+
+  #footer-hireme-contact .footer-grid-wrapper {
+    width: 100%;
+  }
+
+  #footer-hireme-contact .footer-btn-wrapper .btn {
+    font-size: 14px;
   }
 }
 

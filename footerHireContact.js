@@ -7,23 +7,34 @@ document.write(
     />\
     <div class="footer-grid-wrapper">\
       <div class="footer-grid">\
-        <div class="footer-links-a">\
+        <div class="footer-links-b">\
           <h4>\
-              <a class="footer-link" href="../#experience">Portfolio</a>\
+            <a class="footer-link" href="./hireme#services">Services</a>\
           </h4>\
           <h4>\
-              <a class="footer-link" href="./hireme#whoAmI">About</a>\
+              <a class="footer-link" href="./pricing">Pricing</a>\
           </h4>\
           <h4>\
               <a class="footer-link" href="./hireme#faq">FAQ</a>\
           </h4>\
           <h4>\
-              <a class="footer-link" href="./contact">Contact</a>\
+            <a class="footer-link" href="./contact">Contact</a>\
+          </h4>\
+        </div>\
+        <div class="footer-links-a">\
+          <h4>\
+            <a class="footer-link" href="./hireme#testimonialsSection">Reviews</a>\
+          </h4>\
+          <h4>\
+            <a class="footer-link" href="./hireme#myWork">My Work</a>\
+          </h4>\
+          <h4>\
+              <a class="footer-link" href="./hireme#whoAmI">Who Am I?</a>\
           </h4>\
         </div>\
         <div class="socials-container-footer flex">\
           <a\
-              class="link-no-styling"\
+          class="link-no-styling"\
               target="_blank"\
               rel="noopener noreferrer"\
               href="https://www.linkedin.com/in/nicole-hermann/"\
@@ -54,11 +65,12 @@ document.write(
               ><i class="fa-regular fa-envelope"></i\
           ></a>\
         </div>\
-          <p class="footer-made-by">Nikkster.tech was Built, Designed, and Created by Nikki Hermann</p>\
-          <div class="footer-buttons">\
-          <p class="footer-btn-wrapper"><a class="btn footer-not-homepage" href="./contact" target="_blank">Schedule a call</a></p>\
-              <p class="footer-btn-wrapper"><a class="btn footer-not-homepage" href="https://ko-fi.com/nikkster" target="_blank"><i class="fa-solid fa-mug-hot"></i> Buy me a coffee</a></p>\
+        <div class="footer-buttons">\
+          <div class="footer-btn-wrapper">\
+            <a class=btn footer-not-homepage href="./contact" target="_blank">Schedule a free 15 minute call</a>\
           </div>\
+        </div>\
+          <p class="footer-made-by">Nikkster.tech was Built, Designed, and Created by Nikki Hermann</p>\
         </div>\
       </div>\
     </div>\
