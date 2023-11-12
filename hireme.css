@@ -696,7 +696,7 @@ p.card-text {
 #footer-hireme-contact .footer-wrapper {
   display: flex;
   width: 100%;
-  padding: 20px 30px;
+  padding: 20px 30px 20px 45px;
 }
 
 #footer-hireme-contact .footer-grid-wrapper {
@@ -787,9 +787,18 @@ p.card-text {
 #footer-hireme-contact h4 {
   font-size: 16px;
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 200;
   margin: 1px 0;
   text-align: left;
+}
+
+body[data-theme="green"] #footer-hireme-contact .footer-btn-wrapper .btn {
+  background-color: var(--primary-color);
+  border-color: var(--heading-color);
+}
+
+body[data-theme="green"] #footer-hireme-contact .footer-btn-wrapper .btn:hover {
+  background-color: var(--heading-color);
 }
 
 @media screen and (max-width: 1400px) {

@@ -939,14 +939,12 @@ body [data-theme="green"] .socials-container-footer a {
   background-color: var(--text-font-color);
 }
 
-body[data-theme="light"] .footer-link,
 body[data-theme="green"] .footer-link {
   color: var(--text-font-color);
 }
 
-body[data-theme="light"] .footer-link:hover,
 body[data-theme="green"] .footer-link:hover {
-  color: var(--primary-color);
+  color: var(--heading-color);
 }
 
 .footer {
