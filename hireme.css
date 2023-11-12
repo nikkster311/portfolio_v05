@@ -22,7 +22,7 @@ h2.h2-small {
 }
 
 .parallax {
-  min-height: 450px;
+  min-height: 350px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -122,7 +122,7 @@ body[data-theme="green"] .intro-background-wrapper {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 180px 0 80px 0;
+  padding: 120px 0 50px 0;
   text-align: right;
 }
 
@@ -136,6 +136,13 @@ body[data-theme="green"] .intro-background-wrapper {
   width: 100%;
   padding-right: 80px;
   background-color: transparent !important;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+
+.intro .btn-wrapper-hireme {
+  padding: 10px 0 30px;
 }
 
 .intro h5 {
@@ -152,7 +159,7 @@ body[data-theme="green"] .intro-background-wrapper {
   line-height: 1;
   float: right;
   width: 80%;
-  padding: 20px 0 70px 0;
+  padding: 20px 0 0 0;
   text-align: right;
 }
 
@@ -180,14 +187,8 @@ body[data-theme="light"] .intro {
   }
   .intro h1 {
     font-size: 3em;
-  }
-  .intro h2 {
-    font-size: 3em;
     width: 100%;
   }
-}
-
-@media screen and (max-width: 700px) {
   .intro {
     padding-left: 0;
   }
@@ -197,6 +198,10 @@ body[data-theme="light"] .intro {
   .intro h1 {
     font-size: 2em;
     letter-spacing: 6px;
+  }
+
+  .intro h2 {
+    font-size: 2.5em;
   }
 }
 
@@ -340,6 +345,10 @@ body[data-theme="light"] .intro {
   }
   #services {
     padding-right: 0;
+  }
+
+  .services-wrapper p {
+    margin: 6px;
   }
 }
 
