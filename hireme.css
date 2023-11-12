@@ -609,6 +609,10 @@ body[data-theme="light"] .accordion button:hover {
   font-size: 50px;
 }
 
+#contact-page-body section:first-of-type {
+  margin-top: 20px;
+}
+
 #contact-page-body .main-content {
   text-align: center;
 }
@@ -674,10 +678,6 @@ p.card-text {
 @media screen and (max-width: 700px) {
   .card {
     padding: 40px 25px;
-  }
-
-  #contact-page-body .topnav {
-    justify-content: end;
   }
 }
 
