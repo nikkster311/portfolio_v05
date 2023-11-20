@@ -28,9 +28,6 @@ document.write(
           <h4>\
             <a class="footer-link" href="./hireme#myWork">My Work</a>\
           </h4>\
-          <h4>\
-              <a class="footer-link" href="./hireme#whoAmI">Who Am I?</a>\
-          </h4>\
         </div>\
         <div class="socials-container-footer flex">\
           <a\
