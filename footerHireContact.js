@@ -17,9 +17,6 @@ document.write(
           <h4>\
               <a class="footer-link" href="./hireme#faq">FAQ</a>\
           </h4>\
-          <h4>\
-            <a class="footer-link" href="./contact">Contact</a>\
-          </h4>\
         </div>\
         <div class="footer-links-a">\
           <h4>\
@@ -28,6 +25,9 @@ document.write(
           <h4>\
             <a class="footer-link" href="./hireme#myWork">My Work</a>\
           </h4>\
+          <h4>\
+          <a class="footer-link" href="./contact">Contact</a>\
+        </h4>\
         </div>\
         <div class="socials-container-footer flex">\
           <a\
