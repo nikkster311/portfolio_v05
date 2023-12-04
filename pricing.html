@@ -68,6 +68,20 @@
     />
     <script src="index.js"></script>
     <script src="hireme.js"></script>
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "k0g714wn87");
+    </script>
   </head>
 
   <body id="pricing-page-body" class="no-scroll" data-theme="">
@@ -98,31 +112,33 @@
             >
               Are you ready to take your web presence to the next level?
             </h2>
-            <h2 class="alt-font-biryani">We've got you covered.</h2>
+            <h2
+              class="h2-small alt-font-biryani"
+              style="
+                max-width: 1200px;
+                line-height: 1.2;
+                font-weight: 900;
+                padding-top: 20px;
+              "
+            >
+              We've got you covered.
+            </h2>
             <p style="text-align: center; margin-top: 40px">
               <span class="light">**</span>Do you have a Wix or SquareSpace
               website that you want to customize with something built from
               scratch? See my <a href="#faq">FAQ</a>.
             </p>
-            <div class="card-wrapper flex">
+            <div class="card-wrapper flex services-card-wrapper">
               <div id="serviceCardNew" class="card service-active">
                 <div class="card-text-wrapper">
                   <i class="fa-solid fa-laptop-code"></i>
                   <h3>Build Me A Brand New Website</h3>
                   <p class="card-text">
-                    Get a brand new site, built from scratch. For website
-                    builders like Shopify and WordPress or a custom site built
-                    from scratch.
+                    Get a brand new site. For website builders like Shopify and
+                    WordPress.
                   </p>
                   <div class="btn-wrapper-hireme">
-                    <button
-                      onclick="currentSlide(1)
-                    ; changeActiveCard('New')
-                    "
-                      class="btn"
-                    >
-                      Pricing Below
-                    </button>
+                    <a href="#buildPricing" class="btn"> See Pricing </a>
                   </div>
                 </div>
               </div>
@@ -132,17 +148,10 @@
                   <h3>Redesign My Existing Website</h3>
                   <p class="card-text">
                     Get your site up to date. For website builders like Shopify
-                    and WordPress or a custom site built from scratch.
+                    and WordPress.
                   </p>
                   <div class="btn-wrapper-hireme">
-                    <button
-                      onclick="currentSlide(2)
-                    ; changeActiveCard('Redesign')
-                    "
-                      class="btn"
-                    >
-                      See Pricing
-                    </button>
+                    <a href="#redesignPricing" class="btn"> See Pricing </a>
                   </div>
                 </div>
               </div>
@@ -152,18 +161,10 @@
                   <h3>Edit A Few Things On My Website</h3>
                   <p class="card-text">
                     Have a website already but you want to change a few things
-                    up? Leave it to me - I'll get it done right, so that it's
-                    perfect on all devices.
+                    up? This option is for you.
                   </p>
                   <div class="btn-wrapper-hireme">
-                    <button
-                      onclick="currentSlide(3)
-                    ; changeActiveCard('Edit')
-                    "
-                      class="btn"
-                    >
-                      See Pricing
-                    </button>
+                    <a href="#editsPricing" class="btn"> See Pricing </a>
                   </div>
                 </div>
               </div>
@@ -172,24 +173,15 @@
                   <i class="fa-solid fa-comments"></i>
                   <h3>I Need A Professional Website Consultant</h3>
                   <p class="card-text">
-                    Does something look off but you can't pinpoint what it is?
-                    Book a consultation to get advice on best practices for your
-                    site.
+                    Does something look off but you aren't sure what? Book a
+                    consultation to get a personalized plan for your site.
                   </p>
                   <div class="btn-wrapper-hireme">
-                    <button
-                      onclick="currentSlide(4)
-                    ; changeActiveCard('Consultant')
-                    "
-                      class="btn"
-                    >
-                      See Pricing
-                    </button>
+                    <a href="#consultPricing" class="btn"> See Pricing </a>
                   </div>
                 </div>
               </div>
             </div>
-            <br />
             <h3 class="tagline dark" style="text-align: center">
               Are you looking for something you don't see listed?
               <span class="light">
@@ -199,389 +191,333 @@
             </h3>
           </div>
         </section>
-        <section id="slideshowSection">
+
+        <section id="buildPricing">
           <!-- Slideshow container -->
           <div class="slideshow-container">
-            <div class="mySlides fade" style="display: block">
+            <div style="margin: 20px 0; text-align: center">
               <h2 class="large">Build Me An Ecommerce Website</h2>
-              <div class="card-wrapper flex">
-                <div class="card">
-                  <div class="card-text-wrapper">
-                    <p class="tagline"><strong>$6,575</strong></p>
-                    <h1>Shopify Ecommerce Website</h1>
-                    <ul>
-                      <li>45 minute consult.</li>
-                      <li>
-                        Design and build of homepage, product pages, collection
-                        pages, and up to 3 extra pages (page examples include
-                        FAQ, sizing, shipping, return policy, about us,
-                        ingredients..)
-                      </li>
-                      <li>2 review sessions for tweaks and edits.</li>
-                      <li>
-                        We will work together to find a template that you love
-                        that and customize it to your to give you your dream
-                        ecommerce store.
-                      </li>
-                    </ul>
-                    <p>
-                      <strong class="light"> Add-ons available:</strong>
+            </div>
+            <div class="card-wrapper flex">
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <p class="tagline"><strong>$6,575</strong></p>
+                  <h1>Shopify Ecommerce Website</h1>
+                  <ul>
+                    <li>45 minute consult.</li>
+                    <li>
+                      Design and build of homepage, product pages, collection
+                      pages, and up to 3 extra pages (page examples include FAQ,
+                      sizing, shipping, return policy, about us, ingredients..)
+                    </li>
+                    <li>2 review sessions for tweaks and edits.</li>
+                    <li>
+                      We will work together to find a template that you love
+                      that and customize it to your to give you your dream
+                      ecommerce store.
+                    </li>
+                  </ul>
 
-                      more pages, copywriting and/or content writing, logo
-                      creation, professional photography (products only unless
-                      local to Seattle, LA, or San Francisco) , edits after
-                      launch (hourly)
-                    </p>
-                    <div class="btn-wrapper-hireme">
-                      <a href="./contact" class="btn">I Want This</a>
-                    </div>
+                  <div class="btn-wrapper-hireme">
+                    <a href="./contact" class="btn">I Want This</a>
                   </div>
                 </div>
               </div>
-              <br />
+            </div>
+            <div style="margin: 20px 0; text-align: center">
               <h2 class="large">Build Me A General Website</h2>
-              <div class="card-wrapper flex">
-                <div class="card">
-                  <div class="card-text-wrapper">
-                    <p class="tagline"><strong>$1,199</strong></p>
-                    <h1>One Page Site</h1>
-                    <ul>
-                      <li>30 minute consult.</li>
-                      <li>
-                        One page design: header, footer, and up to 6 sections.
-                      </li>
-                      <li>1 review session for tweaks and edits.</li>
-                      <li>
-                        We will work together to find a design you love that
-                        stands out in your field, and customize it to your
-                        needs.
-                      </li>
-                    </ul>
-                    <p>
-                      <strong class="light"> Add-ons available:</strong>
-                    </p>
-                    <ul>
-                      <li>copywriting and/or content writing</li>
-                      <li>logo creation</li>
-                      <li>
-                        professional photography (products only unless local to
-                        Seattle, LA, or San Francisco)
-                      </li>
-                      <li>edits after launch (hourly)</li>
-                      <li>
-                        private hosting on our private server (monthly hosting
-                        fee)
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-text-wrapper">
-                    <p class="tagline"><strong>$3,575</strong></p>
-                    <h1>Standard Site</h1>
-                    <ul>
-                      <li>45 minute consult.</li>
-                      <li>Up to 5 pages.</li>
-                      <li>2 review sessions for tweaks and edits.</li>
-                      <li>
-                        We will work together to find a design you love that
-                        stands out in your field, and customize it to your
-                        needs.
-                      </li>
-                    </ul>
-                    <p>
-                      <strong class="light"> Add-ons available:</strong>
-                    </p>
-                    <ul>
-                      <li>copywriting and/or content writing</li>
-                      <li>logo creation</li>
-                      <li>
-                        professional photography (products only unless local to
-                        Seattle, LA, or San Francisco)
-                      </li>
-                      <li>edits after launch (hourly)</li>
-                      <li>
-                        private hosting on our private server (monthly hosting
-                        fee)
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-text-wrapper">
-                    <p class="tagline"><strong>$6,275</strong></p>
-                    <h1>Premium Site + Blog</h1>
-                    <ul>
-                      <li>45 minute consult.</li>
-                      <li>Up to 10 pages + blog</li>
-                      <li>2 review sessions for tweaks and edits.</li>
-                      <li>
-                        We will work together to find a design you love that
-                        stands out in your field, and customize it to your
-                        needs.
-                      </li>
-                    </ul>
-                    <p>
-                      <strong class="light"> Add-ons available:</strong>
-                    </p>
-                    <ul>
-                      <li>copywriting and/or content writing</li>
-                      <li>logo creation</li>
-                      <li>
-                        professional photography (products only unless local to
-                        Seattle, LA, or San Francisco)
-                      </li>
-                      <li>edits after launch (hourly)</li>
-                      <li>
-                        private hosting on our private server (monthly hosting
-                        fee)
-                      </li>
-                    </ul>
-                  </div>
+            </div>
+            <div class="card-wrapper flex">
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <p class="tagline"><strong>$1,199</strong></p>
+                  <h1>One Page Site</h1>
+                  <ul>
+                    <li>30 minute consult.</li>
+                    <li>
+                      One page design: header, footer, and up to 6 sections.
+                    </li>
+                    <li>1 review session for tweaks and edits.</li>
+                    <li>
+                      We will work together to find a design you love that
+                      stands out in your field, and customize it to your needs.
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="btn-wrapper-hireme">
-                <a href="./contact" class="btn">Let's Get Started</a>
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <p class="tagline"><strong>$3,575</strong></p>
+                  <h1>Standard Site</h1>
+                  <ul>
+                    <li>45 minute consult.</li>
+                    <li>Up to 5 pages.</li>
+                    <li>2 review sessions for tweaks and edits.</li>
+                    <li>
+                      We will work together to find a design you love that
+                      stands out in your field, and customize it to your needs.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <p class="tagline"><strong>$6,275</strong></p>
+                  <h1>Premium Site + Blog</h1>
+                  <ul>
+                    <li>45 minute consult.</li>
+                    <li>Up to 10 pages + blog</li>
+                    <li>2 review sessions for tweaks and edits.</li>
+                    <li>
+                      We will work together to find a design you love that
+                      stands out in your field, and customize it to your needs.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
-            <div class="mySlides fade">
-              <h2 class="large">Redesign My Existing Ecommerce Website</h2>
-              <div class="card-wrapper flex">
-                <div class="card">
-                  <div class="card-text-wrapper">
-                    <p class="tagline"><strong>$4,175</strong></p>
-                    <h1>Shopify Ecommerce Website</h1>
-                    <ul>
-                      <li>45 minute consult.</li>
-                      <li>
-                        Redesign and build of homepage, product pages,
-                        collection pages, and up to 3 currently launched extra
-                        pages (page examples include FAQ, sizing, shipping,
-                        return policy, about us, ingredients..)
-                      </li>
-                      <li>2 review sessions for tweaks and edits.</li>
-                      <li>
-                        We will work together to evaluate what worked and what
-                        didn't with your first design and what you would like to
-                        see changed. We will go through any areas of concern and
-                        make sure the design works for both you and your
-                        customers.
-                      </li>
-                    </ul>
-                    <p>
-                      <strong class="light"> Add-ons available:</strong>
+            <div class="card-wrapper flex" style="margin-top: 45px">
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <h1 style="padding-top: 0">Add-ons available:</h1>
 
-                      creation of more pages, copywriting and/or content
-                      writing, logo creation or redesign, professional
-                      photography (products only unless local to Seattle, LA, or
-                      San Francisco), edits after launch (hourly)
-                    </p>
-                    <div class="btn-wrapper-hireme">
-                      <a href="./contact" class="btn">I Want This</a>
-                    </div>
-                  </div>
+                  <ul>
+                    <li>copywriting and/or content writing</li>
+                    <li>logo creation</li>
+                    <li>
+                      professional photography (products only unless local to
+                      Seattle, LA, or San Francisco)
+                    </li>
+                    <li>edits after launch (hourly)</li>
+                    <li>
+                      private hosting on our private server (monthly hosting
+                      fee)
+                    </li>
+                  </ul>
                 </div>
-              </div>
-              <br />
-              <h2 class="large">Redesign My Existing General Website</h2>
-              <div class="card-wrapper flex">
-                <div class="card">
-                  <div class="card-text-wrapper">
-                    <p class="tagline"><strong>$999</strong></p>
-                    <h1>One Page Site</h1>
-                    <ul>
-                      <li>30 minute consult.</li>
-                      <li>
-                        One page design: header, footer, and up to 6 sections.
-                      </li>
-                      <li>1 review session for tweaks and edits.</li>
-                      <li>
-                        We will work together to evaluate what worked and what
-                        didn't with your first design and what you would like to
-                        see changed. We will go through any areas of concern and
-                        make sure the design works for both you and your
-                        audience.
-                      </li>
-                    </ul>
-                    <p>
-                      <strong class="light"> Add-ons available:</strong>
-                    </p>
-                    <ul>
-                      <li>copywriting and/or content writing</li>
-                      <li>logo creation/redesign</li>
-                      <li>
-                        professional photography (products only unless local to
-                        Seattle, LA, or San Francisco)
-                      </li>
-                      <li>edits after launch (hourly)</li>
-                      <li>
-                        private hosting on our private server (monthly hosting
-                        fee)
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-text-wrapper">
-                    <p class="tagline"><strong>$2,850</strong></p>
-                    <h1>Standard Site</h1>
-                    <ul>
-                      <li>45 minute consult.</li>
-                      <li>Up to 5 pages.</li>
-                      <li>2 review sessions for tweaks and edits.</li>
-                      <li>
-                        We will work together to evaluate what worked and what
-                        didn't with your first design and what you would like to
-                        see changed. We will go through any areas of concern and
-                        make sure the design works for both you and your
-                        audience.
-                      </li>
-                    </ul>
-                    <p>
-                      <strong class="light"> Add-ons available:</strong>
-                    </p>
-                    <ul>
-                      <li>copywriting and/or content writing</li>
-                      <li>logo creation/redesign</li>
-                      <li>
-                        professional photography (products only unless local to
-                        Seattle, LA, or San Francisco)
-                      </li>
-                      <li>edits after launch (hourly)</li>
-                      <li>
-                        private hosting on our private server (monthly hosting
-                        fee)
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-text-wrapper">
-                    <p class="tagline"><strong>$4,999</strong></p>
-                    <h1>Premium Site + Blog</h1>
-                    <ul>
-                      <li>45 minute consult.</li>
-                      <li>Redesign and build of to 10 pages + blog</li>
-                      <li>2 review sessions for tweaks and edits.</li>
-                      <li>
-                        We will work together to evaluate what worked and what
-                        didn't with your first design and what you would like to
-                        see changed. We will go through any areas of concern and
-                        make sure the design works for both you and your
-                        audience.
-                      </li>
-                    </ul>
-                    <p>
-                      <strong class="light"> Add-ons available:</strong>
-                    </p>
-                    <ul>
-                      <li>copywriting and/or content writing</li>
-                      <li>logo creation/redesign</li>
-                      <li>
-                        professional photography (products only unless local to
-                        Seattle, LA, or San Francisco)
-                      </li>
-                      <li>edits after launch (hourly)</li>
-                      <li>
-                        private hosting on our private server (monthly hosting
-                        fee)
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="btn-wrapper-hireme">
-                <a href="./contact" class="btn">I Want To Learn More</a>
               </div>
             </div>
-
-            <div class="mySlides fade">
-              <h2 class="large">Edit A Few Things On My Website</h2>
-              <div class="card-wrapper flex">
-                <div class="card">
-                  <div class="card-text-wrapper">
-                    <p class="tagline"><strong>$99/hour</strong></p>
-                    <h1>Website Edits</h1>
-                    <ul>
-                      <li>
-                        Edits range from text and image replacement, tweaks on
-                        your site, fixing the look on mobile, or anything that
-                        needs to be coded.
-                      </li>
-                      <li>
-                        Video call/screen share to discuss improvements to make
-                        on your site and why they will help achieve your goals,
-                        if requested.
-                      </li>
-                      <li>Time/cost estimate for your edits.</li>
-                    </ul>
-                    <p>
-                      <strong class="light">
-                        Additional edits/add-ons available:</strong
-                      >
-                    </p>
-                    <ul>
-                      <li>copywriting and/or content writing</li>
-                      <li>logo creation</li>
-                      <li>
-                        professional photography (products only unless local to
-                        Seattle, LA, or San Francisco)
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="btn-wrapper-hireme">
-                <a href="./contact" class="btn">I Want This</a>
-              </div>
+            <div class="btn-wrapper-hireme">
+              <a href="./contact" class="btn">Let's Get Started</a>
             </div>
-
-            <div class="mySlides fade">
-              <h2 class="large">I Need A Professional Website Consultant</h2>
-              <div class="card-wrapper flex">
-                <div class="card">
-                  <div class="card-text-wrapper">
-                    <p class="tagline"><strong>$99/hour</strong></p>
-                    <h1>Website Consulting</h1>
-                    <ul>
-                      <li>
-                        Custom review of your site and discussion of any
-                        concerns.
-                      </li>
-                      <li>
-                        Video call/screen share to discuss improvements to make
-                        on your site and why they will help achieve your goals.
-                      </li>
-                      <li>
-                        Video recording + write up/documentation of improvements
-                        to make.
-                      </li>
-                      <li>Minimum - 1 hour.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="btn-wrapper-hireme">
-                <a href="./contact" class="btn">I Want This</a>
-              </div>
-            </div>
-            <br />
-            <br />
-            <h3 class="tagline dark">
-              Are you on a budget or unable to afford my rates?
-              <span class="light">
-                <a class="light" href="./contact">Contact me anyway</a> - we
-                will see if we can work something out.
-              </span>
-            </h3>
-
-            <!-- Next and previous buttons -->
-            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
           </div>
+        </section>
+        <section id="redesignPricing">
+          <div class="slideshow-container">
+            <div style="margin: 20px 0; text-align: center">
+              <h2 class="large">Redesign My Existing Ecommerce Website</h2>
+            </div>
+            <div class="card-wrapper flex">
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <p class="tagline"><strong>$4,175</strong></p>
+                  <h1>Shopify Ecommerce Website</h1>
+                  <ul>
+                    <li>45 minute consult.</li>
+                    <li>
+                      Redesign and build of homepage, product pages, collection
+                      pages, and up to 3 currently launched extra pages (page
+                      examples include FAQ, sizing, shipping, return policy,
+                      about us, ingredients..)
+                    </li>
+                    <li>2 review sessions for tweaks and edits.</li>
+                    <li>
+                      We will work together to evaluate what worked and what
+                      didn't with your first design and what you would like to
+                      see changed. We will go through any areas of concern and
+                      make sure the design works for both you and your
+                      customers.
+                    </li>
+                  </ul>
+                  <p>
+                    <strong class="light"> Add-ons available:</strong>
+
+                    creation of more pages, copywriting and/or content writing,
+                    logo creation or redesign, professional photography
+                    (products only unless local to Seattle, LA, or San
+                    Francisco), edits after launch (hourly)
+                  </p>
+                  <div class="btn-wrapper-hireme">
+                    <a href="./contact" class="btn">I Want This</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="margin: 20px 0; text-align: center">
+              <h2 class="large">Redesign My Existing General Website</h2>
+            </div>
+            <div class="card-wrapper flex">
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <p class="tagline"><strong>$999</strong></p>
+                  <h1>One Page Site</h1>
+                  <ul>
+                    <li>30 minute consult.</li>
+                    <li>
+                      One page design: header, footer, and up to 6 sections.
+                    </li>
+                    <li>1 review session for tweaks and edits.</li>
+                    <li>
+                      We will work together to evaluate what worked and what
+                      didn't with your first design and what you would like to
+                      see changed. We will go through any areas of concern and
+                      make sure the design works for both you and your audience.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <p class="tagline"><strong>$2,850</strong></p>
+                  <h1>Standard Site</h1>
+                  <ul>
+                    <li>45 minute consult.</li>
+                    <li>Up to 5 pages.</li>
+                    <li>2 review sessions for tweaks and edits.</li>
+                    <li>
+                      We will work together to evaluate what worked and what
+                      didn't with your first design and what you would like to
+                      see changed. We will go through any areas of concern and
+                      make sure the design works for both you and your audience.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <p class="tagline"><strong>$4,999</strong></p>
+                  <h1>Premium Site + Blog</h1>
+                  <ul>
+                    <li>45 minute consult.</li>
+                    <li>Redesign and build of to 10 pages + blog</li>
+                    <li>2 review sessions for tweaks and edits.</li>
+                    <li>
+                      We will work together to evaluate what worked and what
+                      didn't with your first design and what you would like to
+                      see changed. We will go through any areas of concern and
+                      make sure the design works for both you and your audience.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper flex" style="margin-top: 45px">
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <h1 style="padding-top: 0">Add-ons available:</h1>
+
+                  <ul>
+                    <li>copywriting and/or content writing</li>
+                    <li>logo creation</li>
+                    <li>
+                      professional photography (products only unless local to
+                      Seattle, LA, or San Francisco)
+                    </li>
+                    <li>edits after launch (hourly)</li>
+                    <li>
+                      private hosting on our private server (monthly hosting
+                      fee)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrapper-hireme">
+              <a href="./contact" class="btn">I Want To Learn More</a>
+            </div>
+          </div>
+        </section>
+        <section id="editsPricing">
+          <div class="slideshow-container">
+            <div style="margin: 20px 0; text-align: center">
+              <h2 class="large">Edit A Few Things On My Website</h2>
+            </div>
+            <div class="card-wrapper flex">
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <p class="tagline"><strong>$99/hour</strong></p>
+                  <h1>Website Edits</h1>
+                  <ul>
+                    <li>
+                      Edits range from text and image replacement, tweaks on
+                      your site, fixing the look on mobile, or anything that
+                      needs to be coded.
+                    </li>
+                    <li>
+                      Video call/screen share to discuss improvements to make on
+                      your site and why they will help achieve your goals, if
+                      requested.
+                    </li>
+                    <li>Time/cost estimate for your edits.</li>
+                  </ul>
+                  <p>
+                    <strong class="light">
+                      Additional edits/add-ons available:</strong
+                    >
+                  </p>
+                  <ul>
+                    <li>copywriting and/or content writing</li>
+                    <li>logo creation</li>
+                    <li>
+                      professional photography (products only unless local to
+                      Seattle, LA, or San Francisco)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrapper-hireme">
+              <a href="./contact" class="btn">I Want This</a>
+            </div>
+          </div>
+        </section>
+        <section id="consultPricing">
+          <div class="slideshow-container">
+            <div style="margin: 20px 0; text-align: center">
+              <h2 class="large">I Need A Professional Website Consultant</h2>
+            </div>
+            <div class="card-wrapper flex">
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <p class="tagline"><strong>$99/hour</strong></p>
+                  <h1>Website Consulting</h1>
+                  <ul>
+                    <li>
+                      Custom review of your site and discussion of any concerns.
+                    </li>
+                    <li>
+                      Video call/screen share to discuss improvements to make on
+                      your site and why they will help achieve your goals.
+                    </li>
+                    <li>
+                      Video recording + write up/documentation of improvements
+                      to make.
+                    </li>
+                    <li>Minimum - 1 hour.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrapper-hireme">
+              <a href="./contact" class="btn">I Want This</a>
+            </div>
+          </div>
+
+          <h3 class="tagline dark">
+            Are you on a budget or unable to afford my rates?
+            <span class="light">
+              <a class="light" href="./contact">Contact me anyway</a> - we will
+              see if we can work something out.
+            </span>
+          </h3>
+
+          <!-- Next and previous buttons -->
+          <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
           <!-- <br /> -->
 
           <!-- The dots/circles -->
@@ -591,209 +527,524 @@
           <span class="dot" onclick="currentSlide(3)"></span>
         </div> -->
         </section>
+
+        <div
+          class="parallax"
+          style="
+            background-image: url('./imgs/hireme/ilya-pavlov-OqtafYT5kTw-unsplash.jpg');
+            opacity: 0.5;
+          "
+        ></div>
+
+        <section id="faq">
+          <div class="appear-on-scroll">
+            <h2 class="alt-font xlarge">FAQ</h2>
+            <div class="panel-wrapper">
+              <div class="accordion">
+                <button class="flex">
+                  <span>What does working with you look like?</span
+                  ><span class="accordion-symbol">+</span>
+                </button>
+              </div>
+              <div class="panel">
+                <ul>
+                  <li>
+                    We will start with
+                    <a class="light" href="./contact">an intro call</a> to
+                    discuss your needs and/or concerns regarding your website.
+                    This will give me an idea of how my services can benefit
+                    your business or online presence.
+                  </li>
+                  <li>
+                    You will fill out a questionnaire about your website needs,
+                    which I will use to create a plan of action.
+                  </li>
+                  <li>
+                    I will come up with a strategy and quote for you (if you
+                    purchase a plan that charges by the hour).
+                  </li>
+                  <li>
+                    I will come up with a design for your site, based on your
+                    niche, audience, and user experience needs for your field.
+                    Once approved by you, I will start building or editing your
+                    site.
+                  </li>
+                  <li>
+                    As I work on your site, you will get regular updates from me
+                    so you are never left in the dark.
+                  </li>
+                  <li>
+                    Once we are both happy with the result, you'll get to reap
+                    the benefits of a clean, informative, professional website
+                    that solves any issues you had before.
+                  </li>
+                </ul>
+                <p>
+                  My job is to make sure that you have a website that makes both
+                  you and your clients happy. I do not cut corners, and I will
+                  make sure you are happy with your website every step of the
+                  way.
+                </p>
+              </div>
+            </div>
+
+            <div class="panel-wrapper">
+              <div class="flex"></div>
+              <div class="accordion">
+                <button class="flex">
+                  <span>Are you accepting new clients at this time?</span
+                  ><span class="accordion-symbol">+</span>
+                </button>
+              </div>
+              <div class="panel">
+                <p>
+                  As of November 2023 I am accepting new clients. (This will be
+                  updated when I am no longer accepting clients.)
+                </p>
+              </div>
+            </div>
+
+            <div class="panel-wrapper">
+              <div class="flex"></div>
+              <div class="accordion">
+                <button class="flex">
+                  <span>What website builders do you work with? *</span
+                  ><span class="accordion-symbol">+</span>
+                </button>
+              </div>
+              <div class="panel">
+                <p>
+                  I can build and edit websites built from scratch or built with
+                  website builders. I excel at working on
+                  <span class="light">Shopify</span> and
+                  <span class="light">WordPress</span> sites, but I also have
+                  experience with Wix<span class="light">*</span>, Weebly<span
+                    class="light"
+                    >*</span
+                  >, WebFlow<span class="light">*</span>, and SquareSpace<span
+                    class="light"
+                    >*</span
+                  >
+                  as well and am happy to work on those sites.
+                </p>
+                <p>
+                  <span class="light"> *Note: </span>These sites have
+                  limitations that do not support certain code. Please reach out
+                  to discuss what you'd like customized on Wix/SquareSpace
+                  sites.
+                </p>
+              </div>
+            </div>
+
+            <div class="panel-wrapper">
+              <div class="flex"></div>
+              <div class="accordion">
+                <button class="flex">
+                  <span>I just have a quick question - can you help me?</span
+                  ><span class="accordion-symbol">+</span>
+                </button>
+              </div>
+              <div class="panel">
+                <p>
+                  Sure! You can send me
+                  <a href="mailto:nikki@nikkster.tech">an email</a> with your
+                  question or schedule a
+                  <a href="./contact">free 15 minute call with me</a>. If your
+                  question simple enough, I may be able to help you out. However
+                  if your question is technical or about design, we would set up
+                  a consultation call. That way I will be able to really dive
+                  into your site and get you the information that you need.
+                </p>
+              </div>
+            </div>
+
+            <div class="panel-wrapper">
+              <div class="accordion">
+                <button class="flex">
+                  <span>How does payment work?</span
+                  ><span class="accordion-symbol">+</span>
+                </button>
+              </div>
+              <div class="panel">
+                <p>
+                  After we have an intro call and you fill out a questionnaire,
+                  I will give you a strategy and a quote. I require a 50%
+                  deposit upfront. I accept credit card payments, wire
+                  transfers, and ACH.
+                </p>
+              </div>
+            </div>
+
+            <div class="panel-wrapper">
+              <div class="accordion">
+                <button class="flex">
+                  <span>Do you design websites from scratch?</span
+                  ><span class="accordion-symbol">+</span>
+                </button>
+              </div>
+              <div class="panel">
+                <p>
+                  When I design a website for my clients, I will take an
+                  existing theme that the client chooses and customize it for
+                  them based on best UX/UI practices for their industry.
+                </p>
+                <p>
+                  Designing custom icons or small graphics is on a case by case
+                  basis - please let me know if this is something you are
+                  interested in.
+                </p>
+                <p>
+                  I have a designer I work with who will create a custom logo
+                  for you as an add on to any
+                  <a href="pricing">services</a> purchased
+                </p>
+                <p>
+                  If you already have a designer, I am happy to build a site
+                  based on what they create.
+                </p>
+              </div>
+            </div>
+
+            <div class="panel-wrapper">
+              <div class="flex"></div>
+              <div class="accordion">
+                <button class="flex">
+                  <span>Do you provide website hosting?</span
+                  ><span class="accordion-symbol">+</span>
+                </button>
+              </div>
+              <div class="panel">
+                <p>
+                  <span class="light">I do!</span> I offer hosting (to anyone -
+                  not just sites I've built!) on the Nikkster.tech
+                  <a href="https://www.siteground.com/">Siteground</a> server.
+                  Hosting your site on my server will allow me to be the main
+                  person of contact if any issues are to arise, instead of
+                  trying to figure things out on your own or struggling with
+                  customer service.
+                </p>
+              </div>
+            </div>
+
+            <div class="btn-wrapper-hireme">
+              <a href="./contact" class="btn">Ask Me A Question</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="myWork">
+          <div class="appear-on-scroll">
+            <h2 class="alt-font xlarge">Client Projects</h2>
+
+            <div class="swiper-work">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide-content">
+                    <a class="card-text-wrapper" href="experience/abs">
+                      <div class="work-img-tags-wrapper">
+                        <img
+                          src="imgs/comp mobile imgs/nikkster.tech insta abs.jpg"
+                          alt="Amplify Black Stories"
+                        />
+                        <div class="flex work-tags">
+                          <p class="btn">From Scratch</p>
+                          <p class="btn">Small Biz</p>
+                        </div>
+                      </div>
+                      <h3>Amplify Black Stories</h3>
+                      <div class="thin card-description">
+                        <p>Website Build</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide-content">
+                    <a class="card-text-wrapper" href="experience/bean">
+                      <div class="work-img-tags-wrapper">
+                        <img
+                          src="imgs/comp mobile imgs/nikkster.tech insta bean.jpg"
+                          alt="Bean.LA"
+                        />
+                        <div class="flex work-tags">
+                          <p class="btn">Small Biz</p>
+                          <p class="btn">Ecommerce</p>
+                          <p class="btn">Shopify</p>
+                          <p class="btn">From Scratch</p>
+                        </div>
+                      </div>
+                      <h3>Bean.LA Shop</h3>
+                      <div class="thin card-description">
+                        <p>Shopify Website Build</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide-content">
+                    <a class="card-text-wrapper" href="experience/ensemble">
+                      <div class="work-img-tags-wrapper">
+                        <img
+                          src="imgs/comp mobile imgs//nikkster.tech insta ensemble.jpg"
+                          alt="Ensemble"
+                        />
+                        <div class="flex work-tags">
+                          <p class="btn">From Scratch</p>
+                          <p class="btn">Small Biz</p>
+                        </div>
+                      </div>
+                      <h3>Ensemble App Website</h3>
+                      <div class="thin card-description">
+                        <p>Website Build</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide-content">
+                    <a
+                      class="card-text-wrapper"
+                      href="experience/jono-pandolfi"
+                    >
+                      <div class="work-img-tags-wrapper">
+                        <img
+                          src="imgs/comp mobile imgs/nikkster.tech insta jono.jpg"
+                          alt="Jono Pandolfi"
+                        />
+                        <div class="flex work-tags">
+                          <p class="btn">Ecommerce</p>
+                          <p class="btn">Shopify</p>
+                          <p class="btn">Small Biz</p>
+                        </div>
+                      </div>
+                      <h3>Jono Pandolfi</h3>
+                      <div class="thin card-description">
+                        <p>Shopify Website Build</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide-content">
+                    <a class="card-text-wrapper" href="experience/madhappy">
+                      <div class="work-img-tags-wrapper">
+                        <img
+                          src="imgs/comp mobile imgs/nikkster.tech insta madhappy.jpg"
+                          alt="MadHappy"
+                        />
+                        <div class="flex work-tags">
+                          <p class="btn">Ecommerce</p>
+                          <p class="btn">Shopify</p>
+                          <p class="btn">Small Biz</p>
+                        </div>
+                      </div>
+                      <h3>MadHappy</h3>
+
+                      <div class="thin card-description">
+                        <p>Website Edits</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide-content">
+                    <a class="card-text-wrapper" href="experience/sailthru">
+                      <div class="work-img-tags-wrapper">
+                        <img
+                          src="imgs/comp mobile imgs/nikkster.tech insta sailthru.jpg"
+                          alt="Sailthru"
+                        />
+                        <div class="flex work-tags">
+                          <p class="btn">WordPress</p>
+                          <p class="btn">From Scratch</p>
+                        </div>
+                      </div>
+                      <h3>Sailthru</h3>
+                      <div class="thin card-description">
+                        <p>WordPress Website Build</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide-content">
+                    <a class="card-text-wrapper" href="experience/shikohin">
+                      <div class="work-img-tags-wrapper">
+                        <img
+                          src="imgs/comp mobile imgs/nikkster.tech insta shikohin.jpg"
+                          alt="Shikohin"
+                        />
+                        <div class="flex work-tags">
+                          <p class="btn">Ecommerce</p>
+                          <p class="btn">Shopify</p>
+                          <p class="btn">Small Biz</p>
+                        </div>
+                      </div>
+                      <h3>Shikohin</h3>
+                      <div class="thin card-description">
+                        <p>Shopify Website Build</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide-content">
+                    <a
+                      class="card-text-wrapper"
+                      href="experience/veroame"
+                      target="_blank"
+                    >
+                      <div class="work-img-tags-wrapper">
+                        <img
+                          src="imgs/comp mobile imgs/nikkster.tech insta veroa.jpg"
+                          alt="Veroa.me"
+                        />
+                        <div class="flex work-tags">
+                          <p class="btn">Portfolio</p>
+                          <p class="btn">From Scratch</p>
+                        </div>
+                      </div>
+                      <h3>Veroa.Me</h3>
+                      <div class="thin card-description">
+                        <p>Website Edits</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide-content">
+                    <a
+                      class="card-text-wrapper"
+                      href="https://wattsweldingandfabrication.com"
+                      target="_blank"
+                    >
+                      <div class="work-img-tags-wrapper">
+                        <img
+                          src="imgs/comp mobile imgs/nikkster.tech insta wwaf (1).jpg"
+                          alt="Watts Welding & Fabrication"
+                        />
+                        <div class="flex work-tags">
+                          <p class="btn">Small Biz</p>
+                          <p class="btn">WordPress</p>
+                        </div>
+                      </div>
+                      <h3>Watts Welding & Fabrication</h3>
+                      <div class="thin card-description">
+                        <p>WordPress Website Build</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide-content">
+                    <a class="card-text-wrapper" href="https://sidequest.zone">
+                      <div class="work-img-tags-wrapper">
+                        <img
+                          src="imgs/comp mobile imgs/nikkster.tech insta sidequest.jpg"
+                          alt="Sidequest"
+                        />
+                        <div class="flex work-tags">
+                          <p class="btn">Small Biz</p>
+                          <p class="btn">WordPress</p>
+                        </div>
+                      </div>
+                      <h3>Sidequest</h3>
+                      <div class="thin card-description">
+                        <p>WordPress Edits</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide-content">
+                    <a
+                      class="card-text-wrapper"
+                      href="https://solstisslace.com"
+                    >
+                      <div class="work-img-tags-wrapper">
+                        <img
+                          src="imgs/comp mobile imgs/nikkster.tech solstiss.jpg"
+                          alt="Solstiss Lace"
+                        />
+                        <div class="flex work-tags">
+                          <p class="btn">Small Biz</p>
+                          <p class="btn">Ecommerce</p>
+                          <p class="btn">Shopify</p>
+                        </div>
+                      </div>
+                      <h3>Solstiss Lace USA</h3>
+                      <div class="thin card-description">
+                        <p>Shopify Website Redesign</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide-content">
+                    <a class="card-text-wrapper" href="https://wearerelive.org">
+                      <div class="work-img-tags-wrapper">
+                        <img
+                          src="imgs/comp mobile imgs/nikkster.tech relive.jpg"
+                          alt="We Are Relive"
+                        />
+                        <div class="flex work-tags">
+                          <p class="btn">Small Biz</p>
+                        </div>
+                      </div>
+                      <h3>We Are Relive</h3>
+                      <div class="thin card-description">
+                        <p>Wix Website Edits & Consultation</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+
+            <script>
+              const swiper2 = new Swiper(".swiper-work", {
+                loop: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                },
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+                slidesPerView: 1,
+                spaceBetween: 15,
+                breakpoints: {
+                  500: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                  },
+                  1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                  },
+                  // "@1.50": {
+                  //   slidesPerView: 4,
+                  //   spaceBetween: 50,
+                  // },
+                },
+              });
+            </script>
+          </div>
+        </section>
       </div>
-
-      <div
-        class="parallax"
-        style="
-          background-image: url('./imgs/hireme/ilya-pavlov-OqtafYT5kTw-unsplash.jpg');
-          opacity: 0.5;
-        "
-      ></div>
-
-      <section id="faq">
-        <div class="appear-on-scroll">
-          <h2 class="alt-font xlarge">FAQ</h2>
-          <div class="panel-wrapper">
-            <div class="accordion">
-              <button class="flex">
-                <span>What does working with you look like?</span
-                ><span class="accordion-symbol">+</span>
-              </button>
-            </div>
-            <div class="panel">
-              <ul>
-                <li>
-                  We will start with
-                  <a class="light" href="./contact">an intro call</a> to discuss
-                  your needs and/or concerns regarding your website. This will
-                  give me an idea of how my services can benefit your business
-                  or online presence.
-                </li>
-                <li>
-                  You will fill out a questionnaire about your website needs,
-                  which I will use to create a plan of action.
-                </li>
-                <li>
-                  I will come up with a strategy and quote for you (if you
-                  purchase a plan that charges by the hour).
-                </li>
-                <li>
-                  I will come up with a design for your site, based on your
-                  niche, audience, and user experience needs for your field.
-                  Once approved by you, I will start building or editing your
-                  site.
-                </li>
-                <li>
-                  As I work on your site, you will get regular updates from me
-                  so you are never left in the dark.
-                </li>
-                <li>
-                  Once we are both happy with the result, you'll get to reap the
-                  benefits of a clean, informative, professional website that
-                  solves any issues you had before.
-                </li>
-              </ul>
-              <p>
-                My job is to make sure that you have a website that makes both
-                you and your clients happy. I do not cut corners, and I will
-                make sure you are happy with your website every step of the way.
-              </p>
-            </div>
-          </div>
-
-          <div class="panel-wrapper">
-            <div class="flex"></div>
-            <div class="accordion">
-              <button class="flex">
-                <span>Are you accepting new clients at this time?</span
-                ><span class="accordion-symbol">+</span>
-              </button>
-            </div>
-            <div class="panel">
-              <p>
-                As of November 2023 I am accepting new clients. (This will be
-                updated when I am no longer accepting clients.)
-              </p>
-            </div>
-          </div>
-
-          <div class="panel-wrapper">
-            <div class="flex"></div>
-            <div class="accordion">
-              <button class="flex">
-                <span>What website builders do you work with? *</span
-                ><span class="accordion-symbol">+</span>
-              </button>
-            </div>
-            <div class="panel">
-              <p>
-                I can build and edit websites built from scratch or built with
-                website builders. I excel at working on
-                <span class="light">Shopify</span> and
-                <span class="light">WordPress</span> sites, but I also have
-                experience with Wix<span class="light">*</span>, Weebly<span
-                  class="light"
-                  >*</span
-                >, WebFlow<span class="light">*</span>, and SquareSpace<span
-                  class="light"
-                  >*</span
-                >
-                as well and am happy to work on those sites.
-              </p>
-              <p>
-                <span class="light"> *Note: </span>These sites have limitations
-                that do not support certain code. Please reach out to discuss
-                what you'd like customized on Wix/SquareSpace sites.
-              </p>
-            </div>
-          </div>
-
-          <div class="panel-wrapper">
-            <div class="flex"></div>
-            <div class="accordion">
-              <button class="flex">
-                <span>I just have a quick question - can you help me?</span
-                ><span class="accordion-symbol">+</span>
-              </button>
-            </div>
-            <div class="panel">
-              <p>
-                Sure! You can send me
-                <a href="mailto:nikki@nikkster.tech">an email</a> with your
-                question or schedule a
-                <a href="./contact">free 15 minute call with me</a>. If your
-                question simple enough, I may be able to help you out. However
-                if your question is technical or about design, we would set up a
-                consultation call. That way I will be able to really dive into
-                your site and get you the information that you need.
-              </p>
-            </div>
-          </div>
-
-          <div class="panel-wrapper">
-            <div class="accordion">
-              <button class="flex">
-                <span>How does payment work?</span
-                ><span class="accordion-symbol">+</span>
-              </button>
-            </div>
-            <div class="panel">
-              <p>
-                After we have an intro call and you fill out a questionnaire, I
-                will give you a strategy and a quote. I require a 50% deposit
-                upfront. I accept credit card payments, wire transfers, and ACH.
-              </p>
-            </div>
-          </div>
-
-          <div class="panel-wrapper">
-            <div class="accordion">
-              <button class="flex">
-                <span>Do you design websites from scratch?</span
-                ><span class="accordion-symbol">+</span>
-              </button>
-            </div>
-            <div class="panel">
-              <p>
-                When I design a website for my clients, I will take an existing
-                theme that the client chooses and customize it for them based on
-                best UX/UI practices for their industry.
-              </p>
-              <p>
-                Designing custom icons or small graphics is on a case by case
-                basis - please let me know if this is something you are
-                interested in.
-              </p>
-              <p>
-                I have a designer I work with who will create a custom logo for
-                you as an add on to any
-                <a href="pricing">services</a> purchased
-              </p>
-              <p>
-                If you already have a designer, I am happy to build a site based
-                on what they create.
-              </p>
-            </div>
-          </div>
-
-          <div class="panel-wrapper">
-            <div class="flex"></div>
-            <div class="accordion">
-              <button class="flex">
-                <span>Do you provide website hosting?</span
-                ><span class="accordion-symbol">+</span>
-              </button>
-            </div>
-            <div class="panel">
-              <p>
-                <span class="light">I do!</span> I offer hosting (to anyone -
-                not just sites I've built!) on the Nikkster.tech
-                <a href="https://www.siteground.com/">Siteground</a> server.
-                Hosting your site on my server will allow me to be the main
-                person of contact if any issues are to arise, instead of trying
-                to figure things out on your own or struggling with customer
-                service.
-              </p>
-            </div>
-          </div>
-
-          <div class="btn-wrapper-hireme">
-            <a href="./contact" class="btn">Ask Me A Question</a>
-          </div>
-        </div>
-      </section>
-
       <script src="footerHireContact.js"></script>
     </div>
   </body>

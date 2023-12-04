@@ -118,21 +118,21 @@ function showSlides(n) {
   // dots[slideIndex - 1].className += " active-slideshow";
 }
 
-// change the display of the service card who's pricing is displayed
-function changeActiveCard(card) {
-  cardId = "serviceCard" + card;
-  allCards = document.getElementsByClassName("card");
-  clickedSlide = document.getElementById(cardId);
+// // change the display of the service card who's pricing is displayed
+// function changeActiveCard(card) {
+//   cardId = "serviceCard" + card;
+//   allCards = document.getElementsByClassName("card");
+//   clickedSlide = document.getElementById(cardId);
 
-  // remove active class
-  for (i = 0; i < allCards.length; i++) {
-    if (allCards[i].classList.contains("service-active")) {
-      allCards[i].classList.remove("service-active");
-      allCards[i].getElementsByClassName("btn")[0].textContent = "See Pricing";
-    }
-  }
+//   // remove active class
+//   for (i = 0; i < allCards.length; i++) {
+//     if (allCards[i].classList.contains("service-active")) {
+//       allCards[i].classList.remove("service-active");
+//       allCards[i].getElementsByClassName("btn")[0].textContent = "See Pricing";
+//     }
+//   }
 
-  // add active class to correct
-  clickedSlide.classList.add("service-active");
-  clickedSlide.getElementsByClassName("btn")[0].textContent = "Pricing Below";
-}
+//   // add active class to correct
+//   clickedSlide.classList.add("service-active");
+//   clickedSlide.getElementsByClassName("btn")[0].textContent = "Pricing Below";
+// }
