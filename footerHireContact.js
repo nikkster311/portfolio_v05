@@ -56,6 +56,8 @@ document.write(
               href="https://twitter.com/nikksterDotTech"\
               ><i class="fa-brands fa-twitter"></i\
           ></a>\
+          <a target="_blank" rel="noopener noreferrer" id="gmb-btn" href="https://g.page/r/Ce1COo5Y3bKHEBM">\
+          <i class="fa-brands fa-google"></i></a>\
           <a target="_blank" rel="noopener noreferrer" id="yelp-btn" href="https://www.yelp.com/biz/nikkster-tech-marysville">\
           <i class="fa-brands fa-yelp"></i></a>\
           <a href="mailto:nikki@nikkster.tech"\
