@@ -4,12 +4,13 @@ function detectPage() {
   var hireme = document.getElementById("hire-me-page-body");
   var contact = document.getElementById("contact-page-body");
   var pricing = document.getElementById("pricing-page-body");
+  var workpage = document.getElementById("work-page-page-body");
   if (index) {
     document.getElementById("home-btn-sidenav").style.display = "none";
     document.getElementById("yelp-btn").style.display = "none";
     document.getElementById("gmb-btn").style.display = "none";
   }
-  if (hireme) {
+  if (hireme || workpage) {
     document.getElementById("home-btn-sidenav").style.display = "none";
     document.getElementById("hire-me-btn-sidenav").style.display = "none";
     document.getElementById("resume-icon").style.display = "none";

@@ -671,7 +671,8 @@ body[data-theme="light"] .accordion button:hover {
 
 @media screen and (max-width: 1000px) {
   #hire-me-page-body #icons,
-  #pricing-page-body #icons {
+  #pricing-page-body #icons,
+  #work-page-page-body #icons {
     margin-top: 5px;
     margin-bottom: 5px;
   }
@@ -679,20 +680,23 @@ body[data-theme="light"] .accordion button:hover {
 
 @media screen and (max-width: 700px) {
   #hire-me-page-body #rotate-email,
-  #pricing-page-body #rotate-email {
+  #pricing-page-body #rotate-email,
+  #work-page-page-body #rotate-email {
     transform: none;
     font-size: 13px;
     padding-left: 5px;
   }
 
   #hire-me-page-body .rotate-email-container .tooltiptext,
-  #pricing-page-body .rotate-email-container .tooltiptext {
+  #pricing-page-body .rotate-email-container .tooltiptext,
+  #work-page-page-body .rotate-email-container .tooltiptext {
     top: -30%;
     left: 24%;
   }
 
   #hire-me-page-body .rotate-email-container,
-  #pricing-page-body .rotate-email-container {
+  #pricing-page-body .rotate-email-container,
+  #work-page-page-body .rotate-email-container {
     bottom: 0;
     z-index: 1;
     right: 0;
@@ -703,7 +707,8 @@ body[data-theme="light"] .accordion button:hover {
   }
 
   #hire-me-page-body .socials-container,
-  #pricing-page-body .socials-container {
+  #pricing-page-body .socials-container,
+  #work-page-page-body .socials-container {
     z-index: 9000;
     bottom: 0;
     justify-content: space-between;
@@ -714,7 +719,8 @@ body[data-theme="light"] .accordion button:hover {
   }
 
   #hire-me-page-body .footer-wrapper,
-  #pricing-page-body .footer-wrapper {
+  #pricing-page-body .footer-wrapper,
+  #work-page-page-body .footer-wrapper {
     padding-bottom: 85px;
   }
 }
@@ -857,7 +863,8 @@ body[data-theme="green"] #footer-hireme-contact .footer-btn-wrapper .btn:hover {
 
 @media screen and (max-width: 1400px) {
   #hire-me-page-body .footer-grid-wrapper,
-  #pricing-page-body .footer-grid-wrapper {
+  #pricing-page-body .footer-grid-wrapper,
+  #work-page-page-body .footer-grid-wrapper {
     align-self: auto;
   }
 }
@@ -866,17 +873,22 @@ body[data-theme="green"] #footer-hireme-contact .footer-btn-wrapper .btn:hover {
   #hire-me-page-body .footer-links-a h4,
   #pricing-page-body .footer-links-a h4,
   #hire-me-page-body .footer-links-b h4,
-  #pricing-page-body .footer-links-b h4 {
+  #pricing-page-body .footer-links-b h4,
+  #work-page-page-body .footer-links-a h4,
+  #work-page-page-body .footer-links-b h4 {
     font-size: 15px;
   }
 
   #hire-me-page-body .socials-container-footer a i,
-  #pricing-page-body .socials-container-footer a i {
+  #pricing-page-body .socials-container-footer a i,
+  #work-page-page-body .socials-container-footer a i,
+  #work-page-page-body .socials-container-footer a i {
     font-size: 1.5em;
   }
 
   #footer-hireme-contact .footer-buttons .btn,
-  #pricing-page-body .footer-buttons .btn {
+  #pricing-page-body .footer-buttons .btn,
+  #work-page-page-body .footer-buttons .btn {
     font-size: 15px;
   }
 }
