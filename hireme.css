@@ -8,6 +8,10 @@ section h2 {
   width: auto;
 }
 
+.work-page-content-wrapper h2 {
+  text-align: left;
+}
+
 h2.h2-small {
   /* margin: 50px 0; */
   max-width: 850px;
