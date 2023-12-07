@@ -1,10 +1,12 @@
 document.write(
   '      <section id="footer-hireme-contact" class="footer">\
   <div class="footer-wrapper">\
-    <img\
-        class="brand-logo"\
-        src="./imgs/logos/nikkstertech-high-resolution-logo-white-on-transparent-background.png"\
-    />\
+  <a href="https://nikkster.tech/hireme">\
+  <img\
+  class="brand-logo"\
+  src="./imgs/logos/nikkstertech-high-resolution-logo-white-on-transparent-background.png"\
+  />\
+  </a>\
     <div class="footer-grid-wrapper">\
       <div class="footer-grid">\
         <div class="footer-links-b">\
