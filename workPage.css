@@ -72,6 +72,10 @@
   border: 3px solid var(--text-font-color);
 }
 
+#work-page-page-body .consults-small-edits-wrapper {
+  background: var(--hover-font-color-less-op);
+}
+
 .right {
   /* width: fit-content; */
   float: right;
@@ -98,16 +102,6 @@
 
 .bottom-padding {
   padding-bottom: 20px;
-}
-
-.work-section-no-border {
-  margin: 20px;
-}
-.work-section-no-border-desktop {
-  margin: 20px;
-}
-.work-section-no-border-mobile {
-  margin: 0px;
 }
 
 @media screen and (max-width: 850px) {
@@ -223,13 +217,6 @@
   .flip-on-mobile {
     display: flex;
     flex-direction: column-reverse;
-  }
-
-  .work-section-no-border-desktop {
-    margin: 0;
-  }
-  .work-section-no-border-mobile {
-    margin: 20px;
   }
 }
 

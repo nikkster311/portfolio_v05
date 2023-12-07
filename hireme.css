@@ -137,8 +137,13 @@ body[data-theme="green"] .intro-background-wrapper {
   height: 90vh;
 }
 
-#pricing-page-body .intro-background-wrapper {
+#pricing-page-body .intro-background-wrapper,
+#work-page-page-body .intro-background-wrapper {
   height: auto;
+}
+
+#work-page-page-body .intro-background-wrapper {
+  padding-top: 80px;
 }
 
 .intro-wrapper {
@@ -182,7 +187,8 @@ body[data-theme="green"] .intro-background-wrapper {
   text-align: right;
 }
 
-#pricing-page-body .intro h2 {
+#pricing-page-body .intro h2,
+#work-page-page-body .intro h2 {
   font-family: "Poiret One", sans-serif;
   font-size: 5em;
 }
@@ -218,6 +224,10 @@ body[data-theme="light"] .intro {
   .intro-wrapper {
     height: auto;
   }
+
+  #work-page-page-body .intro h2 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -230,7 +240,8 @@ body[data-theme="light"] .intro {
     font-size: 2.5em;
   }
 
-  #pricing-page-body .intro h2 {
+  #pricing-page-body .intro h2,
+  #work-page-page-body .intro h2 {
     font-size: 3em;
   }
 }

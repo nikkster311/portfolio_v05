@@ -131,6 +131,9 @@ ul li {
     font-size: 3.5em;
   }
 
+  .large {
+    font-size: 2.2em;
+  }
   .quote {
     font-size: 1em;
   }
