@@ -345,7 +345,8 @@ body[data-theme="light"] .intro {
 
 #services .appear-on-scroll,
 #myWork .appear-on-scroll,
-#why .appear-on-scroll {
+#why .appear-on-scroll,
+#faq .appear-on-scroll {
   max-width: fit-content;
 }
 

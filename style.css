@@ -496,6 +496,12 @@ body[data-theme="light"] .intro h5 {
   display: flex;
 }
 
+section.flex {
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -520,9 +526,41 @@ body[data-theme="light"] .intro h5 {
   align-items: center;
 }
 
+.newsletter-flex {
+  justify-content: space-evenly;
+}
+
+.newsletter-flex .faq-wrapper {
+  max-width: 800px;
+  width: 60vw;
+}
+
+.newsletter-flex .ml-embedded {
+  padding-left: 30px;
+}
+
 @media screen and (max-width: 700px) {
   .portrait-img-wrapper {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section.flex {
+    flex-direction: column-reverse;
+  }
+
+  .newsletter-flex {
+    flex-direction: column;
+  }
+
+  .newsletter-flex .faq-wrapper {
+    width: auto;
+  }
+
+  .newsletter-flex .ml-embedded {
+    padding-left: 0;
+    padding-top: 40px;
   }
 }
 
