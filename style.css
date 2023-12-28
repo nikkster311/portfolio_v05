@@ -556,9 +556,9 @@ section.flex {
 }
 
 @media screen and (max-width: 900px) {
-  section.flex {
+  /* section.flex {
     flex-direction: column-reverse;
-  }
+  } */
 
   .newsletter-flex {
     flex-direction: column;
