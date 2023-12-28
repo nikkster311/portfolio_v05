@@ -66,11 +66,6 @@ document.write(
                 ><i class="fa-regular fa-envelope"></i\
             ></a>\
           </div>\
-          <div class="footer-buttons">\
-            <div class="footer-btn-wrapper">\
-              <a class=btn footer-not-homepage href="./contact" target="_blank">Schedule a free 15 minute call</a>\
-            </div>\
-          </div>\
             <p class="footer-made-by">Nikkster.tech was Built, Designed, and Created by Nikki Hermann</p>\
           </div>\
         </div>\

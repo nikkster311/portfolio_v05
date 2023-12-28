@@ -138,7 +138,8 @@ body[data-theme="green"] .intro-background-wrapper {
 }
 
 #pricing-page-body .intro-background-wrapper,
-#work-page-page-body .intro-background-wrapper {
+#work-page-page-body .intro-background-wrapper,
+#contact-page-body .intro-background-wrapper {
   height: auto;
 }
 
@@ -643,12 +644,22 @@ body[data-theme="light"] .accordion button:hover {
 
 /* contact section */
 
-#contact a:not(.btn) {
+#contact a:not(.btn),
+#contact-page-body .main-content a:not(.btn) {
   color: var(--heading-color);
 }
 
-#contact a:not(.btn):hover {
+#contact a:not(.btn):hover,
+#contact-page-body .main-content :not(.btn):hover {
   color: var(--text-font-color);
+}
+
+#contact-page-body .main-content :not(.btn) {
+  text-decoration: none;
+}
+
+#contact-page-body i {
+  padding-right: 20px;
 }
 
 #contact .tagline {

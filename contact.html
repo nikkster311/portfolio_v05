@@ -108,14 +108,14 @@
   </head>
 
   <body id="contact-page-body" class="no-scroll" data-theme="">
-    <script
+    <!-- <script
       type="text/javascript"
       src="https://assets.calendly.com/assets/external/widget.js"
       async
-    ></script>
+    ></script> -->
     <div id="loader-wrapper">
       <h1 class="alt-font" style="text-align: center">
-        Calendly is loading...
+        <!-- Calendly is loading... -->
       </h1>
       <div class="loader"></div>
     </div>
@@ -125,29 +125,55 @@
       <script src="contactnav.js"></script>
       <script src="topBtnContact.js"></script>
       <div class="main-content">
-        <section>
-          <h2>Get In Touch</h2>
-          <br />
-          <p>
-            Schedule a FREE 15 minute intro call with me below. Alternatively,
-            <a href="mailto:nikki@nikkster.tech">send me an email</a>.
-          </p>
-          <br />
-          I am currently accepting new clients for January 2024. Only 2 spots
-          left for website build or redesign! Reach out today to save your spot.
-          <p>
-            Are you a designer, dev, photographer, etc? Feel free to reach out -
-            I am currently looking for collaborations.
-          </p>
+        <section class="intro-background-wrapper">
+          <div class="intro-wrapper">
+            <div class="intro">
+              <h2>Get In Touch</h2>
+            </div>
+          </div>
         </section>
         <section class="flex">
+          <div>
+            <div class="light rotate-email-container not-rotated">
+              <h4
+                onclick="copyEmail()"
+                onmouseout="emailHover()"
+                id="rotate-email"
+              >
+                <span class="tooltiptext" id="emailToolTipA">
+                  Copy to clipboard
+                </span>
+                <i class="fa-regular fa-paper-plane"></i> Send me an email:
+                nikki@nikkster.tech
+              </h4>
+            </div>
+
+            <h4>
+              <a
+                target="_blank"
+                href="https://form.jotform.com/233375947492065"
+              >
+                <i class="fa-regular fa-circle-check"></i> Inquire about one of
+                my services
+              </a>
+            </h4>
+            <br />
+            I am currently accepting new clients for January-March 2024. Only 2
+            spots left for website build or redesign in January! Reach out today
+            to save your spot.
+            <p>
+              Are you a designer, dev, photographer, etc? Feel free to reach out
+              - I am currently looking for collaborations.
+            </p>
+          </div>
+
           <div class="ml-embedded" data-form="sjLpIk"></div>
           <!-- Calendly inline widget begin -->
-          <div
+          <!-- <div
             class="calendly-inline-widget"
             data-url="https://calendly.com/nhermann311/15min"
             style="width: 1010px; max-width: 72vw; height: 700px"
-          ></div>
+          ></div> -->
           <!-- Calendly inline widget end -->
         </section>
       </div>

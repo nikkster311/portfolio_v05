@@ -306,6 +306,12 @@ body[data-theme="light"] .intro h5 {
   top: 56%;
 }
 
+.rotate-email-container.not-rotated {
+  right: 0;
+  top: 0;
+  position: inherit;
+}
+
 .rotate-email-container:hover #rotate-email {
   cursor: pointer;
 }
@@ -313,6 +319,10 @@ body[data-theme="light"] .intro h5 {
 #rotate-email {
   transform: rotate(90deg);
   padding-bottom: 2px;
+}
+
+.rotate-email-container.not-rotated #rotate-email {
+  transform: rotate(360deg);
 }
 
 .rotate-email-container .tooltiptext {

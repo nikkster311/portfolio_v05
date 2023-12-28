@@ -9,13 +9,13 @@ function detectPage() {
     document.getElementById("home-btn-sidenav").style.display = "none";
     document.getElementById("yelp-btn").style.display = "none";
     document.getElementById("gmb-btn").style.display = "none";
+    document.getElementById("insta-btn").style.display = "none";
   }
   if (hireme || workpage) {
     document.getElementById("home-btn-sidenav").style.display = "none";
     document.getElementById("hire-me-btn-sidenav").style.display = "none";
     document.getElementById("resume-icon").style.display = "none";
     document.getElementById("githubIcon").style.display = "none";
-    document.getElementById("envelopeIcon").style.display = "none";
   }
   if (contact) {
     document.getElementById("resume-icon").style.display = "none";
@@ -26,7 +26,6 @@ function detectPage() {
     document.getElementById("home-btn-sidenav").style.display = "none";
     document.getElementById("resume-icon").style.display = "none";
     document.getElementById("githubIcon").style.display = "none";
-    document.getElementById("envelopeIcon").style.display = "none";
   }
 }
 
@@ -48,6 +47,7 @@ document.write(
   <i class="fa-brands fa-yelp"></i></a>\
 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nicole-hermann/">\
 <i class="fa-brands fa-linkedin"></i></a>\
+<a target="_blank" rel="noopener noreferrer" id="insta-btn" href="https://instagram.com/nikkster.tech"><i class="fa-brands fa-instagram"></i></a>\
 <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/nikksterDotTech"><i class="fa-brands fa-twitter"></i></a>\
 <a id="resume-icon" class="resumeSocial" target="_blank" rel="noopener noreferrer" href="./Hermann_resume.pdf" download="Hermann_resume">\
 <i class="fa-solid fa-file"></i>\

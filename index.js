@@ -71,10 +71,16 @@ function topFunction() {
 function copyEmail() {
   navigator.clipboard.writeText("nikki@nikkster.tech");
   var tooltip = document.getElementById("emailToolTip");
+  var tooltipA = document.getElementById("emailToolTipA");
   tooltip.classList.remove("hide");
+  tooltipA.classList.remove("hide");
   tooltip.innerHTML = "Email Copied!";
+  tooltipA.innerHTML = "Email Copied!";
   setTimeout(() => {
     tooltip.classList.add("hide");
+  }, 3000);
+  setTimeout(() => {
+    tooltipA.classList.add("hide");
   }, 3000);
 }
 
@@ -82,6 +88,9 @@ function emailHover() {
   var tooltip = document.getElementById("emailToolTip");
   tooltip.classList.remove("hide");
   tooltip.innerHTML = "Copy to clipboard";
+  var tooltipA = document.getElementById("emailToolTipA");
+  tooltipA.classList.remove("hide");
+  tooltipA.innerHTML = "Copy to clipboard";
 }
 
 // project
