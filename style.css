@@ -742,12 +742,12 @@ section .p a:hover,
 }
 
 .flex.flex.format-flex div:first-of-type,
-.flex ul:first-of-type {
+#experience .flex ul:first-of-type {
   width: 30%;
 }
 
 .flex.flex.format-flex div:nth-child(2),
-.flex ul:nth-child(2) {
+#experience .flex ul:nth-child(2) {
   width: 70%;
 }
 
