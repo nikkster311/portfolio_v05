@@ -1,7 +1,7 @@
 document.write(
   '      <section id="footer-hireme-contact" class="footer">\
   <div class="footer-wrapper">\
-  <a href="https://nikkster.tech/hireme">\
+  <a href="https://nikkster.tech/">\
   <img\
   class="brand-logo"\
   src="./imgs/logos/nikkstertech-high-resolution-logo-white-on-transparent-background.png"\
@@ -11,21 +11,21 @@ document.write(
       <div class="footer-grid">\
         <div class="footer-links-b">\
           <h4>\
-            <a class="footer-link" href="./hireme#services">Services</a>\
+            <a class="footer-link" href=".#services">Services</a>\
           </h4>\
           <h4>\
               <a class="footer-link" href="https://form.jotform.com/233375947492065">Get A Quote</a>\
           </h4>\
           <h4>\
-              <a class="footer-link" href="./hireme#faq">FAQ</a>\
+              <a class="footer-link" href=".#faq">FAQ</a>\
           </h4>\
         </div>\
         <div class="footer-links-a">\
           <h4>\
-            <a class="footer-link" href="./hireme#testimonialsSection">Reviews</a>\
+            <a class="footer-link" href=".#testimonialsSection">Reviews</a>\
           </h4>\
           <h4>\
-            <a class="footer-link" href="./hireme#myWork">My Work</a>\
+            <a class="footer-link" href=".#myWork">My Work</a>\
           </h4>\
           <h4>\
           <a class="footer-link" href="./contact">Contact</a>\

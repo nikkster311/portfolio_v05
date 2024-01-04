@@ -1,34 +1,34 @@
 document.write(
   '      <section id="footer-hireme-contact" class="footer">\
     <div class="footer-wrapper">\
-    <a href="https://nikkster.tech/hireme">\
-      <img\
-          class="brand-logo"\
-          src="../imgs/logos/nikkstertech-high-resolution-logo-white-on-transparent-background.png"\
-      />\
-      </a>\
+    <a href="https://nikkster.tech/">\
+    <img\
+    class="brand-logo"\
+    src="./imgs/logos/nikkstertech-high-resolution-logo-white-on-transparent-background.png"\
+    />\
+    </a>\
       <div class="footer-grid-wrapper">\
         <div class="footer-grid">\
           <div class="footer-links-b">\
             <h4>\
-              <a class="footer-link" href="..#services">Services</a>\
+              <a class="footer-link" href=".#services">Services</a>\
             </h4>\
             <h4>\
                 <a class="footer-link" href="https://form.jotform.com/233375947492065">Get A Quote</a>\
             </h4>\
             <h4>\
-                <a class="footer-link" href="..#faq">FAQ</a>\
+                <a class="footer-link" href=".#faq">FAQ</a>\
             </h4>\
           </div>\
           <div class="footer-links-a">\
             <h4>\
-              <a class="footer-link" href="..#testimonialsSection">Reviews</a>\
+              <a class="footer-link" href=".#testimonialsSection">Reviews</a>\
             </h4>\
             <h4>\
-              <a class="footer-link" href="..#myWork">My Work</a>\
+              <a class="footer-link" href=".#myWork">My Work</a>\
             </h4>\
             <h4>\
-            <a class="footer-link" href="../contact">Contact</a>\
+            <a class="footer-link" href="./contact">Contact</a>\
           </h4>\
           </div>\
           <div class="socials-container-footer flex">\
@@ -65,6 +65,8 @@ document.write(
             <a href="mailto:nikki@nikkster.tech"\
                 ><i class="fa-regular fa-envelope"></i\
             ></a>\
+          </div>\
+          <div class="footer-buttons">\
           </div>\
             <p class="footer-made-by">Nikkster.tech was Built, Designed, and Created by Nikki Hermann</p>\
           </div>\
