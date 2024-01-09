@@ -564,7 +564,7 @@ section.flex {
     flex-direction: column;
   }
 
-  .newsletter-flex .faq-wrapper {
+  #hire-me-page-body .newsletter-flex .faq-wrapper {
     width: auto;
   }
 
@@ -624,11 +624,14 @@ body[data-theme="light"] .topnav {
     padding: 8px 0 8px 10px;
   }
   .topnav a {
-    font-size: 14px;
+    font-size: 12px;
     padding: 0;
   }
   .topnav .btn {
     padding: 5px 5px 1px 5px;
+  }
+  .topnav .btn .fa-solid {
+    font-size: 12px;
   }
   .topnav .hire-me {
     margin: 0;
@@ -718,7 +721,7 @@ section .p a:hover,
 
 @media screen and (max-width: 700px) {
   #about .flex {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .portrait-img {
     height: 30vh;

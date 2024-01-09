@@ -654,7 +654,7 @@ body[data-theme="light"] .accordion button:hover {
 }
 
 #contact-page-body i {
-  padding-right: 20px;
+  padding-right: 8px;
 }
 
 #contact .tagline {
@@ -1431,4 +1431,12 @@ a.card-text-wrapper {
     margin: 10px 0px;
     width: 100%;
   }
+}
+
+/* mailerlite */
+
+.sign-up-wrapper
+  #mlb2-10484425.ml-form-embedContainer
+  .ml-form-embedWrapper.embedForm {
+  max-width: 1000px !important;
 }

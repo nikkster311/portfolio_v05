@@ -28,6 +28,9 @@ document.write(
               <a class="footer-link" href="..#myWork">My Work</a>\
             </h4>\
             <h4>\
+            <a class="footer-link" href="..#about">About</a>\
+          </h4>\
+            <h4>\
             <a class="footer-link" href="../contact">Contact</a>\
           </h4>\
           </div>\
