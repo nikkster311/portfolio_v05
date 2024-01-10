@@ -22,13 +22,13 @@ document.write(
           </div>\
           <div class="footer-links-a">\
             <h4>\
-              <a class="footer-link" href="..#testimonialsSection">Reviews</a>\
+              <a class="footer-link" href="../reviews">Reviews</a>\
             </h4>\
             <h4>\
               <a class="footer-link" href="..#myWork">My Work</a>\
             </h4>\
             <h4>\
-            <a class="footer-link" href="..#about">About</a>\
+            <a class="footer-link" href="../about">About</a>\
           </h4>\
             <h4>\
             <a class="footer-link" href="../contact">Contact</a>\
