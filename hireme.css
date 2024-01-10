@@ -139,7 +139,8 @@ body[data-theme="green"] .intro-background-wrapper {
 
 #pricing-page-body .intro-background-wrapper,
 #work-page-page-body .intro-background-wrapper,
-#contact-page-body .intro-background-wrapper {
+#contact-page-body .intro-background-wrapper,
+#about-page-body .intro-background-wrapper {
   height: auto;
 }
 
@@ -418,6 +419,18 @@ body[data-theme="light"] .intro {
 
 /* testimonials */
 
+#page-wrapper #testimonialsSection .appear-on-scroll {
+  max-width: fit-content;
+}
+
+.review-wrapper {
+  width: 50%;
+  padding: 15px;
+}
+
+@media screen and (max-width: 769px) {
+}
+
 #testimonialsSection .fa-star {
   color: #ffbe00;
 }
@@ -515,8 +528,13 @@ body[data-theme="light"] .swiper-pagination-bullet-active {
     top: 7px;
   }
 
+  .review-wrapper {
+    width: 100%;
+    padding: 15px 15px 15px 30px;
+  }
+
   #testimonialsSection {
-    padding: 30px 15px;
+    /* padding: 30px 15px; */
   }
 
   #testimonialsSection .swiper-slide-content {
