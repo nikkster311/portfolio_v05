@@ -1464,3 +1464,51 @@ a.card-text-wrapper {
   .ml-form-embedWrapper.embedForm {
   max-width: 1000px !important;
 }
+
+/* about */
+
+#about-page-body #about p {
+  margin: 28px 0;
+}
+
+/* what we do */
+
+#whatWeDo .fa-solid {
+  /* font-weight: 900; */
+  font-size: 45px;
+}
+
+.what-we-do-wrapper {
+  text-align: center;
+  margin: 20px;
+}
+
+.what-we-do-wrapper h3 {
+  margin-top: 10px;
+}
+
+#whatWeDo .flex {
+  align-items: self-end;
+}
+
+.large-p {
+  font-size: 25px;
+}
+
+#whatWeDo h3 {
+  font-size: 40px;
+}
+@media screen and (max-width: 900px) {
+  #whatWeDo .flex {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .large-p {
+    font-size: 18px;
+  }
+
+  #whatWeDo h3 {
+    font-size: 30px;
+  }
+}
