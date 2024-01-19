@@ -5,13 +5,14 @@ function detectPage() {
   var contact = document.getElementById("contact-page-body");
   var pricing = document.getElementById("pricing-page-body");
   var workpage = document.getElementById("work-page-page-body");
+  var about = document.getElementById("about-page-body");
   if (index) {
     document.getElementById("home-btn-sidenav").style.display = "none";
     document.getElementById("yelp-btn").style.display = "none";
     document.getElementById("gmb-btn").style.display = "none";
     document.getElementById("insta-btn").style.display = "none";
   }
-  if (hireme || workpage) {
+  if (hireme || workpage || about) {
     document.getElementById("home-btn-sidenav").style.display = "none";
     document.getElementById("hire-me-btn-sidenav").style.display = "none";
     document.getElementById("resume-icon").style.display = "none";

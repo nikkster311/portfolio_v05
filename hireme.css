@@ -708,7 +708,8 @@ body[data-theme="light"] .accordion button:hover {
 @media screen and (max-width: 1000px) {
   #hire-me-page-body #icons,
   #pricing-page-body #icons,
-  #work-page-page-body #icons {
+  #work-page-page-body #icons,
+  #about-page-body #icons {
     margin-top: 5px;
     margin-bottom: 5px;
   }
@@ -717,7 +718,8 @@ body[data-theme="light"] .accordion button:hover {
 @media screen and (max-width: 700px) {
   #hire-me-page-body #rotate-email,
   #pricing-page-body #rotate-email,
-  #work-page-page-body #rotate-email {
+  #work-page-page-body #rotate-email,
+  #about-page-body #rotate-email {
     transform: none;
     font-size: 13px;
     padding-left: 5px;
@@ -725,14 +727,16 @@ body[data-theme="light"] .accordion button:hover {
 
   #hire-me-page-body .rotate-email-container .tooltiptext,
   #pricing-page-body .rotate-email-container .tooltiptext,
-  #work-page-page-body .rotate-email-container .tooltiptext {
+  #work-page-page-body .rotate-email-container .tooltiptext,
+  #about-page-page-body .rotate-email-container .tooltiptext {
     top: -30%;
     left: 24%;
   }
 
   #hire-me-page-body .rotate-email-container,
   #pricing-page-body .rotate-email-container,
-  #work-page-page-body .rotate-email-container {
+  #work-page-page-body .rotate-email-container,
+  #about-page-body .rotate-email-container {
     bottom: 0;
     z-index: 1;
     right: 0;
@@ -744,7 +748,8 @@ body[data-theme="light"] .accordion button:hover {
 
   #hire-me-page-body .socials-container,
   #pricing-page-body .socials-container,
-  #work-page-page-body .socials-container {
+  #work-page-page-body .socials-container,
+  #about-page-body .socials-container {
     z-index: 9000;
     bottom: 0;
     justify-content: space-between;
@@ -756,7 +761,8 @@ body[data-theme="light"] .accordion button:hover {
 
   #hire-me-page-body .footer-wrapper,
   #pricing-page-body .footer-wrapper,
-  #work-page-page-body .footer-wrapper {
+  #work-page-page-body .footer-wrapper,
+  #about-page-body .footer-wrapper {
     padding-bottom: 85px;
   }
 }

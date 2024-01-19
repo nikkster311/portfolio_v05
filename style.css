@@ -553,6 +553,9 @@ section.flex {
   .portrait-img-wrapper {
     text-align: center;
   }
+  .newsletter-flex .faq-wrapper {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 900px) {
