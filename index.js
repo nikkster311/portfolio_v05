@@ -32,7 +32,8 @@ const toggleTheme = () => {
     lightIcon.style.display = "block";
   }
 
-  localStorage.setItem("theme", newTheme);
+  // localStorage.setItem("theme", newTheme);
+  localStorage.setItem("theme", "green");
 };
 
 // remove the loader after the page loads
