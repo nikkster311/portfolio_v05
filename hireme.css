@@ -210,6 +210,12 @@ body[data-theme="light"] .intro {
   background-color: var(--primary-color);
 }
 
+@media screen and (max-width: 800px) {
+  .intro-background-wrapper {
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .intro {
     padding-right: 0;
@@ -219,6 +225,9 @@ body[data-theme="light"] .intro {
   .intro h1 {
     font-size: 3em;
     width: 100%;
+  }
+  .intro h2 {
+    font-size: 3em;
   }
   .intro {
     padding-left: 0;

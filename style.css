@@ -496,6 +496,7 @@ body[data-theme="light"] .intro h5 {
   margin-right: auto;
   display: flex;
   height: fit-content;
+  align-items: flex-start;
   height: -webkit-fill-available;
   align-self: center;
 }
