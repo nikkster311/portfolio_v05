@@ -19,6 +19,9 @@ document.write(
             <h4>\
                 <a class="footer-link" href=".#faq">FAQ</a>\
             </h4>\
+            <h4>\
+            <a class="footer-link" href="./privacypolicy">Privacy Policy</a>\
+        </h4>\
           </div>\
           <div class="footer-links-a">\
             <h4>\
@@ -71,7 +74,7 @@ document.write(
           </div>\
           <div class="footer-buttons">\
           </div>\
-            <p class="footer-made-by">Nikkster.tech was Built, Designed, and Created by Nikki Hermann</p>\
+          <p class="footer-made-by">&#169 2020-2024 Nikkster.tech</p>\
           </div>\
         </div>\
       </div>\
