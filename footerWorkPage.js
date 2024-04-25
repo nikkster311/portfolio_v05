@@ -28,7 +28,7 @@ document.write(
               <a class="footer-link" href="../reviews">Reviews</a>\
             </h4>\
             <h4>\
-              <a class="footer-link" href="..#myWork">My Work</a>\
+              <a class="footer-link" href="../mywork">My Work</a>\
             </h4>\
             <h4>\
             <a class="footer-link" href="../about">About</a>\
@@ -57,12 +57,6 @@ document.write(
                 rel="noopener noreferrer"\
                 href="https://instagram.com/nikkster.tech"\
                 ><i class="fa-brands fa-instagram"></i\
-            ></a>\
-            <a\
-                target="_blank"\
-                rel="noopener noreferrer"\
-                href="https://twitter.com/nikksterDotTech"\
-                ><i class="fa-brands fa-twitter"></i\
             ></a>\
             <a target="_blank" rel="noopener noreferrer" id="gmb-btn" href="https://g.page/r/Ce1COo5Y3bKHEBM">\
             <i class="fa-brands fa-google"></i></a>\

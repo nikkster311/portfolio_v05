@@ -51,7 +51,6 @@ document.write(
 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nicole-hermann/">\
 <i class="fa-brands fa-linkedin"></i></a>\
 <a target="_blank" rel="noopener noreferrer" id="insta-btn" href="https://instagram.com/nikkster.tech"><i class="fa-brands fa-instagram"></i></a>\
-<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/nikksterDotTech"><i class="fa-brands fa-twitter"></i></a>\
 <a href="mailto:nikki@nikkster.tech"><i id="envelopeIcon" class="fa-regular fa-envelope"></i></a>\
 <a id="resume-icon" class="resumeSocial" target="_blank" rel="noopener noreferrer" href="./Hermann_resume.pdf" download="Hermann_resume">\
 <i class="fa-solid fa-file"></i>\

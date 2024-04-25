@@ -39,12 +39,6 @@ document.write(
       download="Hermann_resume"\
     >\
       <button class="btn">Download my resume</button></a>\
-    <a\
-      target="_blank"\
-      rel="noopener noreferrer"\
-      href="https://twitter.com/nikksterDotTech"\
-      ><i class="fa-brands fa-twitter"></i\
-    ></a>\
     <a href="mailto:nikki@nikkster.tech"\
       ><i class="fa-regular fa-envelope"></i\
     ></a>\
