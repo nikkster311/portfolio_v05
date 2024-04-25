@@ -28,7 +28,7 @@ document.write(
               <a class="footer-link" href="./reviews">Reviews</a>\
             </h4>\
             <h4>\
-              <a class="footer-link" href=".#myWork">My Work</a>\
+              <a class="footer-link" href="./mywork">My Work</a>\
             </h4>\
             <h4>\
             <a class="footer-link" href="./about">About</a>\

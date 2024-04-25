@@ -17,7 +17,12 @@ h2.h2-small {
   max-width: 850px;
   margin: 0 auto;
 }
-
+@media screen and (max-width: 600px) {
+  #myWork {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
 @media screen and (max-width: 450px) {
   section {
     padding-left: 35px;
@@ -140,6 +145,7 @@ body[data-theme="green"] .intro-background-wrapper {
 #pricing-page-body .intro-background-wrapper,
 #work-page-page-body .intro-background-wrapper,
 #contact-page-body .intro-background-wrapper,
+#my-work-page-body .intro-background-wrapper,
 #about-page-body .intro-background-wrapper {
   height: auto;
 }
@@ -718,6 +724,7 @@ body[data-theme="light"] .accordion button:hover {
   #hire-me-page-body #icons,
   #pricing-page-body #icons,
   #work-page-page-body #icons,
+  #my-work-page-body #icons,
   #about-page-body #icons {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -728,6 +735,7 @@ body[data-theme="light"] .accordion button:hover {
   #hire-me-page-body #rotate-email,
   #pricing-page-body #rotate-email,
   #work-page-page-body #rotate-email,
+  #my-work-page-body #rotate-email,
   #about-page-body #rotate-email {
     transform: none;
     font-size: 13px;
@@ -737,6 +745,7 @@ body[data-theme="light"] .accordion button:hover {
   #hire-me-page-body .rotate-email-container .tooltiptext,
   #pricing-page-body .rotate-email-container .tooltiptext,
   #work-page-page-body .rotate-email-container .tooltiptext,
+  #my-work-page-body .rotate-email-container .tooltiptext,
   #about-page-page-body .rotate-email-container .tooltiptext {
     top: -30%;
     left: 24%;
@@ -745,9 +754,10 @@ body[data-theme="light"] .accordion button:hover {
   #hire-me-page-body .rotate-email-container,
   #pricing-page-body .rotate-email-container,
   #work-page-page-body .rotate-email-container,
+  #my-work-page-body .rotate-email-container,
   #about-page-body .rotate-email-container {
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
     right: 0;
     top: auto;
     width: 100%;
@@ -758,6 +768,7 @@ body[data-theme="light"] .accordion button:hover {
   #hire-me-page-body .socials-container,
   #pricing-page-body .socials-container,
   #work-page-page-body .socials-container,
+  #my-work-page-body .socials-container,
   #about-page-body .socials-container {
     z-index: 9000;
     bottom: 0;
@@ -771,6 +782,7 @@ body[data-theme="light"] .accordion button:hover {
   #hire-me-page-body .footer-wrapper,
   #pricing-page-body .footer-wrapper,
   #work-page-page-body .footer-wrapper,
+  #my-work-page-body .footer-wrapper,
   #about-page-body .footer-wrapper {
     padding-bottom: 85px;
   }
@@ -915,6 +927,7 @@ body[data-theme="green"] #footer-hireme-contact .footer-btn-wrapper .btn:hover {
 @media screen and (max-width: 1400px) {
   #hire-me-page-body .footer-grid-wrapper,
   #pricing-page-body .footer-grid-wrapper,
+  #my-work-page-body .footer-grid-wrapper,
   #work-page-page-body .footer-grid-wrapper {
     align-self: auto;
   }
@@ -926,6 +939,8 @@ body[data-theme="green"] #footer-hireme-contact .footer-btn-wrapper .btn:hover {
   #hire-me-page-body .footer-links-b h4,
   #pricing-page-body .footer-links-b h4,
   #work-page-page-body .footer-links-a h4,
+  #my-work-page-body .footer-links-a h4,
+  #my-work-page-body .footer-links-b h4,
   #work-page-page-body .footer-links-b h4 {
     font-size: 15px;
   }
@@ -933,12 +948,14 @@ body[data-theme="green"] #footer-hireme-contact .footer-btn-wrapper .btn:hover {
   #hire-me-page-body .socials-container-footer a i,
   #pricing-page-body .socials-container-footer a i,
   #work-page-page-body .socials-container-footer a i,
+  #my-work-page-body .socials-container-footer a i,
   #work-page-page-body .socials-container-footer a i {
     font-size: 1.5em;
   }
 
   #footer-hireme-contact .footer-buttons .btn,
   #pricing-page-body .footer-buttons .btn,
+  #my-work-page-body .footer-buttons .btn,
   #work-page-page-body .footer-buttons .btn {
     font-size: 15px;
   }
@@ -1333,21 +1350,46 @@ body[data-theme="green"] .slideshow-container .card:hover,
   padding: 7px 12px;
 }
 
+.work-wrapper {
+  width: 33%;
+}
+
 .work-wrapper .card {
-  margin: 10px;
-  width: 30%;
-  padding: 15px;
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
+
+  overflow: hidden;
 }
 .work-wrapper .card img {
   width: 100%;
+
+  object-fit: cover;
+  /* transition: all 0.3s ease; */
+  transition: transform 0.4s ease;
+  transform-origin: 50% 50%;
+}
+
+.work-wrapper .card img:hover {
+  overflow: hidden;
+  transform: scale(1.1);
+  width: 100%;
+  filter: opacity(70%);
+  height: 100%;
 }
 
 .work-wrapper .card p.card-text {
   text-align: left;
 }
 
+.work-wrapper .card-title-block {
+  background-color: var(--primary-color);
+  z-index: 1;
+}
+
 .work-img-tags-wrapper {
   position: relative;
+  display: inline-flex;
 }
 
 .work-tags {
@@ -1436,14 +1478,13 @@ a.card-text-wrapper {
 
 @media screen and (max-width: 1365px) {
   .work-wrapper .card {
-    width: 28%;
+    /* width: 28%; */
   }
 }
 
-@media screen and (max-width: 909px) {
-  .work-wrapper .card {
-    width: 42%;
-    padding: 10px;
+@media screen and (max-width: 850px) {
+  .work-wrapper {
+    width: 50%;
   }
 }
 
@@ -1452,7 +1493,7 @@ a.card-text-wrapper {
     flex-direction: row;
   }
   .work-wrapper .card {
-    width: 42vw;
+    /* width: 42vw; */
   }
 }
 
