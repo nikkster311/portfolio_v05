@@ -86,6 +86,7 @@ h2.h2-small {
   font-weight: 900;
   border-width: 3px;
   text-decoration: none;
+  align-self: center;
 }
 
 .btn-wrapper-hireme .btn:hover
@@ -174,7 +175,7 @@ body[data-theme="green"] .intro-background-wrapper {
 }
 
 .intro .btn-wrapper-hireme {
-  padding: 10px 0 30px;
+  padding: 20px 0 30px;
 }
 
 .intro h5 {
@@ -321,22 +322,22 @@ body[data-theme="light"] .intro {
   }
 }
 
-/* intro blurb */
+/* two buttons next to each other */
 
-#introBlurb .btn-wrapper-hireme:first-of-type {
+.two-btns .btn-wrapper-hireme:first-of-type {
   padding-right: 50px;
 }
 
-#introBlurb .btn-wrapper-hireme:last-of-type {
+.two-btns .btn-wrapper-hireme:last-of-type {
   padding-left: 50px;
 }
 
 @media screen and (max-width: 700px) {
-  #introBlurb .btn-wrapper-hireme:first-of-type {
+  .two-btns .btn-wrapper-hireme:first-of-type {
     padding-right: 20px;
   }
 
-  #introBlurb .btn-wrapper-hireme:last-of-type {
+  .two-btns .btn-wrapper-hireme:last-of-type {
     padding-left: 20px;
   }
 }
@@ -1531,6 +1532,7 @@ a.card-text-wrapper {
 .what-we-do-wrapper {
   text-align: center;
   margin: 20px;
+  align-self: start;
 }
 
 .what-we-do-wrapper h3 {

@@ -201,7 +201,7 @@ body[data-theme="light"] .intro h5 {
   border: 2px solid var(--primary-color);
   color: var(--text-font-color);
   cursor: pointer;
-  padding: 15px 15px 10px 15px;
+  padding: 10px 17px 5px 17px;
   border-radius: 10px;
   font-size: 18px;
 }
