@@ -774,7 +774,7 @@ body[data-theme="light"] .accordion button:hover {
     z-index: 9000;
     bottom: 0;
     justify-content: space-between;
-    width: 40%;
+    width: 35%;
     margin: 3px 39%;
     flex-direction: row;
     top: auto;
