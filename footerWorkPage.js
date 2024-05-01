@@ -22,6 +22,9 @@ document.write(
             <h4>\
             <a class="footer-link" href="../privacypolicy">Privacy Policy</a>\
         </h4>\
+        <h4>\
+        <a class="footer-link" href="../termsandconditions">Terms & Conditions</a>\
+    </h4>\
           </div>\
           <div class="footer-links-a">\
             <h4>\
