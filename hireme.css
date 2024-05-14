@@ -131,6 +131,7 @@ body[data-theme="dark"] .intro-background-wrapper {
 }
 
 body[data-theme="green"] .intro-background-wrapper {
+  background-image: url("imgs/hero_bg_green.jpg");
 }
 
 .intro-background-wrapper {
