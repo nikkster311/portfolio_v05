@@ -13,7 +13,8 @@ function detectPage() {
     document.getElementById("google-my-business-btn").style.display = "none";
     document.getElementById("insta-btn").style.display = "none";
   }
-  if (hireme || workpage || about || mywork) {
+  if (hireme || workpage || about) {
+    // mywork goes in the line above, if it gets working
     document.getElementById("home-btn-sidenav").style.display = "none";
     document.getElementById("hire-me-btn-sidenav").style.display = "none";
     document.getElementById("resume-icon").style.display = "none";
