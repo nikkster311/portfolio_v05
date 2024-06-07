@@ -6,7 +6,7 @@ function detectPage() {
   var pricing = document.getElementById("pricing-page-body");
   var workpage = document.getElementById("work-page-page-body");
   var about = document.getElementById("about-page-body");
-  var mywork = documemnt.getElementById("my-work-page-body");
+  // var mywork = documemnt.getElementById("my-work-page-body");
   if (index) {
     document.getElementById("home-btn-sidenav").style.display = "none";
     document.getElementById("yelp-btn").style.display = "none";
@@ -14,7 +14,6 @@ function detectPage() {
     document.getElementById("insta-btn").style.display = "none";
   }
   if (hireme || workpage || about || mywork) {
-    console.log("ellooo");
     document.getElementById("home-btn-sidenav").style.display = "none";
     document.getElementById("hire-me-btn-sidenav").style.display = "none";
     document.getElementById("resume-icon").style.display = "none";
