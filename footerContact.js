@@ -14,7 +14,7 @@ document.write(
               <a class="footer-link" href=".#services">Services</a>\
             </h4>\
             <h4>\
-                <a class="footer-link" href="https://form.jotform.com/233375947492065">Work With Us</a>\
+                <a class="footer-link" href="https://form.jotform.com/233375947492065" target="__blank">Work With Us</a>\
             </h4>\
             <h4>\
                 <a class="footer-link" href=".#faq">FAQ</a>\
