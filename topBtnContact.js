@@ -46,6 +46,8 @@ document.write(
   <i class="fa-brands fa-google"></i></a>\
   <a target="_blank" rel="noopener noreferrer" id="yelp-btn" href="https://www.yelp.com/biz/nikkster-tech-marysville">\
   <i class="fa-brands fa-yelp"></i></a>\
+              <a target="_blank" rel="noopener noreferrer" id="youtube-btn" href="https://www.youtube.com/@nikkstertech">\
+            <i class="fa-brands fa-youtube"></i></a>\
 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nicole-hermann/">\
 <i class="fa-brands fa-linkedin"></i></a>\
 <a target="_blank" rel="noopener noreferrer" id="insta-btn" href="https://instagram.com/nikkster.tech"><i class="fa-brands fa-instagram"></i></a>\

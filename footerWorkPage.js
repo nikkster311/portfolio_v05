@@ -65,6 +65,8 @@ document.write(
             <i class="fa-brands fa-google"></i></a>\
             <a target="_blank" rel="noopener noreferrer" id="yelp-btn" href="https://www.yelp.com/biz/nikkster-tech-marysville">\
             <i class="fa-brands fa-yelp"></i></a>\
+                        <a target="_blank" rel="noopener noreferrer" id="youtube-btn" href="https://www.youtube.com/@nikkstertech">\
+            <i class="fa-brands fa-youtube"></i></a>\
             <a href="mailto:nikki@nikkster.tech"\
                 ><i class="fa-regular fa-envelope"></i\
             ></a>\
