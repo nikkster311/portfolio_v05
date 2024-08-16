@@ -140,7 +140,13 @@ body[data-theme="green"] .intro-background-wrapper {
   background-size: cover;
   padding: 120px 0 50px 0;
   text-align: right;
-  height: 80vh;
+  /* height: 80vh; */
+}
+
+@media screen and (max-width: 700px) {
+  .intro-background-wrapper {
+    /* height: 20vh; */
+  }
 }
 
 #pricing-page-body .intro-background-wrapper,
@@ -148,7 +154,7 @@ body[data-theme="green"] .intro-background-wrapper {
 #contact-page-body .intro-background-wrapper,
 #my-work-page-body .intro-background-wrapper,
 #about-page-body .intro-background-wrapper {
-  height: auto;
+  /* height: auto; */
 }
 
 #work-page-page-body .intro-background-wrapper {
@@ -220,7 +226,7 @@ body[data-theme="light"] .intro {
 @media screen and (max-width: 800px) {
   .intro-background-wrapper {
     height: auto;
-    min-height: 75vh;
+    /* min-height: 75vh; */
     padding-top: 80px;
   }
 }
@@ -243,7 +249,7 @@ body[data-theme="light"] .intro {
   }
   .intro-wrapper {
     height: auto;
-    min-height: 70vh;
+    /* min-height: 70vh; */
   }
 
   #work-page-page-body .intro h2 {
@@ -347,7 +353,7 @@ body[data-theme="light"] .intro {
   }
 }
 
-/* Services Section */
+/* Some stuff we do Section */
 #services {
   padding-right: 45px;
 }
@@ -435,6 +441,36 @@ body[data-theme="light"] .intro {
 @media screen and (max-width: 500px) {
   #myWork {
     padding: 30px 20px;
+  }
+}
+
+/* fancy block (used for services) */
+
+.new-style-grid {
+  padding: 60px 0;
+}
+
+.new-style-grid .services-wrapper {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.new-style-grid-box {
+  border: 1px solid #eefff7;
+  padding: 0 20px 30px;
+}
+
+.new-style-grid-box.half {
+  width: 50%;
+}
+
+.new-style-grid-box.whole {
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .new-style-grid-box.half {
+    width: 100%;
   }
 }
 

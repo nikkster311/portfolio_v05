@@ -11,7 +11,7 @@ document.write(
         <div class="footer-grid">\
           <div class="footer-links-b">\
             <h4>\
-              <a class="footer-link" href="..#services">Services</a>\
+              <a class="footer-link" href="..#servicesBlock">Services</a>\
             </h4>\
             <h4>\
                 <a class="footer-link" href="https://form.jotform.com/233375947492065" target="__blank">Work With Us</a>\

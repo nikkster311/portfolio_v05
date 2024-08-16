@@ -1,6 +1,6 @@
 document.write(
   '<div class="topnav flex" id="nav">\
-<a href="#services">services</a>\
+<a href="#servicesBlock">services</a>\
 <a href="#testimonialsSection">reviews</a>\
 <a href="./mywork">my work</a>\
 <a href="./about">about</a>\
