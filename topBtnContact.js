@@ -1,36 +1,36 @@
 // do not display icon linking to current page
-function detectPage() {
-  var index = document.getElementById("index-page-body");
-  var hireme = document.getElementById("hire-me-page-body");
-  var contact = document.getElementById("contact-page-body");
-  var pricing = document.getElementById("pricing-page-body");
-  var workpage = document.getElementById("work-page-page-body");
-  var about = document.getElementById("about-page-body");
-  // var mywork = documemnt.getElementById("my-work-page-body");
-  if (index) {
-    document.getElementById("home-btn-sidenav").style.display = "none";
-    document.getElementById("yelp-btn").style.display = "none";
-    document.getElementById("google-my-business-btn").style.display = "none";
-    document.getElementById("insta-btn").style.display = "none";
-  }
-  if (hireme || workpage || about) {
-    // mywork goes in the line above, if it gets working
-    document.getElementById("home-btn-sidenav").style.display = "none";
-    document.getElementById("hire-me-btn-sidenav").style.display = "none";
-    document.getElementById("resume-icon").style.display = "none";
-    document.getElementById("githubIcon").style.display = "none";
-  }
-  if (contact) {
-    document.getElementById("resume-icon").style.display = "none";
-    document.getElementById("home-btn-sidenav").style.display = "none";
-  }
-  if (pricing) {
-    document.getElementById("hire-me-btn-sidenav").style.display = "none";
-    document.getElementById("home-btn-sidenav").style.display = "none";
-    document.getElementById("resume-icon").style.display = "none";
-    document.getElementById("githubIcon").style.display = "none";
-  }
-}
+// function detectPage() {
+//   var index = document.getElementById("index-page-body");
+//   var hireme = document.getElementById("hire-me-page-body");
+//   var contact = document.getElementById("contact-page-body");
+//   var pricing = document.getElementById("pricing-page-body");
+//   var workpage = document.getElementById("work-page-page-body");
+//   var about = document.getElementById("about-page-body");
+//   // var mywork = documemnt.getElementById("my-work-page-body");
+//   if (index) {
+//     // document.getElementById("home-btn-sidenav").style.display = "none";
+//     // document.getElementById("yelp-btn").style.display = "none";
+//     // document.getElementById("google-my-business-btn").style.display = "none";
+//     // document.getElementById("insta-btn").style.display = "none";
+//   }
+//   if (hireme || workpage || about) {
+//     // mywork goes in the line above, if it gets working
+//     // document.getElementById("home-btn-sidenav").style.display = "none";
+//     // document.getElementById("hire-me-btn-sidenav").style.display = "none";
+//     // document.getElementById("resume-icon").style.display = "none";
+//     // document.getElementById("githubIcon").style.display = "none";
+//   }
+//   if (contact) {
+//     // document.getElementById("resume-icon").style.display = "none";
+//     // document.getElementById("home-btn-sidenav").style.display = "none";
+//   }
+//   if (pricing) {
+//     // document.getElementById("hire-me-btn-sidenav").style.display = "none";
+//     // document.getElementById("home-btn-sidenav").style.display = "none";
+//     // document.getElementById("resume-icon").style.display = "none";
+//     // document.getElementById("githubIcon").style.display = "none";
+//   }
+// }
 
 document.write(
   '<div class="rotate-email-container">\
