@@ -56,4 +56,4 @@ document.write(
 '
 );
 
-window.addEventListener("load", detectPage);
+// window.addEventListener("load", detectPage);
